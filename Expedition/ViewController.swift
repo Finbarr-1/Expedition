@@ -92,16 +92,11 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     func verifyUrl (urlString: String?) -> Bool { //tests for url
-        if (urlString!.contains(".")) {
-                if let url = URL(string: "http://" + urlString!) {
-                    return UIApplication.shared.canOpenURL(url)
-                }else {
-                    return false
-                }
-            }
-            return false
+        if let url = URL(string: "http://" + urlString!) {
+            return UIApplication.shared.canOpenURL(url)
         }
-    
+        return false
+    }
     func historyOnOff() -> Bool {
         let historyOnOff = true
         return historyOnOff
