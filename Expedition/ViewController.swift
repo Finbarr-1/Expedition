@@ -92,8 +92,18 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     func verifyUrl (urlString: String?) -> Bool { //tests for url
-        if let url = URL(string: "http://" + urlString!) {
-            return UIApplication.shared.canOpenURL(url)
+        let url: URL?
+        if urlString!.hasPrefix("http://") {
+            url = URL(string: urlString!)
+        } else {
+            url = URL(string: "http://" + urlString!)
+        }
+        if let url = url {
+            if (urlString!.contains(".")) {
+                if (UIApplication.shared.canOpenURL(url)) {
+                    return true
+                }
+            }
         }
         return false
     }
@@ -112,7 +122,17 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             historyRuns += 1
         }
     }
+    
+    func searchText(urlString: String) -> URLRequest {
+        let queryItemQuery = URLQueryItem(name: "q", value: urlString);
         
+        components?.queryItems = [queryItemQuery]
+        
+        let request = URLRequest(url: (components?.url)!)
+        
+        return request
+    }
+
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         var urlForHistory = searchBar.text
@@ -124,12 +144,12 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             let url = URL(string: "http://\(searchBar.text!)")
             
             
-             let request = URLRequest(url: url!)
+            let request = URLRequest(url: url!)
             
             webView.load(request)
         }
         else {
-            let queryItemQuery = URLQueryItem(name: "q", value: searchBar.text);
+            let queryItemQuery = URLQueryItem(name: "q", value: searchBar.text!);
             
             components?.queryItems = [queryItemQuery]
             
@@ -144,4 +164,5 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
 }
     
 func DarkModeToggle(_ sender: Any) {
-    }
+    
+}
