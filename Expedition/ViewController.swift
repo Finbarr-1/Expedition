@@ -17,15 +17,14 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
     
-    var History: Array<Any>!
+    var History: Array<Any>! //history Array initialization
     var historyRuns = 0
     let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey"
     
-    var components = URLComponents(string: "https://duckduckgo.com/")
+    var components = URLComponents(string: "https://duckduckgo.com/") //search engine
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        super.viewDidLoad() //setup stuff
         
         //let searchEngine: String = "duckduckgo.com"
         
@@ -48,28 +47,28 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     
-    @IBAction func back(_ sender: Any) {
+    @IBAction func back(_ sender: Any) { //makes the page go back if it can
         if webView.canGoBack{
             webView.goBack()
         }
     }
 
-    @IBAction func forward(_ sender: Any) {
+    @IBAction func forward(_ sender: Any) { //makes the page go forward if it can
         if webView.canGoForward{
             webView.goForward()
         }
     }
 
     
-    @IBAction func refresh(_ sender: Any) {
+    @IBAction func refresh(_ sender: Any) { //makes the page reload
         webView.reload()
     }
     
-    @IBAction func pinchReload(_ sender: Any) {
+    @IBAction func pinchReload(_ sender: Any) { // pinch on searchbar gesture
         webView.reload()
     }
     
-    @IBAction func stop(_ sender: Any) {
+    @IBAction func stop(_ sender: Any) { //makes the page stop loading
         webView.stopLoading()
     }
     
@@ -107,15 +106,15 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
         return false
     }
-    func historyOnOff() -> Bool {
+    func historyOnOff() -> Bool { //will be connected to a switch turning tracking on and off
         let historyOnOff = true
         return historyOnOff
     }
 
-    func history(urlForHistory : String?) {
+    func history(urlForHistory : String?) { //adds stuff to the history array
         if historyOnOff(){
             if (historyRuns == 0) {
-                History = [urlForHistory!]
+                History = [urlForHistory!] // it is used ignore ->
             } else {
                 History.append(urlForHistory!)
             }
@@ -123,7 +122,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
     }
     
-    func searchText(urlString: String) -> URLRequest {
+    func searchText(urlString: String) -> URLRequest { //julian please explain
         let queryItemQuery = URLQueryItem(name: "q", value: urlString);
         
         components?.queryItems = [queryItemQuery]
@@ -133,9 +132,9 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         return request
     }
 
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) { //turns the users input into something that the search engine can use
         
-        var urlForHistory = searchBar.text
+        var urlForHistory = searchBar.text // it is used ignore ->
         history(urlForHistory : searchBar.text)
         
         searchBar.resignFirstResponder()
@@ -163,6 +162,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
 }
     
-func DarkModeToggle(_ sender: Any) {
+func DarkModeToggle(_ sender: Any) { //turns dark mode on and off
     
 }
