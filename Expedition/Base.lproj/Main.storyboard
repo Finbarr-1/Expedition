@@ -9,45 +9,6 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="Kn3-AL-LpF">
-            <objects>
-                <viewController id="4dc-CE-h4x" sceneMemberID="viewController">
-                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="qn9-46-FQF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="BKn-Jb-7k2">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3OG-he-ncm">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="ze6-t8-PTk">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <gestureRecognizers/>
-                                        <connections>
-                                            <outletCollection property="gestureRecognizers" destination="sAe-8a-yra" appends="YES" id="0CO-6P-dyt"/>
-                                        </connections>
-                                    </view>
-                                    <blurEffect style="regular"/>
-                                </visualEffectView>
-                            </subviews>
-                        </view>
-                        <blurEffect style="regular"/>
-                    </visualEffectView>
-                    <navigationItem key="navigationItem" id="M2l-90-FZM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="E2E-op-voT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="sAe-8a-yra">
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Xqb-tN-xyj"/>
-                    </connections>
-                </tapGestureRecognizer>
-            </objects>
-            <point key="canvasLocation" x="49" y="755"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
@@ -200,6 +161,23 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="onTintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 </switch>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-2a-zgr">
+                                    <rect key="frame" x="127" y="259" width="66" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Dark Icon"/>
+                                    <connections>
+                                        <action selector="darkIconButton:" destination="Aez-zN-2MU" eventType="touchUpInside" id="VkQ-MS-aCY"/>
+                                        <action selector="didTapDarkIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="egC-tE-Gqj"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-z4-oQS">
+                                    <rect key="frame" x="126" y="221" width="68" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Light Icon"/>
+                                    <connections>
+                                        <action selector="didTapPrimaryIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="QJb-ON-UWa"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="ila-Kj-6Ks" secondAttribute="bottom" constant="64" id="AAd-Rn-JxD"/>
@@ -212,6 +190,7 @@
                     <navigationItem key="navigationItem" id="Lhc-iQ-X1J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MP-i3-UdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Aez-zN-2MU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="783.75" y="21.12676056338028"/>
         </scene>

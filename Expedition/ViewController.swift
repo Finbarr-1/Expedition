@@ -13,6 +13,20 @@ import Foundation
 
 class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate {
     
+    let appIconService = AppIconService()
+    
+    
+    @IBAction func didTapPrimaryIcon() {
+        appIconService.changeAppIcon(to: .primaryAppIcon)
+    
+    }
+    
+    @IBAction func didTapDarkIcon() {
+        appIconService.changeAppIcon(to: .DarkAppIcon)
+    
+    }
+    
+    
     @IBOutlet weak var webView: WKWebView!
     
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
@@ -22,6 +36,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey"
     
     var components = URLComponents(string: "https://duckduckgo.com/")
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -154,10 +170,12 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
           
     }
-    
-    
-}
+   
+   }
+
     
 func DarkModeToggle(_ sender: Any) {
-    
+   
+
+
 }
