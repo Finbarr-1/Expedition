@@ -31,7 +31,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <searchBar opaque="NO" contentMode="redraw" layoutMarginsFollowReadableWidth="YES" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-H8-wBy">
-                                <rect key="frame" x="35" y="0.0" width="250" height="56"/>
+                                <rect key="frame" x="34" y="0.0" width="251" height="56"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                                 <gestureRecognizers/>
                                 <color key="barTintColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -47,9 +47,9 @@
                                 </connections>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2T-Z9-N1d">
-                                <rect key="frame" x="15" y="14" width="20" height="29"/>
+                                <rect key="frame" x="15" y="14" width="19" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" image="info.circle" catalog="system"/>
+                                <state key="normal" image="ellipsis" catalog="system"/>
                                 <connections>
                                     <segue destination="4Pb-2Y-0Xd" kind="presentation" id="JVn-MS-aE1"/>
                                 </connections>
@@ -178,7 +178,7 @@
     </scenes>
     <resources>
         <image name="Artboard 1" width="960" height="661"/>
-        <image name="info.circle" catalog="system" width="64" height="60"/>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="n6b-n6-BVa"/>
