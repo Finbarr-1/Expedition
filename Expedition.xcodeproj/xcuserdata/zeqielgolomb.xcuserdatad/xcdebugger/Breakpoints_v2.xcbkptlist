@@ -15,8 +15,8 @@
             timestampString = "587942971.328259"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
             landmarkName = "applicationWillResignActive(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -31,8 +31,8 @@
             filePath = "Expedition/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "AppDelegate"
             landmarkType = "3">
          </BreakpointContent>
@@ -47,8 +47,8 @@
             filePath = "Expedition/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -65,100 +65,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "24"
             endingLineNumber = "24"
-            landmarkName = "unknown"
-            landmarkType = "0">
-            <Locations>
-               <Location
-                  uuid = "3A4B0A9B-47DD-4AFC-B689-84D8BF4D4F49 - 30b39ebfe038404b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Expedition.ViewController.components.getter : Swift.Optional&lt;Foundation.URLComponents&gt;"
-                  moduleName = "Expedition"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeqielgolomb/Documents/GitHub/Expedition/Expedition/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "91">
-               </Location>
-               <Location
-                  uuid = "3A4B0A9B-47DD-4AFC-B689-84D8BF4D4F49 - 32680ad6e81d807f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Expedition.ViewController.components.setter : Swift.Optional&lt;Foundation.URLComponents&gt;"
-                  moduleName = "Expedition"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeqielgolomb/Documents/GitHub/Expedition/Expedition/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "238">
-               </Location>
-               <Location
-                  uuid = "3A4B0A9B-47DD-4AFC-B689-84D8BF4D4F49 - f1f13e51102dc04e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Expedition.ViewController.components.modify : Swift.Optional&lt;Foundation.URLComponents&gt;"
-                  moduleName = "Expedition"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeqielgolomb/Documents/GitHub/Expedition/Expedition/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  uuid = "3A4B0A9B-47DD-4AFC-B689-84D8BF4D4F49 - 83400424c3926337"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Expedition.ViewController.components.modify : Swift.Optional&lt;Foundation.URLComponents&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Expedition"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeqielgolomb/Documents/GitHub/Expedition/Expedition/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  uuid = "3A4B0A9B-47DD-4AFC-B689-84D8BF4D4F49 - d21290443b1e96c0"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Expedition.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Expedition.ViewController"
-                  moduleName = "Expedition"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeqielgolomb/Documents/GitHub/Expedition/Expedition/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "603">
-               </Location>
-               <Location
-                  uuid = "3A4B0A9B-47DD-4AFC-B689-84D8BF4D4F49 - c0bdc0a723f0187f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Expedition.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Expedition.ViewController&gt;"
-                  moduleName = "Expedition"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/zeqielgolomb/Documents/GitHub/Expedition/Expedition/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "24"
-                  endingLineNumber = "24"
-                  offsetFromSymbolStart = "553">
-               </Location>
-            </Locations>
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -171,8 +79,8 @@
             filePath = "Expedition/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
             landmarkName = "applicationWillResignActive(_:)"
             landmarkType = "7">
          </BreakpointContent>

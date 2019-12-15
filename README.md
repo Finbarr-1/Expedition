@@ -9,4 +9,4 @@ Expedition is a light-weight web browser with advanced gesture control, letting 
 
 ## Credits
 
-### Created by The Morning Company with additional help from Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, and Kai Morita-McVey.
+### Created by _____ with additional help from ___.
