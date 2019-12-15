@@ -72,6 +72,12 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
 
     
+
+    @IBAction func pinchReload(_ sender: Any) { // pinch on searchbar gesture
+        webView.reload()
+    }
+    
+
     @IBAction func stop(_ sender: Any) { //makes the page stop loading
         webView.stopLoading()
     }
@@ -103,12 +109,19 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
         if let url = url {
             if (urlString!.contains(".")) {
+
                 if (UIApplication.shared.canOpenURL(url)) {
                     return true
+
+                if (!(urlString!.hasPrefix(".")) && !(urlString!.hasSuffix("."))){
+                    if (UIApplication.shared.canOpenURL(url)) {
+                        return true
+                    }
+
                 }
             }
-        }
-        return false
+       return false }
+        
     }
     func historyOnOff() -> Bool { //will be connected to a switch turning tracking on and off
         let historyOnOff = true
@@ -128,11 +141,19 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     func searchText(urlString: String) -> URLRequest { //julian please explain
         let queryItemQuery = URLQueryItem(name: "q", value: urlString);
+
         
         components?.queryItems = [queryItemQuery]
         
         let request = URLRequest(url: (components?.url)!)
         
+
+        
+        components?.queryItems = [queryItemQuery]
+        
+        let request = URLRequest(url: (components?.url)!)
+        
+
         return request
     }
 
@@ -164,9 +185,11 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     
-}
+
     
 func DarkModeToggle(_ sender: Any) { //turns dark mode on and off
     
 }
+
+
 
