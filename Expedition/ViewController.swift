@@ -99,10 +99,13 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
         if let url = url {
             if (urlString!.contains(".")) {
-                if (UIApplication.shared.canOpenURL(url)) {
-                    return true
+                if (!(urlString!.hasPrefix(".")) && !(urlString!.hasSuffix("."))){
+                    if (UIApplication.shared.canOpenURL(url)) {
+                        return true
+                    }
                 }
             }
+            return false
         }
         return false
     }
@@ -114,7 +117,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     func history(urlForHistory : String?) { //adds stuff to the history array
         if historyOnOff(){
             if (historyRuns == 0) {
-                History = [urlForHistory!] // it is used ignore ->
+                History = [urlForHistory!]
             } else {
                 History.append(urlForHistory!)
             }
