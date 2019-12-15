@@ -177,7 +177,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Artboard 1" width="5004" height="3446"/>
+        <image name="Artboard 1" width="960" height="661"/>
         <image name="info.circle" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
