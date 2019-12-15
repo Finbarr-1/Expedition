@@ -9,7 +9,9 @@
 import UIKit
 
 class AppIconService {
+    
     let application = UIApplication.shared
+    
     enum AppIcon: String {
         case primaryAppIcon
         case DarkAppIcon
@@ -20,5 +22,5 @@ class AppIconService {
     
         application.setAlternateIconName(appIcon.rawValue)
         
-}
+    }
 }

@@ -155,7 +155,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-2a-zgr">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-2a-zgr">
                                     <rect key="frame" x="111.5" y="263" width="97" height="22"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" title="Dark Icon" image="moon.fill" catalog="system">
@@ -166,7 +166,7 @@
                                         <action selector="didTapDarkIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="egC-tE-Gqj"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-z4-oQS">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-z4-oQS">
                                     <rect key="frame" x="109.5" y="225" width="101" height="22"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" title="Light Icon" image="sun.max.fill" catalog="system">
@@ -184,9 +184,11 @@
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="qOa-AB-Nfe" secondAttribute="trailing" constant="90" id="3jj-2Q-VEd"/>
                                 <constraint firstAttribute="bottom" secondItem="ila-Kj-6Ks" secondAttribute="bottom" constant="64" id="AAd-Rn-JxD"/>
+                                <constraint firstItem="qOa-AB-Nfe" firstAttribute="top" secondItem="iRc-2a-zgr" secondAttribute="bottom" constant="46" id="GVk-XF-USI"/>
                                 <constraint firstItem="Z1I-5N-r75" firstAttribute="leading" secondItem="W7s-7k-ZTo" secondAttribute="leading" constant="62" id="SBI-2X-v5x"/>
                                 <constraint firstItem="iRc-2a-zgr" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" id="bt2-3Y-X7v"/>
                                 <constraint firstItem="CXo-z4-oQS" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" id="c0N-sk-9l1"/>
+                                <constraint firstItem="iRc-2a-zgr" firstAttribute="top" secondItem="CXo-z4-oQS" secondAttribute="bottom" constant="16" id="emB-Rq-BBT"/>
                                 <constraint firstItem="ila-Kj-6Ks" firstAttribute="leading" secondItem="W7s-7k-ZTo" secondAttribute="leading" id="jib-xt-iyK"/>
                                 <constraint firstItem="ila-Kj-6Ks" firstAttribute="top" secondItem="Z1I-5N-r75" secondAttribute="bottom" constant="30" id="pb7-rR-Qv7"/>
                                 <constraint firstItem="ila-Kj-6Ks" firstAttribute="top" secondItem="qOa-AB-Nfe" secondAttribute="bottom" constant="25" id="y3l-kz-kQH"/>
