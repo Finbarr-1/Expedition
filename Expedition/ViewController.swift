@@ -11,7 +11,20 @@ import UIKit
 import WebKit
 import Foundation
 
-class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate {
+class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
+    
+    let list = ["Zeqe Golomb", "Finbarr O'Connell", "Jackson Yan", "Julian Wright", "Brendan Burkhart", "Kai Morita-McVey"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return (list.count)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "cell")
+        cell.textLabel?.text = list[indexPath.row]
+        
+        return (cell)
+    }
     
     @IBOutlet weak var webView: WKWebView!
     
@@ -61,8 +74,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
 
     
     @IBAction func swipeReload(_ sender: Any) {
-   webView.reload()
-    
+        webView.reload()
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
