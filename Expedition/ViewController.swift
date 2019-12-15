@@ -29,7 +29,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         //let searchEngine: String = "duckduckgo.com"
         
-        
         let url = URL(string: "https://duckduckgo.com/")
         
         let request = URLRequest(url: url!)
@@ -100,13 +99,16 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
         if let url = url {
             if (urlString!.contains(".")) {
-                if (UIApplication.shared.canOpenURL(url)) {
-                    return true
+                if (!urlString!.hasPrefix(".") && !urlString!.hasSuffix(".")) {
+                    if (UIApplication.shared.canOpenURL(url)) {
+                        return true
+                    }
                 }
             }
         }
         return false
     }
+    
     func historyOnOff() -> Bool {
         let historyOnOff = true
         return historyOnOff
