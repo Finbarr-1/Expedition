@@ -60,18 +60,9 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
 
     
-    @IBAction func refresh(_ sender: Any) {
-        webView.reload()
-    }
-    
-   
     @IBAction func swipeReload(_ sender: Any) {
    webView.reload()
     
-    }
-    
-    @IBAction func stop(_ sender: Any) {
-        webView.stopLoading()
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
