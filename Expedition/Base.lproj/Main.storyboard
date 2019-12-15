@@ -45,7 +45,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="76.811594202898561" y="768.75"/>
+            <point key="canvasLocation" x="49" y="755"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
