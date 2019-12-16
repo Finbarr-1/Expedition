@@ -21,6 +21,6 @@ class AppIconService {
     func changeAppIcon(to appIcon: AppIcon){
     
         application.setAlternateIconName(appIcon.rawValue)
-        
+           
     }
 }
