@@ -13,45 +13,29 @@ import Foundation
 
 class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate {
     
-    let appIconService = AppIconService()
-    
-    
-    @IBAction func didTapPrimaryIcon() {
-        appIconService.changeAppIcon(to: .primaryAppIcon)
-    
-    }
-    
-    @IBAction func didTapDarkIcon() {
-        appIconService.changeAppIcon(to: .DarkAppIcon)
-    
-    }
-    
-    
     @IBOutlet weak var webView: WKWebView!
     
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
     
-    var History: Array<Any>!
-    var historyRuns = 0
-    let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey"
+    var History: Array<Any>! //history Array initialization
+    var historyRuns = 0 //history runs initialization
+    let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey" //Credits
+    var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
     
-    var components = URLComponents(string: "https://duckduckgo.com/")
-   
     
+    var components = URLComponents(string: "https://duckduckgo.com/") //search engine
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        super.viewDidLoad() //setup stuff
         
-        //let searchEngine: String = "duckduckgo.com"
+        var components = URLComponents(string: searchEngine)
         
         let url = URL(string: "https://duckduckgo.com/")
         
         let request = URLRequest(url: url!)
         
-        var components = URLComponents()
-        components.scheme = "https"
-        components.host = "duckduckgo.com"
+        components?.scheme = "https"
+        components?.host = "duckduckgo.com"
         
         webView.load(request)
         
@@ -63,22 +47,29 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     
-    @IBAction func back(_ sender: Any) {
+    @IBAction func back(_ sender: Any) { //makes the page go back if it can
         if webView.canGoBack{
             webView.goBack()
         }
     }
 
-    @IBAction func forward(_ sender: Any) {
+    @IBAction func forward(_ sender: Any) { //makes the page go forward if it can
         if webView.canGoForward{
             webView.goForward()
         }
     }
 
     
-    @IBAction func swipeReload(_ sender: Any) {
-   webView.reload()
+    @IBAction func refresh(_ sender: Any) { //makes the page reload
+        webView.reload()
+    }
     
+    @IBAction func swipeReload(_ sender: Any) {
+    webView.reload()
+     }
+    
+    @IBAction func stop(_ sender: Any) { //makes the page stop loading
+        webView.stopLoading()
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
@@ -108,22 +99,22 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
         if let url = url {
             if (urlString!.contains(".")) {
-                if (!urlString!.hasPrefix(".") && !urlString!.hasSuffix(".")) {
+                if (!(urlString!.hasPrefix(".")) && !(urlString!.hasSuffix("."))){
                     if (UIApplication.shared.canOpenURL(url)) {
                         return true
                     }
                 }
             }
+            return false
         }
         return false
     }
-    
-    func historyOnOff() -> Bool {
+    func historyOnOff() -> Bool { //will be connected to a switch turning tracking on and off
         let historyOnOff = true
         return historyOnOff
     }
 
-    func history(urlForHistory : String?) {
+    func history(urlForHistory : String?) { //adds stuff to the history array
         if historyOnOff(){
             if (historyRuns == 0) {
                 History = [urlForHistory!]
@@ -134,7 +125,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
     }
     
-    func searchText(urlString: String) -> URLRequest {
+    func searchText(urlString: String) -> URLRequest { //julian please explain
         let queryItemQuery = URLQueryItem(name: "q", value: urlString);
         
         components?.queryItems = [queryItemQuery]
@@ -144,10 +135,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         return request
     }
 
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        
-        var urlForHistory = searchBar.text
-        history(urlForHistory : searchBar.text)
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) { //turns the users input into something that the search engine can use
         
         searchBar.resignFirstResponder()
         
@@ -166,16 +154,20 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             
             let request = URLRequest(url: (components?.url)!)
             
+            var urlForHistory = request // it is used ignore ->
+            history(urlForHistory : searchBar.text)
+                        
             webView.load(request)
         }
           
     }
-   
-   }
-
     
-func DarkModeToggle(_ sender: Any) {
-   
-
-
+    
 }
+    
+func DarkModeToggle(_ sender: Any) { //turns dark mode on and off
+    
+}
+
+
+
