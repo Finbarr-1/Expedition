@@ -16,8 +16,8 @@
 		001366D82307B620009A102E /* ExpeditionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366D72307B620009A102E /* ExpeditionUITests.swift */; };
 		001366E72307BEA9009A102E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001366E62307BEA9009A102E /* WebKit.framework */; };
 		0016FC5E23A6BFAC000D0022 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016FC5D23A6BFAC000D0022 /* AppIconService.swift */; };
-		0033D1B723A73193009F1CF9 /* DarkIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033D1B523A73193009F1CF9 /* DarkIcon@2x.png */; };
-		0033D1B823A73193009F1CF9 /* DarkIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0033D1B623A73193009F1CF9 /* DarkIcon@3x.png */; };
+		00A91DBC23A84AFF00F045F7 /* 60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBA23A84AFF00F045F7 /* 60@2x.png */; };
+		00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBB23A84AFF00F045F7 /* 60@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +53,9 @@
 		001366D92307B620009A102E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001366E62307BEA9009A102E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		0016FC5D23A6BFAC000D0022 /* AppIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconService.swift; sourceTree = "<group>"; };
-		0033D1B523A73193009F1CF9 /* DarkIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DarkIcon@2x.png"; path = "../../../../../Desktop/Other/Miscellaneous/Expedition/Icons/Dark E Shaped/DarkIcon@2x.png"; sourceTree = "<group>"; };
-		0033D1B623A73193009F1CF9 /* DarkIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "DarkIcon@3x.png"; path = "../../../../../Desktop/Other/Miscellaneous/Expedition/Icons/Dark E Shaped/DarkIcon@3x.png"; sourceTree = "<group>"; };
 		005932CF234D747100DC2323 /* Expedition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expedition.entitlements; sourceTree = "<group>"; };
+		00A91DBA23A84AFF00F045F7 /* 60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@2x.png"; sourceTree = "<group>"; };
+		00A91DBB23A84AFF00F045F7 /* 60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,8 +151,8 @@
 		0016FC3C23A6B801000D0022 /* DarkAppIcon */ = {
 			isa = PBXGroup;
 			children = (
-				0033D1B523A73193009F1CF9 /* DarkIcon@2x.png */,
-				0033D1B623A73193009F1CF9 /* DarkIcon@3x.png */,
+				00A91DBA23A84AFF00F045F7 /* 60@2x.png */,
+				00A91DBB23A84AFF00F045F7 /* 60@3x.png */,
 			);
 			path = DarkAppIcon;
 			sourceTree = "<group>";
@@ -261,11 +261,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A91DBC23A84AFF00F045F7 /* 60@2x.png in Resources */,
+				00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */,
 				001366C22307B620009A102E /* LaunchScreen.storyboard in Resources */,
 				001366BF2307B620009A102E /* Assets.xcassets in Resources */,
-				0033D1B823A73193009F1CF9 /* DarkIcon@3x.png in Resources */,
 				001366BD2307B61F009A102E /* Main.storyboard in Resources */,
-				0033D1B723A73193009F1CF9 /* DarkIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
