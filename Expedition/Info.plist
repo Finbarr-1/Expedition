@@ -58,32 +58,25 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-   
-   <key>CFBundleIcons</key>
-   <dict>
-
-        <key>CFBundlePrimaryIcon</key>
-        <dict>
-            <key>CFBundleIconFiles</key>
-            <array>
-                <string>Artboard 5-16</string>
-            </array>
-        </dict>
-        
-    </dict>
-        <key>CFBundleAlternateIcons</key>
-        <dict>
-            
-            <key>DarkAppIcon</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>DarkIcon</string>
-                </array>
-            </dict>
-        
-        </dict>
-
-
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>60</string>
+			</array>
+		</dict>
+	</dict>
+	<key>CFBundleAlternateIcons</key>
+	<dict>
+		<key>DarkAppIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>DarkIcon</string>
+			</array>
+		</dict>
+	</dict>
 </dict>
 </plist>
