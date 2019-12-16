@@ -14,18 +14,18 @@ import Foundation
 class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate {
     
     let appIconService = AppIconService()
-    
+    //app icon changer
     
     @IBAction func didTapPrimaryIcon() {
         appIconService.changeAppIcon(to: .primaryAppIcon)
     
     }
-    
+    //should change to light icon
     @IBAction func didTapDarkIcon() {
         appIconService.changeAppIcon(to: .DarkAppIcon)
     
     }
-    
+     //should change to dark icon
     
     @IBOutlet weak var webView: WKWebView!
     
