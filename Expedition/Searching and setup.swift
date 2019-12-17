@@ -20,7 +20,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
-    
+    var historyOnOff = true
     
     
     
@@ -56,31 +56,26 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             url = URL(string: "http://" + urlString!)
         }
         if let url = url {
-            if (urlString!.contains(".")) {
-                if (!(urlString!.hasPrefix(".")) && !(urlString!.hasSuffix("."))){
-                    if (UIApplication.shared.canOpenURL(url)) {
-                        return true
-                    }
+            if (urlString!.contains(".") && !(urlString!.hasPrefix(".")) && !(urlString!.hasSuffix("."))) {
+                if (UIApplication.shared.canOpenURL(url)) {
+                    return true
                 }
             }
-            return false
         }
-        return false
+            return false
     }
     
     
     
-    
-    func historyOnOff() -> Bool { //will be connected to a switch turning tracking on and off
-        let historyOnOff = true
-        return historyOnOff
+    @IBAction func historySwitch(_ sender: UISwitch) {
+        historyOnOff = !historyOnOff
     }
     
     
     
     
     func history(urlForHistory : String?) { //adds stuff to the history array
-        if historyOnOff(){
+        if historyOnOff{
             if (historyRuns == 0) {
                 History = [urlForHistory!]
             } else {
