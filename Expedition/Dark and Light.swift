@@ -1,0 +1,29 @@
+//
+//  Dark:Light.swift
+//  Expedition
+//
+//  Created by Finbarr O'Connell on 12/16/19.
+//  Copyright © 2019 Zeqe Golomb. All rights reserved.
+//
+
+import Foundation
+
+
+class darkLight {
+
+    let appIconService = AppIconService()
+       //app icon changer
+       
+    @IBAction func didTapPrimaryIcon() {  //should change to light icon
+           appIconService.changeAppIcon(to: .primaryAppIcon)
+
+    }
+    @IBAction func didTapDarkIcon() { //should change to dark icon
+           appIconService.changeAppIcon(to: .DarkAppIcon)
+       
+    }
+}
+
+func DarkModeToggle(_ sender: Any) { //turns dark mode on and off
+    
+}

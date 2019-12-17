@@ -12,22 +12,6 @@ import WebKit
 import Foundation
 
 class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate {
-    
-
-    let appIconService = AppIconService()
-    //app icon changer
-    
-    @IBAction func didTapPrimaryIcon() {
-        appIconService.changeAppIcon(to: .primaryAppIcon)
-    
-    }
-    //should change to light icon
-    @IBAction func didTapDarkIcon() {
-        appIconService.changeAppIcon(to: .DarkAppIcon)
-    
-    }
-     //should change to dark icon
-    
 
     @IBOutlet weak var webView: WKWebView!
     
@@ -60,50 +44,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         webView.navigationDelegate = self
         ActInd.hidesWhenStopped = true
-    }
-    
-    
-    @IBAction func back(_ sender: Any) { //makes the page go back if it can
-        if webView.canGoBack{
-            webView.goBack()
-        }
-    }
-
-    @IBAction func forward(_ sender: Any) { //makes the page go forward if it can
-        if webView.canGoForward{
-            webView.goForward()
-        }
-    }
-
-    
-    @IBAction func refresh(_ sender: Any) { //makes the page reload
-        webView.reload()
-    }
-    
-    @IBAction func swipeReload(_ sender: Any) {
-    webView.reload()
-     }
-    
-    @IBAction func stop(_ sender: Any) { //makes the page stop loading
-        webView.stopLoading()
-    }
-    
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        
-        ActInd.startAnimating()
-        
-    }
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        
-        ActInd.stopAnimating()
-        
-    }
-    
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        
-        ActInd.stopAnimating()
-        
     }
     
     func verifyUrl (urlString: String?) -> Bool { //tests for url
@@ -180,10 +120,3 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     
 }
-    
-func DarkModeToggle(_ sender: Any) { //turns dark mode on and off
-    
-}
-
-
-
