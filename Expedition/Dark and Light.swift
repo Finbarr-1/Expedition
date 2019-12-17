@@ -10,16 +10,13 @@ import Foundation
 
 
 class darkLight {
-
-    let appIconService = AppIconService()
-       //app icon changer
        
     @IBAction func didTapPrimaryIcon() {  //should change to light icon
-           appIconService.changeAppIcon(to: .primaryAppIcon)
+        AppIconService().changeAppIcon(to: .primaryAppIcon)
 
     }
     @IBAction func didTapDarkIcon() { //should change to dark icon
-           appIconService.changeAppIcon(to: .DarkAppIcon)
+        AppIconService().changeAppIcon(to: .DarkAppIcon)
        
     }
 }

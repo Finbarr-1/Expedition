@@ -4,8 +4,6 @@
 //
 //  Created by Zeqiel Golomb on 8/16/19.
 //  Copyright © 2019 The Morning Company All rights reserved.
-//
-//
 
 import UIKit
 import WebKit
@@ -14,19 +12,20 @@ import Foundation
 class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var webView: WKWebView!
-    
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
+    
     
     var History: Array<Any>! //history Array initialization
     var historyRuns = 0 //history runs initialization
     let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
-    
-    
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
     
-    override func viewDidLoad() {
-        super.viewDidLoad() //setup stuff
+    
+    
+    
+    override func viewDidLoad() { //Setup stuff
+        super.viewDidLoad()
         
         var components = URLComponents(string: searchEngine)
         
@@ -45,6 +44,9 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         webView.navigationDelegate = self
         ActInd.hidesWhenStopped = true
     }
+    
+    
+    
     
     func verifyUrl (urlString: String?) -> Bool { //tests for url
         let url: URL?
@@ -65,11 +67,18 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
         return false
     }
+    
+    
+    
+    
     func historyOnOff() -> Bool { //will be connected to a switch turning tracking on and off
         let historyOnOff = true
         return historyOnOff
     }
-
+    
+    
+    
+    
     func history(urlForHistory : String?) { //adds stuff to the history array
         if historyOnOff(){
             if (historyRuns == 0) {
@@ -81,6 +90,9 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
     }
     
+    
+    
+    
     func searchText(urlString: String) -> URLRequest { //julian please explain
         let queryItemQuery = URLQueryItem(name: "q", value: urlString);
         
@@ -90,7 +102,10 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         return request
     }
-
+    
+    
+    
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) { //turns the users input into something that the search engine can use
         
         searchBar.resignFirstResponder()
