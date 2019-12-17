@@ -173,8 +173,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
           
     }
-    
-    
 }
     
 func DarkModeToggle(_ sender: Any) { //turns dark mode on and off
