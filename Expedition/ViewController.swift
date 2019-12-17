@@ -80,13 +80,9 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         webView.reload()
     }
     
-    @IBAction func swipeReload(_ sender: Any) {
+    @IBAction func swipeReload(_ sender: Any) { //makes the page reload on downward swipe on searchbar
     webView.reload()
      }
-    
-    @IBAction func stop(_ sender: Any) { //makes the page stop loading
-        webView.stopLoading()
-    }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
         
