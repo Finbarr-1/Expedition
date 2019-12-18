@@ -43,8 +43,8 @@
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="If8-vV-6zM"/>
                                     <outletCollection property="gestureRecognizers" destination="Srt-5a-Pr4" appends="YES" id="qrt-YL-BIT"/>
-                                    <outletCollection property="gestureRecognizers" destination="6QB-C4-VQ2" appends="YES" id="iIY-Np-p6w"/>
                                     <outletCollection property="gestureRecognizers" destination="Gli-I6-TVR" appends="YES" id="RGQ-lH-p1y"/>
+                                    <outletCollection property="gestureRecognizers" destination="P5n-VF-Prn" appends="YES" id="fm6-xX-aNG"/>
                                 </connections>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2T-Z9-N1d">
@@ -85,20 +85,21 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="1pt-Gt-L2n" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="left" id="Srt-5a-Pr4" userLabel="History Swipe">
                     <connections>
                         <action selector="historySwipe:" destination="BYZ-38-t0r" id="BbT-F3-pQB"/>
                         <segue destination="65v-MH-vlF" kind="presentation" id="zo6-DM-YYL"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="down" id="6QB-C4-VQ2" userLabel="Reload Swipe">
-                    <connections>
-                        <action selector="swipeReload:" destination="BYZ-38-t0r" id="qsM-iZ-nPI"/>
-                    </connections>
-                </swipeGestureRecognizer>
                 <swipeGestureRecognizer direction="right" id="ltd-91-b5P" userLabel="Info Swipe">
                     <connections>
                         <segue destination="4Pb-2Y-0Xd" kind="presentation" id="n6b-n6-BVa"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="P5n-VF-Prn" userLabel="Reload Swipe">
+                    <connections>
+                        <action selector="swipeReload:" destination="1pt-Gt-L2n" id="kMW-MB-HIo"/>
                     </connections>
                 </swipeGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Gli-I6-TVR" userLabel="Share Press">
@@ -160,7 +161,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="ila-Kj-6Ks">
-                                    <rect key="frame" x="0.0" y="597" width="375" height="97.000000000000227"/>
+                                    <rect key="frame" x="0.0" y="597" width="375" height="97"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="97" id="exT-Bg-90S"/>
                                     </constraints>
