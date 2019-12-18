@@ -38,30 +38,30 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         components?.scheme = "https"
         components?.host = "duckduckgo.com"
         
-        webView.load(request)
+        webView?.load(request)
         
-        webView.addSubview(ActInd)
-        ActInd.startAnimating()
+        webView?.addSubview(ActInd)
+        ActInd?.startAnimating()
         
-        webView.navigationDelegate = self
-        ActInd.hidesWhenStopped = true
+        webView?.navigationDelegate = self
+        ActInd?.hidesWhenStopped = true
     }
    
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
          
-         ActInd.startAnimating()
+         ActInd?.startAnimating()
          
      }
      
      func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
          
-         ActInd.stopAnimating()
+         ActInd?.stopAnimating()
          
      }
      
      func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
          
-         ActInd.stopAnimating()
+         ActInd?.stopAnimating()
          
      }
      
@@ -125,7 +125,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             
             let request = URLRequest(url: url!)
             
-            webView.load(request)
+            webView?.load(request)
         }
         else {
             let queryItemQuery = URLQueryItem(name: "q", value: searchBar.text!);
@@ -137,7 +137,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             var urlForHistory = request // it is used ignore ->
             history(urlForHistory : searchBar.text)
                         
-            webView.load(request)
+            webView?.load(request)
         }
           
     }
