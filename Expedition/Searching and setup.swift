@@ -46,7 +46,25 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         webView?.navigationDelegate = self
         ActInd?.hidesWhenStopped = true
     }
-    
+   
+    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+         
+         ActInd.startAnimating()
+         
+     }
+     
+     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+         
+         ActInd.stopAnimating()
+         
+     }
+     
+     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+         
+         ActInd.stopAnimating()
+         
+     }
+     
 
     func verifyUrl (urlString: String?) -> Bool { //tests for url
         let url: URL?
