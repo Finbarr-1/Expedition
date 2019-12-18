@@ -30,6 +30,9 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                                 <string key="customUserAgent">(iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.1 Mobile/15E148 Expedition/604.1</string>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="q2E-QW-eES" appends="YES" id="KaF-dV-XAY"/>
+                                </connections>
                             </wkWebView>
                             <searchBar opaque="NO" contentMode="redraw" layoutMarginsFollowReadableWidth="YES" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-H8-wBy">
                                 <rect key="frame" x="34" y="0.0" width="251" height="56"/>
@@ -101,6 +104,7 @@
                         <segue destination="4Pb-2Y-0Xd" kind="presentation" id="n6b-n6-BVa"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <gestureRecognizer id="q2E-QW-eES"/>
             </objects>
             <point key="canvasLocation" x="49.275362318840585" y="23.4375"/>
         </scene>
@@ -146,7 +150,7 @@
         <!--More Options-->
         <scene sceneID="FC5-hE-oNx">
             <objects>
-                <viewController title="More Options" id="4Pb-2Y-0Xd" sceneMemberID="viewController">
+                <viewController title="More Options" id="4Pb-2Y-0Xd" customClass="ViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="9jz-R2-cFf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -212,6 +216,9 @@
                         <blurEffect style="regular"/>
                     </visualEffectView>
                     <navigationItem key="navigationItem" id="Lhc-iQ-X1J"/>
+                    <connections>
+                        <outlet property="historySwitch" destination="qOa-AB-Nfe" id="hCf-Zq-cPx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MP-i3-UdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Aez-zN-2MU" userLabel="Exit" sceneMemberID="exit"/>
