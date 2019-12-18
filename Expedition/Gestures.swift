@@ -34,21 +34,5 @@ class Gestures : WKWebView, WKNavigationDelegate{
         webView.reload()
     }
     
-    func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-           
-           ActInd.startAnimating()
-           
-       }
-       
-       func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-           
-           ActInd.stopAnimating()
-           
-       }
-       
-       func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-           
-           ActInd.stopAnimating()
-           
-       }
+    
 }
