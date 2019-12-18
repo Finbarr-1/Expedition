@@ -45,6 +45,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="If8-vV-6zM"/>
                                     <outletCollection property="gestureRecognizers" destination="Srt-5a-Pr4" appends="YES" id="qrt-YL-BIT"/>
                                     <outletCollection property="gestureRecognizers" destination="6QB-C4-VQ2" appends="YES" id="iIY-Np-p6w"/>
+                                    <outletCollection property="gestureRecognizers" destination="Gli-I6-TVR" appends="YES" id="RGQ-lH-p1y"/>
                                 </connections>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2T-Z9-N1d">
@@ -101,6 +102,11 @@
                         <segue destination="4Pb-2Y-0Xd" kind="presentation" id="n6b-n6-BVa"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Gli-I6-TVR">
+                    <connections>
+                        <action selector="longPress:" destination="BYZ-38-t0r" id="ANq-sl-ehK"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="49.275362318840585" y="23.4375"/>
         </scene>

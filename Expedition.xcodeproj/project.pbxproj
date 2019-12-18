@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		001366B82307B61F009A102E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366B72307B61F009A102E /* AppDelegate.swift */; };
-		001366BA2307B61F009A102E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366B92307B61F009A102E /* ViewController.swift */; };
+		001366BA2307B61F009A102E /* Searching and setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366B92307B61F009A102E /* Searching and setup.swift */; };
 		001366BD2307B61F009A102E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001366BB2307B61F009A102E /* Main.storyboard */; };
 		001366BF2307B620009A102E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 001366BE2307B620009A102E /* Assets.xcassets */; };
 		001366C22307B620009A102E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001366C02307B620009A102E /* LaunchScreen.storyboard */; };
@@ -18,6 +18,8 @@
 		0016FC5E23A6BFAC000D0022 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016FC5D23A6BFAC000D0022 /* AppIconService.swift */; };
 		00A91DBC23A84AFF00F045F7 /* 60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBA23A84AFF00F045F7 /* 60@2x.png */; };
 		00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBB23A84AFF00F045F7 /* 60@3x.png */; };
+		D6030CDC23A89669003C6911 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDB23A89669003C6911 /* Gestures.swift */; };
+		D6030CDE23A89A96003C6911 /* Dark and Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDD23A89A96003C6911 /* Dark and Light.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 /* Begin PBXFileReference section */
 		001366B42307B61F009A102E /* Expedition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expedition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001366B72307B61F009A102E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		001366B92307B61F009A102E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
+		001366B92307B61F009A102E /* Searching and setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Searching and setup.swift"; sourceTree = "<group>"; usesTabs = 0; };
 		001366BC2307B61F009A102E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		001366BE2307B620009A102E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		001366C12307B620009A102E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +58,8 @@
 		005932CF234D747100DC2323 /* Expedition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expedition.entitlements; sourceTree = "<group>"; };
 		00A91DBA23A84AFF00F045F7 /* 60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@2x.png"; sourceTree = "<group>"; };
 		00A91DBB23A84AFF00F045F7 /* 60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@3x.png"; sourceTree = "<group>"; };
+		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
+		D6030CDD23A89A96003C6911 /* Dark and Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dark and Light.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +116,13 @@
 				0016FC3C23A6B801000D0022 /* DarkAppIcon */,
 				005932CF234D747100DC2323 /* Expedition.entitlements */,
 				001366B72307B61F009A102E /* AppDelegate.swift */,
-				001366B92307B61F009A102E /* ViewController.swift */,
+				001366B92307B61F009A102E /* Searching and setup.swift */,
 				0016FC5D23A6BFAC000D0022 /* AppIconService.swift */,
 				001366BB2307B61F009A102E /* Main.storyboard */,
+				D6030CDD23A89A96003C6911 /* Dark and Light.swift */,
 				001366BE2307B620009A102E /* Assets.xcassets */,
 				001366C02307B620009A102E /* LaunchScreen.storyboard */,
+				D6030CDB23A89669003C6911 /* Gestures.swift */,
 				001366C32307B620009A102E /* Info.plist */,
 			);
 			path = Expedition;
@@ -290,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				001366BA2307B61F009A102E /* ViewController.swift in Sources */,
+				001366BA2307B61F009A102E /* Searching and setup.swift in Sources */,
 				001366B82307B61F009A102E /* AppDelegate.swift in Sources */,
 				0016FC5E23A6BFAC000D0022 /* AppIconService.swift in Sources */,
+				D6030CDE23A89A96003C6911 /* Dark and Light.swift in Sources */,
+				D6030CDC23A89669003C6911 /* Gestures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,7 +490,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.themorningcompany.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = a.Expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -509,7 +517,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.themorningcompany.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = a.Expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
