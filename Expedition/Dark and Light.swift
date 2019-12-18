@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 import UIKit
 
 
@@ -21,10 +22,22 @@ class darkLight {
     }
     @IBAction func didTapDarkIcon() { //should change to dark icon
            appIconService.changeAppIcon(to: .DarkAppIcon)
+
+
+    }
+class darkLight {
        
+    @IBAction func didTapPrimaryIcon() {  //should change to light icon
+        AppIconService().changeAppIcon(to: .primaryAppIcon)
+
+    }
+    @IBAction func didTapDarkIcon() { //should change to dark icon
+        AppIconService().changeAppIcon(to: .DarkAppIcon)
+
     }
 }
 
 func DarkModeToggle(_ sender: Any) { //turns dark mode on and off
     
+}
 }

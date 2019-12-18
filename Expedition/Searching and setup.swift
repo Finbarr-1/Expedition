@@ -4,8 +4,6 @@
 //
 //  Created by Zeqiel Golomb on 8/16/19.
 //  Copyright © 2019 The Morning Company All rights reserved.
-//
-//
 
 import UIKit
 import WebKit
@@ -14,19 +12,22 @@ import Foundation
 class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate {
 
     @IBOutlet weak var webView: WKWebView!
-    
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
+    
     
     var History: Array<Any>! //history Array initialization
     var historyRuns = 0 //history runs initialization
-    let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey" //Credits
+    let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey, Sir Flansi" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
-    
-    
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
+    var historyOnOff: Bool!
     
-    override func viewDidLoad() {
-        super.viewDidLoad() //setup stuff
+    @IBOutlet weak var historySwitch: UISwitch!
+    
+    override func viewDidLoad() { //Setup stuff
+        super.viewDidLoad()
+        
+        historySwitch?.setOn(historyOnOff ?? true, animated: false)
         
         var components = URLComponents(string: searchEngine)
         
@@ -37,15 +38,16 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         components?.scheme = "https"
         components?.host = "duckduckgo.com"
         
-        webView.load(request)
+        webView?.load(request)
         
-        webView.addSubview(ActInd)
-        ActInd.startAnimating()
+        webView?.addSubview(ActInd)
+        ActInd?.startAnimating()
         
-        webView.navigationDelegate = self
-        ActInd.hidesWhenStopped = true
+        webView?.navigationDelegate = self
+        ActInd?.hidesWhenStopped = true
     }
     
+
     func verifyUrl (urlString: String?) -> Bool { //tests for url
         let url: URL?
         if urlString!.hasPrefix("http://") {
@@ -54,32 +56,33 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             url = URL(string: "http://" + urlString!)
         }
         if let url = url {
-            if (urlString!.contains(".")) {
-                if (!(urlString!.hasPrefix(".")) && !(urlString!.hasSuffix("."))){
-                    if (UIApplication.shared.canOpenURL(url)) {
-                        return true
-                    }
+            if (urlString!.contains(".") && !(urlString!.hasPrefix(".")) && !(urlString!.hasSuffix("."))) {
+                if (UIApplication.shared.canOpenURL(url)) {
+                    return true
                 }
             }
+        }
             return false
+    }
+    
+    
+    
+    @IBAction func historySwitch(_ sender: UISwitch) {
+        if (historyOnOff == true) {
+                historyOnOff = false
+        } else {
+            historyOnOff = true
         }
-        return false
     }
-    func historyOnOff() -> Bool { //will be connected to a switch turning tracking on and off
-        let historyOnOff = true
-        return historyOnOff
-    }
-
+    
+    
+    
     func history(urlForHistory : String?) { //adds stuff to the history array
-        if historyOnOff(){
-            if (historyRuns == 0) {
-                History = [urlForHistory!]
-            } else {
-                History.append(urlForHistory!)
-            }
-            historyRuns += 1
-        }
+        historyOnOff = historySwitch.isOn
     }
+    
+    
+    
     
     func searchText(urlString: String) -> URLRequest { //julian please explain
         let queryItemQuery = URLQueryItem(name: "q", value: urlString);
@@ -90,7 +93,10 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         return request
     }
-
+    
+    
+    
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) { //turns the users input into something that the search engine can use
         
         searchBar.resignFirstResponder()
@@ -117,7 +123,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
           
     }
-    
-    
+
     
 }
