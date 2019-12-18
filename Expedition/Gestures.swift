@@ -30,9 +30,9 @@ class Gestures : WKWebView, WKNavigationDelegate{
         webView.reload()
     }
     
-    @IBAction func swipeReload(_ sender: Any) { //makes the page reload on downward swipe on searchbar
-    webView.reload()
-     }
+    @IBAction func swipeReload(_ sender: Any) {
+        webView.reload()
+    }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
            
