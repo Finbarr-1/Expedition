@@ -85,23 +85,23 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="Srt-5a-Pr4">
+                <swipeGestureRecognizer direction="left" id="Srt-5a-Pr4" userLabel="History Swipe">
                     <connections>
                         <action selector="historySwipe:" destination="BYZ-38-t0r" id="BbT-F3-pQB"/>
                         <segue destination="65v-MH-vlF" kind="presentation" id="zo6-DM-YYL"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="down" id="6QB-C4-VQ2">
+                <swipeGestureRecognizer direction="down" id="6QB-C4-VQ2" userLabel="Reload Swipe">
                     <connections>
                         <action selector="swipeReload:" destination="BYZ-38-t0r" id="qsM-iZ-nPI"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="ltd-91-b5P">
+                <swipeGestureRecognizer direction="right" id="ltd-91-b5P" userLabel="Info Swipe">
                     <connections>
                         <segue destination="4Pb-2Y-0Xd" kind="presentation" id="n6b-n6-BVa"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Gli-I6-TVR">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Gli-I6-TVR" userLabel="Share Press">
                     <connections>
                         <action selector="longPress:" destination="BYZ-38-t0r" id="ANq-sl-ehK"/>
                     </connections>
@@ -160,7 +160,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="ila-Kj-6Ks">
-                                    <rect key="frame" x="0.0" y="597" width="375" height="97"/>
+                                    <rect key="frame" x="0.0" y="597" width="375" height="97.000000000000227"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="97" id="exT-Bg-90S"/>
                                     </constraints>
