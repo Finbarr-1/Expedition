@@ -96,7 +96,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     
     func history(urlForHistory : String?) { //adds stuff to the history array
-        historyOnOff = historySwitch.isOn
+        historyOnOff? = historySwitch.isOn
     }
     
     
