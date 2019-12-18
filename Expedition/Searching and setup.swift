@@ -38,13 +38,13 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         components?.scheme = "https"
         components?.host = "duckduckgo.com"
         
-        webView.load(request)
+        webView?.load(request)
         
-        webView.addSubview(ActInd)
-        ActInd.startAnimating()
+        webView?.addSubview(ActInd)
+        ActInd?.startAnimating()
         
-        webView.navigationDelegate = self
-        ActInd.hidesWhenStopped = true
+        webView?.navigationDelegate = self
+        ActInd?.hidesWhenStopped = true
     }
    
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
