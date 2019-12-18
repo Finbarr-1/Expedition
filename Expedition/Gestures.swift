@@ -30,6 +30,11 @@ class Gestures : WKWebView, WKNavigationDelegate{
         webView.reload()
     }
  
+    @IBAction func reload(_ sender: Any) {
+        webView.reload()
+    }
+   
+    
     @IBAction func swipeReload(_ sender: Any) {
         webView.reload()
     }
