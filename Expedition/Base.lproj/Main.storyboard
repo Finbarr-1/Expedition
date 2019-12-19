@@ -162,30 +162,19 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="ila-Kj-6Ks">
-                                    <rect key="frame" x="0.0" y="561" width="375" height="97"/>
+                                    <rect key="frame" x="0.0" y="511" width="375" height="97.000000000000227"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="97" id="exT-Bg-90S"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-5N-r75">
-                                    <rect key="frame" x="62" y="510" width="98" height="21"/>
+                                    <rect key="frame" x="63.666666666666657" y="460" width="98" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-2a-zgr">
-                                    <rect key="frame" x="139" y="437" width="97" height="22"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <state key="normal" title="Dark Icon" image="moon.fill" catalog="system">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="darkIconButton:" destination="Aez-zN-2MU" eventType="touchUpInside" id="VkQ-MS-aCY"/>
-                                        <action selector="didTapDarkIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="egC-tE-Gqj"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-z4-oQS">
-                                    <rect key="frame" x="137" y="399" width="101" height="22"/>
+                                    <rect key="frame" x="212" y="398" width="101" height="22"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" title="Light Icon" image="sun.max.fill" catalog="system">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -195,7 +184,7 @@
                                     </connections>
                                 </button>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOa-AB-Nfe">
-                                    <rect key="frame" x="236" y="505" width="51" height="31"/>
+                                    <rect key="frame" x="238" y="455" width="51" height="31"/>
                                     <color key="onTintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="historySwitch:" destination="Aez-zN-2MU" eventType="valueChanged" id="MKe-eQ-bxZ"/>
@@ -207,7 +196,7 @@
                                         <constraint firstAttribute="height" constant="35" id="PGh-ks-uf2"/>
                                         <constraint firstAttribute="width" constant="41" id="bMS-nR-RMR"/>
                                     </constraints>
-                                    <state key="normal" image="Artboard 5-1"/>
+                                    <state key="normal" title="Instagram" image="Artboard 5-1"/>
                                     <connections>
                                         <action selector="igButton:" destination="Aez-zN-2MU" eventType="touchUpInside" id="T7i-mX-X7M"/>
                                     </connections>
@@ -218,28 +207,47 @@
                                         <constraint firstAttribute="height" constant="35" id="BLJ-6O-Chy"/>
                                         <constraint firstAttribute="width" constant="54" id="sb9-kT-gkg"/>
                                     </constraints>
-                                    <state key="normal" image="Artboard 3"/>
+                                    <state key="normal" title="Youtube" image="Artboard 3"/>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="be social. follow us." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-Ae-Wb0">
+                                    <rect key="frame" x="106.66666666666669" y="641" width="162" height="24"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-2a-zgr">
+                                    <rect key="frame" x="64" y="398" width="97" height="22"/>
+                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <state key="normal" title="Dark Icon" image="moon.fill" catalog="system">
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="darkIconButton:" destination="Aez-zN-2MU" eventType="touchUpInside" id="VkQ-MS-aCY"/>
+                                        <action selector="didTapDarkIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="egC-tE-Gqj"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="qOa-AB-Nfe" secondAttribute="trailing" constant="90" id="3jj-2Q-VEd"/>
-                                <constraint firstAttribute="bottom" secondItem="ila-Kj-6Ks" secondAttribute="bottom" constant="100" id="AAd-Rn-JxD"/>
-                                <constraint firstItem="qOa-AB-Nfe" firstAttribute="top" secondItem="iRc-2a-zgr" secondAttribute="bottom" constant="46" id="GVk-XF-USI"/>
+                                <constraint firstItem="Z1I-5N-r75" firstAttribute="top" secondItem="iRc-2a-zgr" secondAttribute="bottom" constant="40" id="4MP-74-HBf"/>
+                                <constraint firstAttribute="bottom" secondItem="ila-Kj-6Ks" secondAttribute="bottom" constant="150" id="AAd-Rn-JxD"/>
+                                <constraint firstItem="XgJ-Ae-Wb0" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" id="GPr-u7-Z0j"/>
+                                <constraint firstItem="Z1I-5N-r75" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" constant="-75" id="Jff-0v-06F"/>
                                 <constraint firstAttribute="bottom" secondItem="u5B-UX-6DJ" secondAttribute="bottom" constant="38" id="Q6c-38-88L"/>
-                                <constraint firstItem="Z1I-5N-r75" firstAttribute="leading" secondItem="W7s-7k-ZTo" secondAttribute="leading" constant="62" id="SBI-2X-v5x"/>
-                                <constraint firstItem="iRc-2a-zgr" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" id="bt2-3Y-X7v"/>
-                                <constraint firstItem="CXo-z4-oQS" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" id="c0N-sk-9l1"/>
-                                <constraint firstItem="iRc-2a-zgr" firstAttribute="top" secondItem="CXo-z4-oQS" secondAttribute="bottom" constant="16" id="emB-Rq-BBT"/>
                                 <constraint firstAttribute="bottom" secondItem="Uw4-GM-06v" secondAttribute="bottom" constant="38" id="gZ2-He-f5b"/>
+                                <constraint firstItem="qOa-AB-Nfe" firstAttribute="top" secondItem="CXo-z4-oQS" secondAttribute="bottom" constant="35" id="gfz-An-VWX"/>
                                 <constraint firstItem="ila-Kj-6Ks" firstAttribute="leading" secondItem="W7s-7k-ZTo" secondAttribute="leading" id="jib-xt-iyK"/>
                                 <constraint firstItem="u5B-UX-6DJ" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" constant="-36" id="kAX-c1-EyF"/>
+                                <constraint firstItem="Uw4-GM-06v" firstAttribute="top" secondItem="XgJ-Ae-Wb0" secondAttribute="bottom" constant="20" id="kM1-mf-Wde"/>
+                                <constraint firstItem="iRc-2a-zgr" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" constant="-75" id="kT9-Q6-QRo"/>
+                                <constraint firstItem="qOa-AB-Nfe" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" constant="75" id="nXv-ON-dYa"/>
                                 <constraint firstItem="Uw4-GM-06v" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" constant="36.5" id="owk-hS-vka"/>
                                 <constraint firstItem="ila-Kj-6Ks" firstAttribute="top" secondItem="Z1I-5N-r75" secondAttribute="bottom" constant="30" id="pb7-rR-Qv7"/>
+                                <constraint firstItem="CXo-z4-oQS" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" constant="75" id="uzC-ld-N2W"/>
                                 <constraint firstItem="ila-Kj-6Ks" firstAttribute="top" secondItem="qOa-AB-Nfe" secondAttribute="bottom" constant="25" id="y3l-kz-kQH"/>
                                 <constraint firstAttribute="trailing" secondItem="ila-Kj-6Ks" secondAttribute="trailing" id="zvB-4N-gzT"/>
                             </constraints>
                         </view>
-                        <blurEffect style="regular"/>
+                        <blurEffect style="systemChromeMaterial"/>
                     </visualEffectView>
                     <navigationItem key="navigationItem" id="Lhc-iQ-X1J"/>
                     <connections>
