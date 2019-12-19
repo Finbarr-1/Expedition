@@ -20,7 +20,7 @@
                                 <rect key="frame" x="340" y="62" width="20" height="20"/>
                                 <color key="color" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             </activityIndicatorView>
-                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" customUserAgent="iPhoneAppleWebKit/605.1.15  Version/5.1 Mobile Expedition" translatesAutoresizingMaskIntoConstraints="NO" id="1Sr-kh-OPV">
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Sr-kh-OPV">
                                 <rect key="frame" x="0.0" y="100" width="375" height="678"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -29,6 +29,7 @@
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
+                                <string key="customUserAgent">Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1</string>
                             </wkWebView>
                             <searchBar opaque="NO" contentMode="redraw" layoutMarginsFollowReadableWidth="YES" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-H8-wBy">
                                 <rect key="frame" x="34" y="44" width="306" height="56"/>
@@ -161,19 +162,19 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="ila-Kj-6Ks">
-                                    <rect key="frame" x="0.0" y="597" width="375" height="97.000000000000227"/>
+                                    <rect key="frame" x="0.0" y="561" width="375" height="97"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="97" id="exT-Bg-90S"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-5N-r75">
-                                    <rect key="frame" x="62" y="546" width="98" height="21"/>
+                                    <rect key="frame" x="62" y="510" width="98" height="21"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-2a-zgr">
-                                    <rect key="frame" x="139" y="473" width="97" height="22"/>
+                                    <rect key="frame" x="139" y="437" width="97" height="22"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" title="Dark Icon" image="moon.fill" catalog="system">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -184,7 +185,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-z4-oQS">
-                                    <rect key="frame" x="137" y="435" width="101" height="22"/>
+                                    <rect key="frame" x="137" y="399" width="101" height="22"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" title="Light Icon" image="sun.max.fill" catalog="system">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -194,22 +195,45 @@
                                     </connections>
                                 </button>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOa-AB-Nfe">
-                                    <rect key="frame" x="236" y="541" width="51" height="31"/>
+                                    <rect key="frame" x="236" y="505" width="51" height="31"/>
                                     <color key="onTintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="historySwitch:" destination="Aez-zN-2MU" eventType="valueChanged" id="MKe-eQ-bxZ"/>
                                     </connections>
                                 </switch>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uw4-GM-06v" userLabel="IG">
+                                    <rect key="frame" x="203.66666666666666" y="685" width="41" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="PGh-ks-uf2"/>
+                                        <constraint firstAttribute="width" constant="41" id="bMS-nR-RMR"/>
+                                    </constraints>
+                                    <state key="normal" image="Artboard 5-1"/>
+                                    <connections>
+                                        <action selector="igButton:" destination="Aez-zN-2MU" eventType="touchUpInside" id="T7i-mX-X7M"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5B-UX-6DJ" userLabel="YT">
+                                    <rect key="frame" x="124.66666666666669" y="685" width="54" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="BLJ-6O-Chy"/>
+                                        <constraint firstAttribute="width" constant="54" id="sb9-kT-gkg"/>
+                                    </constraints>
+                                    <state key="normal" image="Artboard 3"/>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="qOa-AB-Nfe" secondAttribute="trailing" constant="90" id="3jj-2Q-VEd"/>
-                                <constraint firstAttribute="bottom" secondItem="ila-Kj-6Ks" secondAttribute="bottom" constant="64" id="AAd-Rn-JxD"/>
+                                <constraint firstAttribute="bottom" secondItem="ila-Kj-6Ks" secondAttribute="bottom" constant="100" id="AAd-Rn-JxD"/>
                                 <constraint firstItem="qOa-AB-Nfe" firstAttribute="top" secondItem="iRc-2a-zgr" secondAttribute="bottom" constant="46" id="GVk-XF-USI"/>
+                                <constraint firstAttribute="bottom" secondItem="u5B-UX-6DJ" secondAttribute="bottom" constant="38" id="Q6c-38-88L"/>
                                 <constraint firstItem="Z1I-5N-r75" firstAttribute="leading" secondItem="W7s-7k-ZTo" secondAttribute="leading" constant="62" id="SBI-2X-v5x"/>
                                 <constraint firstItem="iRc-2a-zgr" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" id="bt2-3Y-X7v"/>
                                 <constraint firstItem="CXo-z4-oQS" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" id="c0N-sk-9l1"/>
                                 <constraint firstItem="iRc-2a-zgr" firstAttribute="top" secondItem="CXo-z4-oQS" secondAttribute="bottom" constant="16" id="emB-Rq-BBT"/>
+                                <constraint firstAttribute="bottom" secondItem="Uw4-GM-06v" secondAttribute="bottom" constant="38" id="gZ2-He-f5b"/>
                                 <constraint firstItem="ila-Kj-6Ks" firstAttribute="leading" secondItem="W7s-7k-ZTo" secondAttribute="leading" id="jib-xt-iyK"/>
+                                <constraint firstItem="u5B-UX-6DJ" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" constant="-36" id="kAX-c1-EyF"/>
+                                <constraint firstItem="Uw4-GM-06v" firstAttribute="centerX" secondItem="W7s-7k-ZTo" secondAttribute="centerX" constant="36.5" id="owk-hS-vka"/>
                                 <constraint firstItem="ila-Kj-6Ks" firstAttribute="top" secondItem="Z1I-5N-r75" secondAttribute="bottom" constant="30" id="pb7-rR-Qv7"/>
                                 <constraint firstItem="ila-Kj-6Ks" firstAttribute="top" secondItem="qOa-AB-Nfe" secondAttribute="bottom" constant="25" id="y3l-kz-kQH"/>
                                 <constraint firstAttribute="trailing" secondItem="ila-Kj-6Ks" secondAttribute="trailing" id="zvB-4N-gzT"/>
@@ -225,11 +249,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MP-i3-UdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Aez-zN-2MU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="783.75" y="21.12676056338028"/>
+            <point key="canvasLocation" x="783.20000000000005" y="20.689655172413794"/>
         </scene>
     </scenes>
     <resources>
         <image name="Artboard 1" width="1280" height="881.33331298828125"/>
+        <image name="Artboard 3" width="1011" height="701"/>
+        <image name="Artboard 5-1" width="792" height="701"/>
         <image name="ellipsis" catalog="system" width="64" height="18"/>
         <image name="moon.fill" catalog="system" width="64" height="60"/>
         <image name="sun.max.fill" catalog="system" width="64" height="62"/>
