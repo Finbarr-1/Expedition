@@ -25,16 +25,7 @@ class Gestures : WKWebView, WKNavigationDelegate{
         }
     }
 
-    
-    @IBAction func refresh(_ sender: Any) { //makes the page reload
-        webView.reload()
-    }
  
-    @IBAction func reload(_ sender: Any) {
-        webView.reload()
-    }
-   
-    
     @IBAction func swipeReload(_ sender: Any) {
         webView.reload()
     }

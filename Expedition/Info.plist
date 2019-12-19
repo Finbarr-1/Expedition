@@ -76,7 +76,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>iOSDevTips</string>
+				<string>Instagram</string>
 			</array>
 		</dict>
 	</array>
