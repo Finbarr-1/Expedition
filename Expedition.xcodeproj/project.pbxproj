@@ -20,6 +20,7 @@
 		00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBB23A84AFF00F045F7 /* 60@3x.png */; };
 		D6030CDC23A89669003C6911 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDB23A89669003C6911 /* Gestures.swift */; };
 		D6030CDE23A89A96003C6911 /* Dark and Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDD23A89A96003C6911 /* Dark and Light.swift */; };
+		D6EC580A23AD51AF002B2293 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EC580923AD51AF002B2293 /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		00A91DBB23A84AFF00F045F7 /* 60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@3x.png"; sourceTree = "<group>"; };
 		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		D6030CDD23A89A96003C6911 /* Dark and Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dark and Light.swift"; sourceTree = "<group>"; };
+		D6EC580923AD51AF002B2293 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				001366B92307B61F009A102E /* Searching and setup.swift */,
 				0016FC5D23A6BFAC000D0022 /* AppIconService.swift */,
 				001366BB2307B61F009A102E /* Main.storyboard */,
+				D6EC580923AD51AF002B2293 /* History.swift */,
 				D6030CDD23A89A96003C6911 /* Dark and Light.swift */,
 				001366BE2307B620009A102E /* Assets.xcassets */,
 				001366C02307B620009A102E /* LaunchScreen.storyboard */,
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6EC580A23AD51AF002B2293 /* History.swift in Sources */,
 				001366BA2307B61F009A102E /* Searching and setup.swift in Sources */,
 				001366B82307B61F009A102E /* AppDelegate.swift in Sources */,
 				0016FC5E23A6BFAC000D0022 /* AppIconService.swift in Sources */,
