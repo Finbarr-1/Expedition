@@ -198,7 +198,7 @@
                                     </constraints>
                                     <state key="normal" title="Instagram" image="Artboard 5-1"/>
                                     <connections>
-                                        <action selector="igButton:" destination="Aez-zN-2MU" eventType="touchUpInside" id="T7i-mX-X7M"/>
+                                        <action selector="igButton:" destination="Aez-zN-2MU" eventType="touchUpInside" id="PCn-xH-HUj"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5B-UX-6DJ" userLabel="YT">
