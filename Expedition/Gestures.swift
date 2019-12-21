@@ -31,7 +31,7 @@ class Gestures : WKWebView, WKNavigationDelegate{
     }
     
     @IBAction func igButton(_ sender: UIButton) {
-        print ("\n\n\n----------------\nIGBUTTONPRESSED\n---------------- \n \n \n ")
+        print ("IGBUTTONPRESSED")
         //let instagramHooks = "https://www.instagram.com/themorningcompanymedia/"
         guard let instagramUrl = URL(string: "https://www.instagram.com/themorningcompanymedia") else {
             return

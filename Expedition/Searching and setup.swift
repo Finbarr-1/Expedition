@@ -97,9 +97,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         return request
     }
     
-    
-    
-    
+   
+
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) { //turns the users input into something that the search engine can use
         
         searchBar.resignFirstResponder()
