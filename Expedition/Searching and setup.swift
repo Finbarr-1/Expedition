@@ -20,14 +20,13 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey, Sir Flansi" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
-    var historyOnOff: Bool!
     
     @IBOutlet weak var historySwitch: UISwitch!
     
     override func viewDidLoad() { //Setup stuff
         super.viewDidLoad()
         
-        historySwitch?.setOn(historyOnOff ?? true, animated: false)
+        
         
         var components = URLComponents(string: searchEngine)
         
@@ -68,7 +67,9 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
 
     func verifyUrl (urlString: String?) -> Bool { //tests for url
         let url: URL?
-        if urlString!.hasPrefix("http://") {
+        if (urlString!.contains(" ")){
+            return false
+        } else if urlString!.hasPrefix("http://") {
             url = URL(string: urlString!)
         } else {
             url = URL(string: "http://" + urlString!)
@@ -81,22 +82,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             }
         }
             return false
-    }
-    
-    
-    
-    @IBAction func historySwitch(_ sender: UISwitch) {
-        if (historyOnOff == true) {
-                historyOnOff = false
-        } else {
-            historyOnOff = true
-        }
-    }
-    
-    
-    
-    func history(urlForHistory : String?) { //adds stuff to the history array
-        historyOnOff? = historySwitch.isOn
     }
     
     
@@ -139,8 +124,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
                         
             webView?.load(request)
         }
-          
+        
     }
 
-    
 }
+// webView.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil)
