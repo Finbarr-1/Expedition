@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0006AA8423ADEBD9004C30C0 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0006AA8323ADEBD9004C30C0 /* History.swift */; };
 		001366B82307B61F009A102E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366B72307B61F009A102E /* AppDelegate.swift */; };
 		001366BA2307B61F009A102E /* Searching and setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366B92307B61F009A102E /* Searching and setup.swift */; };
 		001366BD2307B61F009A102E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001366BB2307B61F009A102E /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0006AA8323ADEBD9004C30C0 /* History.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		001366B42307B61F009A102E /* Expedition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expedition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001366B72307B61F009A102E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		001366B92307B61F009A102E /* Searching and setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Searching and setup.swift"; sourceTree = "<group>"; usesTabs = 0; };
@@ -116,6 +118,7 @@
 				0016FC3C23A6B801000D0022 /* DarkAppIcon */,
 				005932CF234D747100DC2323 /* Expedition.entitlements */,
 				001366B72307B61F009A102E /* AppDelegate.swift */,
+				0006AA8323ADEBD9004C30C0 /* History.swift */,
 				001366B92307B61F009A102E /* Searching and setup.swift */,
 				0016FC5D23A6BFAC000D0022 /* AppIconService.swift */,
 				001366BB2307B61F009A102E /* Main.storyboard */,
@@ -296,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0006AA8423ADEBD9004C30C0 /* History.swift in Sources */,
 				001366BA2307B61F009A102E /* Searching and setup.swift in Sources */,
 				001366B82307B61F009A102E /* AppDelegate.swift in Sources */,
 				0016FC5E23A6BFAC000D0022 /* AppIconService.swift in Sources */,

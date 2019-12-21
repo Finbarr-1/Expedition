@@ -25,19 +25,28 @@ class Gestures : WKWebView, WKNavigationDelegate{
         }
     }
 
-    
-    @IBAction func refresh(_ sender: Any) { //makes the page reload
-        webView.reload()
-    }
  
-    @IBAction func reload(_ sender: Any) {
-        webView.reload()
-    }
-   
-    
-    @IBAction func swipeReload(_ sender: Any) {
+    @IBAction func swipeReload(_ sender: UIGestureRecognizer) {
         webView.reload()
     }
     
+    @IBAction func igButton(_ sender: UIButton) {
+        print ("IGBUTTONPRESSED")
+        //let instagramHooks = "https://www.instagram.com/themorningcompanymedia/"
+        guard let instagramUrl = URL(string: "https://www.instagram.com/themorningcompanymedia") else {
+            return
+        }
+        if UIApplication.shared.canOpenURL(instagramUrl)
+        {
+            let request = URLRequest(url: instagramUrl)
+            webView.load(request)
+            
+         } else {
+            //redirect to safari because the user doesn't have Instagram
+            UIApplication.shared.open(URL(string: "http://instagram.com/")! as URL, options: [:], completionHandler: nil)
+        }
+    }
     
 }
+    
+
