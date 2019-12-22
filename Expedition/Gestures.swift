@@ -7,6 +7,7 @@
 //
 import WebKit
 import UIKit
+import Foundation
 
 class Gestures : WKWebView, WKNavigationDelegate{
      @IBOutlet weak var webView: WKWebView!
@@ -25,13 +26,15 @@ class Gestures : WKWebView, WKNavigationDelegate{
         }
     }
 
- 
-    @IBAction func swipeReload(_ sender: UIGestureRecognizer) {
+    @IBAction func reload(_ sender: Any) {
+   
         webView.reload()
+        
     }
     
+
   
-    }
+}
     
 
     

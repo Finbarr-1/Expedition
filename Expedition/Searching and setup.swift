@@ -130,15 +130,30 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
   
         dismiss(animated: true, completion: nil)
         
-        let url = URL(string: "https://www.instagram.com/themorningcompanymedia")
+            let url = URL(string: "https://www.instagram.com/themorningcompanymedia/")
                    
-        let request = URLRequest(url: url!)
+            let request = URLRequest(url: url!)
                    
-        webView?.load(request)
+            webView?.load(request)
     
     }
    
+    @IBAction func ytButton(_ sender: Any) {
+    
+    dismiss(animated: true, completion: nil)
+            
+        let url = URL(string: "https://www.youtube.com/channel/UCizXzjlzl6NksCf6wPLakKw")
+                       
+        let request = URLRequest(url: url!)
+                       
+        webView?.load(request)
+    
+    
+    }
+    
+    
     
 }
 
-// webView.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil)
+// webView.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil) What's this for?
+

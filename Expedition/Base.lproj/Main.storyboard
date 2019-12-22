@@ -45,7 +45,7 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="If8-vV-6zM"/>
                                     <outletCollection property="gestureRecognizers" destination="Srt-5a-Pr4" appends="YES" id="qrt-YL-BIT"/>
                                     <outletCollection property="gestureRecognizers" destination="Gli-I6-TVR" appends="YES" id="RGQ-lH-p1y"/>
-                                    <outletCollection property="gestureRecognizers" destination="P5n-VF-Prn" appends="YES" id="fm6-xX-aNG"/>
+                                    <outletCollection property="gestureRecognizers" destination="AN3-pI-gg7" appends="YES" id="mmv-Yg-faM"/>
                                 </connections>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2T-Z9-N1d">
@@ -87,27 +87,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="1pt-Gt-L2n" userLabel="Exit" sceneMemberID="exit"/>
-                <swipeGestureRecognizer direction="left" id="Srt-5a-Pr4" userLabel="History Swipe">
+                <swipeGestureRecognizer direction="left" id="Srt-5a-Pr4" userLabel="HistorySwipe">
                     <connections>
                         <action selector="historySwipe:" destination="BYZ-38-t0r" id="BbT-F3-pQB"/>
                         <segue destination="65v-MH-vlF" kind="presentation" id="zo6-DM-YYL"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="ltd-91-b5P" userLabel="Info Swipe">
+                <swipeGestureRecognizer direction="right" id="ltd-91-b5P" userLabel="InfoSwipe">
                     <connections>
                         <segue destination="4Pb-2Y-0Xd" kind="presentation" id="n6b-n6-BVa"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="down" id="P5n-VF-Prn" userLabel="Reload Swipe">
-                    <connections>
-                        <action selector="swipeReload:" destination="1pt-Gt-L2n" id="kMW-MB-HIo"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Gli-I6-TVR" userLabel="Share Press">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Gli-I6-TVR" userLabel="SharePress">
                     <connections>
                         <action selector="longPress:" destination="BYZ-38-t0r" id="ANq-sl-ehK"/>
                     </connections>
                 </pongPressGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="AN3-pI-gg7" userLabel="ReloadSwipe">
+                    <connections>
+                        <action selector="reload:" destination="1pt-Gt-L2n" id="JhW-Pb-XpQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="48.799999999999997" y="22.906403940886701"/>
         </scene>
@@ -162,7 +162,7 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="ila-Kj-6Ks">
-                                    <rect key="frame" x="0.0" y="511" width="375" height="97.000000000000227"/>
+                                    <rect key="frame" x="0.0" y="511" width="375" height="97"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="97" id="exT-Bg-90S"/>
                                     </constraints>
@@ -209,6 +209,9 @@
                                         <constraint firstAttribute="width" constant="54" id="sb9-kT-gkg"/>
                                     </constraints>
                                     <state key="normal" title="Youtube" image="Artboard 3"/>
+                                    <connections>
+                                        <action selector="ytButton:" destination="4Pb-2Y-0Xd" eventType="touchUpInside" id="6N2-Ts-h6p"/>
+                                    </connections>
                                 </button>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="be social. follow us." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgJ-Ae-Wb0">
                                     <rect key="frame" x="106.66666666666669" y="641" width="162" height="24"/>
@@ -258,7 +261,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MP-i3-UdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Aez-zN-2MU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="905" y="23"/>
+            <point key="canvasLocation" x="904.79999999999995" y="22.906403940886701"/>
         </scene>
     </scenes>
     <resources>
