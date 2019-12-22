@@ -30,23 +30,9 @@ class Gestures : WKWebView, WKNavigationDelegate{
         webView.reload()
     }
     
-    @IBAction func igButton(_ sender: UIButton) {
-        print ("IGBUTTONPRESSED")
-        //let instagramHooks = "https://www.instagram.com/themorningcompanymedia/"
-        guard let instagramUrl = URL(string: "https://www.instagram.com/themorningcompanymedia") else {
-            return
-        }
-        if UIApplication.shared.canOpenURL(instagramUrl)
-        {
-            let request = URLRequest(url: instagramUrl)
-            webView.load(request)
-            
-         } else {
-            //redirect to safari because the user doesn't have Instagram
-            UIApplication.shared.open(URL(string: "http://instagram.com/")! as URL, options: [:], completionHandler: nil)
-        }
+  
     }
     
-}
+
     
 

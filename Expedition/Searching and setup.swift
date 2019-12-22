@@ -119,12 +119,26 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             let request = URLRequest(url: (components?.url)!)
             
             var urlForHistory = request // it is used ignore ->
-            history(urlForHistory : searchBar.text)
+            
                         
             webView?.load(request)
         }
         
     }
 
+    @IBAction func igButton(_ sender: Any) {
+  
+        dismiss(animated: true, completion: nil)
+        
+        let url = URL(string: "https://www.instagram.com/themorningcompanymedia")
+                   
+        let request = URLRequest(url: url!)
+                   
+        webView?.load(request)
+    
+    }
+   
+    
 }
+
 // webView.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil)
