@@ -17,7 +17,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     var History: Array<Any>! //history Array initialization
     var historyRuns = 0 //history runs initialization
-    let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey, Sir Flansi" //Credits
+    let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
     
@@ -147,7 +147,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         let request = URLRequest(url: url!)
                        
         webView?.load(request)
-    
     
     }
     
