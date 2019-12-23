@@ -119,7 +119,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             let request = URLRequest(url: (components?.url)!)
             
             var urlForHistory = request // it is used ignore ->
-            history(urlForHistory : searchBar.text)
+            //history(urlForHistory : searchBar.text)
                         
             webView?.load(request)
         }
