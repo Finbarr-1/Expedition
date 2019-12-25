@@ -121,11 +121,11 @@
 				0006AA8323ADEBD9004C30C0 /* History.swift */,
 				001366B92307B61F009A102E /* Searching and setup.swift */,
 				0016FC5D23A6BFAC000D0022 /* AppIconService.swift */,
-				001366BB2307B61F009A102E /* Main.storyboard */,
 				D6030CDD23A89A96003C6911 /* Dark and Light.swift */,
+				D6030CDB23A89669003C6911 /* Gestures.swift */,
+				001366BB2307B61F009A102E /* Main.storyboard */,
 				001366BE2307B620009A102E /* Assets.xcassets */,
 				001366C02307B620009A102E /* LaunchScreen.storyboard */,
-				D6030CDB23A89669003C6911 /* Gestures.swift */,
 				001366C32307B620009A102E /* Info.plist */,
 			);
 			path = Expedition;
