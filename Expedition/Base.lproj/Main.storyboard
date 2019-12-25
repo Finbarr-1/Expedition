@@ -122,16 +122,16 @@
                         <color key="sectionIndexColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="7dK-fL-zc3" style="IBUITableViewCellStyleDefault" id="jPf-bm-8lT">
-                                <rect key="frame" x="16" y="55.5" width="288" height="44"/>
+                                <rect key="frame" x="16" y="55.5" width="288" height="47"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jPf-bm-8lT" id="7Wr-Ex-Ulu">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="288" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7dK-fL-zc3">
-                                            <rect key="frame" x="15" y="0.0" width="258" height="44"/>
+                                            <rect key="frame" x="15" y="0.0" width="258" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -148,7 +148,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6H6-I3-eKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="784" y="934"/>
+            <point key="canvasLocation" x="-741" y="841"/>
         </scene>
         <!--Credits-->
         <scene sceneID="FC5-hE-oNx">
@@ -185,7 +185,7 @@
                                     </connections>
                                 </button>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 1" translatesAutoresizingMaskIntoConstraints="NO" id="ila-Kj-6Ks">
-                                    <rect key="frame" x="20" y="431" width="280" height="72"/>
+                                    <rect key="frame" x="20" y="431" width="280.00000000000023" height="72"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="280" id="3Gn-Fo-q3G"/>
                                         <constraint firstAttribute="height" constant="72" id="ob2-Er-0OP"/>
@@ -236,91 +236,84 @@
                         </view>
                         <blurEffect style="systemChromeMaterial"/>
                     </visualEffectView>
-                    <connections>
-                        <outlet property="historySwitch" destination="qOa-AB-Nfe" id="hCf-Zq-cPx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2MP-i3-UdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Aez-zN-2MU" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="888.75" y="75"/>
+            <point key="canvasLocation" x="849" y="460"/>
         </scene>
         <!--Options-->
         <scene sceneID="oyU-ty-4iq">
             <objects>
                 <viewController title="Options" id="bgj-w0-VgC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bIk-BH-EIM">
+                    <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="qSP-HF-leV">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-5N-r75">
-                                <rect key="frame" x="38" y="86" width="98" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXo-z4-oQS">
-                                <rect key="frame" x="220" y="302" width="62" height="22"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="Light" image="sun.max.fill" catalog="system">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapPrimaryIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="QJb-ON-UWa"/>
-                                </connections>
-                            </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qOa-AB-Nfe">
-                                <rect key="frame" x="233" y="81" width="51" height="31"/>
-                                <color key="onTintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <action selector="historySwitch:" destination="Aez-zN-2MU" eventType="valueChanged" id="MKe-eQ-bxZ"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f26-X7-MVt">
-                                <rect key="frame" x="38" y="38" width="113" height="40"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFL-BJ-xFA">
-                                <rect key="frame" x="38" y="254" width="127" height="40"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRc-2a-zgr">
-                                <rect key="frame" x="38" y="302" width="58" height="22"/>
-                                <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="Dark" image="moon.fill" catalog="system">
-                                    <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="darkIconButton:" destination="Aez-zN-2MU" eventType="touchUpInside" id="VkQ-MS-aCY"/>
-                                    <action selector="didTapDarkIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="egC-tE-Gqj"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="f26-X7-MVt" firstAttribute="top" secondItem="XxO-dH-Fdx" secondAttribute="top" constant="38" id="6H6-Kv-juU"/>
-                            <constraint firstItem="Z1I-5N-r75" firstAttribute="leading" secondItem="XxO-dH-Fdx" secondAttribute="leading" constant="38" id="9nn-3V-eO7"/>
-                            <constraint firstItem="CXo-z4-oQS" firstAttribute="centerY" secondItem="iRc-2a-zgr" secondAttribute="centerY" id="C1g-fn-b4E"/>
-                            <constraint firstItem="XxO-dH-Fdx" firstAttribute="trailing" secondItem="CXo-z4-oQS" secondAttribute="trailing" constant="38" id="DEp-O1-qq3"/>
-                            <constraint firstItem="qOa-AB-Nfe" firstAttribute="centerY" secondItem="Z1I-5N-r75" secondAttribute="centerY" id="Hoe-Ob-eQd"/>
-                            <constraint firstItem="iRc-2a-zgr" firstAttribute="leading" secondItem="XxO-dH-Fdx" secondAttribute="leading" constant="38" id="M8Q-zU-ooO"/>
-                            <constraint firstItem="f26-X7-MVt" firstAttribute="leading" secondItem="XxO-dH-Fdx" secondAttribute="leading" constant="38" id="Uv0-Xt-7o9"/>
-                            <constraint firstItem="Z1I-5N-r75" firstAttribute="top" secondItem="f26-X7-MVt" secondAttribute="bottom" constant="8" id="XPS-sY-8t8"/>
-                            <constraint firstItem="iRc-2a-zgr" firstAttribute="top" secondItem="HFL-BJ-xFA" secondAttribute="bottom" constant="8" id="aCL-hf-EuI"/>
-                            <constraint firstItem="HFL-BJ-xFA" firstAttribute="leading" secondItem="XxO-dH-Fdx" secondAttribute="leading" constant="38" id="lCG-QS-zlm"/>
-                            <constraint firstItem="HFL-BJ-xFA" firstAttribute="top" secondItem="Z1I-5N-r75" secondAttribute="bottom" constant="147" id="mt9-BM-pvg"/>
-                            <constraint firstItem="XxO-dH-Fdx" firstAttribute="trailing" secondItem="qOa-AB-Nfe" secondAttribute="trailing" constant="38" id="vfw-dj-pGb"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="XxO-dH-Fdx"/>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0UT-MA-a3z">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Keep History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul4-TQ-1nE">
+                                    <rect key="frame" x="38" y="103" width="98" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-Vs-hNj">
+                                    <rect key="frame" x="220" y="319" width="62" height="22"/>
+                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <state key="normal" title="Light" image="sun.max.fill" catalog="system">
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapPrimaryIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="N8Q-Qm-H9s"/>
+                                    </connections>
+                                </button>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-tN-yD7">
+                                    <rect key="frame" x="233" y="98" width="51" height="31"/>
+                                    <color key="onTintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <connections>
+                                        <action selector="historySwitch:" destination="Aez-zN-2MU" eventType="valueChanged" id="ifw-Yz-LHK"/>
+                                    </connections>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-sF-8td">
+                                    <rect key="frame" x="38" y="55" width="113" height="40"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="App Icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuS-5G-FcM">
+                                    <rect key="frame" x="38" y="271" width="127" height="40"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi">
+                                    <rect key="frame" x="38" y="319" width="58" height="22"/>
+                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <state key="normal" title="Dark" image="moon.fill" catalog="system">
+                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="darkIconButton:" destination="Aez-zN-2MU" eventType="touchUpInside" id="Wh1-18-IWL"/>
+                                        <action selector="didTapDarkIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="xES-Q8-hTO"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Wc4-Vs-hNj" firstAttribute="centerY" secondItem="bzd-j1-tNi" secondAttribute="centerY" id="0eA-Wn-ngi"/>
+                                <constraint firstItem="KuS-5G-FcM" firstAttribute="top" secondItem="ul4-TQ-1nE" secondAttribute="bottom" constant="147" id="DxC-RH-K7P"/>
+                                <constraint firstItem="bzd-j1-tNi" firstAttribute="top" secondItem="KuS-5G-FcM" secondAttribute="bottom" constant="8" id="G3f-de-Rhp"/>
+                                <constraint firstItem="4S2-tN-yD7" firstAttribute="centerY" secondItem="ul4-TQ-1nE" secondAttribute="centerY" id="NcP-mR-m7j"/>
+                                <constraint firstItem="ul4-TQ-1nE" firstAttribute="top" secondItem="ClN-sF-8td" secondAttribute="bottom" constant="8" id="bC2-ve-s4z"/>
+                            </constraints>
+                        </view>
+                        <blurEffect style="systemChromeMaterial"/>
+                    </visualEffectView>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzH-Lv-A1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850" y="-808"/>
+            <point key="canvasLocation" x="848" y="-536"/>
         </scene>
     </scenes>
     <resources>
