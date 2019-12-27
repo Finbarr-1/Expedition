@@ -86,7 +86,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="1pt-Gt-L2n" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="left" id="Srt-5a-Pr4" userLabel="HistorySwipe">
                     <connections>
                         <action selector="historySwipe:" destination="BYZ-38-t0r" id="BbT-F3-pQB"/>
@@ -105,7 +104,7 @@
                 </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="AN3-pI-gg7" userLabel="ReloadSwipe">
                     <connections>
-                        <action selector="reload:" destination="1pt-Gt-L2n" id="JhW-Pb-XpQ"/>
+                        <action selector="reloadSwipe:" destination="BYZ-38-t0r" id="Bka-27-1de"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
