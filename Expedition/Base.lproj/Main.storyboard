@@ -86,7 +86,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="1pt-Gt-L2n" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="left" id="Srt-5a-Pr4" userLabel="HistorySwipe">
                     <connections>
                         <action selector="historySwipe:" destination="BYZ-38-t0r" id="BbT-F3-pQB"/>
@@ -105,7 +104,7 @@
                 </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="AN3-pI-gg7" userLabel="ReloadSwipe">
                     <connections>
-                        <action selector="reload:" destination="1pt-Gt-L2n" id="JhW-Pb-XpQ"/>
+                        <action selector="reloadSwipe:" destination="BYZ-38-t0r" id="l4J-cr-O0Y"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -242,6 +241,14 @@
             </objects>
             <point key="canvasLocation" x="849" y="460"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="MrX-Ny-nrN">
+            <objects>
+                <pageViewController storyboardIdentifier="PageView" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ki2-qE-QTu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmA-Kp-ffa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2120" y="8"/>
+        </scene>
         <!--Options-->
         <scene sceneID="oyU-ty-4iq">
             <objects>
@@ -299,6 +306,11 @@
                                         <action selector="didTapDarkIcon:" destination="Aez-zN-2MU" eventType="touchUpInside" id="xES-Q8-hTO"/>
                                     </connections>
                                 </button>
+                                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="nFr-ZB-Vwi">
+                                    <rect key="frame" x="148.5" y="503" width="23" height="37"/>
+                                    <color key="pageIndicatorTintColor" systemColor="quaternaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.17999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="currentPageIndicatorTintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </pageControl>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="Wc4-Vs-hNj" firstAttribute="centerY" secondItem="bzd-j1-tNi" secondAttribute="centerY" id="0eA-Wn-ngi"/>
@@ -312,6 +324,8 @@
                                 <constraint firstItem="ClN-sF-8td" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="38" id="XmK-Uu-eBk"/>
                                 <constraint firstItem="ul4-TQ-1nE" firstAttribute="top" secondItem="ClN-sF-8td" secondAttribute="bottom" constant="8" id="bC2-ve-s4z"/>
                                 <constraint firstItem="ClN-sF-8td" firstAttribute="top" secondItem="0UT-MA-a3z" secondAttribute="top" constant="38" id="fMA-f4-Hx6"/>
+                                <constraint firstItem="nFr-ZB-Vwi" firstAttribute="centerX" secondItem="0UT-MA-a3z" secondAttribute="centerX" id="gw6-5x-LmG"/>
+                                <constraint firstAttribute="bottom" secondItem="nFr-ZB-Vwi" secondAttribute="bottom" constant="8" id="n3V-m0-W6h"/>
                                 <constraint firstItem="bzd-j1-tNi" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="38" id="yp8-e0-H6u"/>
                             </constraints>
                         </view>
