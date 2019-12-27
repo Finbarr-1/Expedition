@@ -150,9 +150,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     }
     
-    @IBAction func reloadSwipe(_ sender: Any) {
-        webView.reload()
-    }
     
     
 }
