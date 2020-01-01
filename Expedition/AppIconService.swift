@@ -14,7 +14,7 @@ class AppIconService {
     
     enum AppIcon: String {
         case primaryAppIcon
-        case DarkAppIcon
+        case darkAppIcon
         
     }
     
