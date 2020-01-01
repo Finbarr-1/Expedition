@@ -21,7 +21,7 @@ class darkLight {
 
     }
     @IBAction func didTapDarkIcon() { //should change to dark icon
-           appIconService.changeAppIcon(to: .DarkAppIcon)
+           appIconService.changeAppIcon(to: .darkAppIcon)
 
 
     }
@@ -32,7 +32,7 @@ class darkLight {
 
     }
     @IBAction func didTapDarkIcon() { //should change to dark icon
-        AppIconService().changeAppIcon(to: .DarkAppIcon)
+        AppIconService().changeAppIcon(to: .darkAppIcon)
 
     }
 }
