@@ -19,6 +19,7 @@
 		0016FC5E23A6BFAC000D0022 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016FC5D23A6BFAC000D0022 /* AppIconService.swift */; };
 		00A91DBC23A84AFF00F045F7 /* 60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBA23A84AFF00F045F7 /* 60@2x.png */; };
 		00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBB23A84AFF00F045F7 /* 60@3x.png */; };
+		00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00C4A4C523C509E800C18F65 /* Settings.bundle */; };
 		D6030CDC23A89669003C6911 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDB23A89669003C6911 /* Gestures.swift */; };
 		D6030CDE23A89A96003C6911 /* Dark and Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDD23A89A96003C6911 /* Dark and Light.swift */; };
 		D6F21CB023C409AE004C79EC /* code.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F21CAF23C409AE004C79EC /* code.swift */; };
@@ -61,6 +62,7 @@
 		005932CF234D747100DC2323 /* Expedition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expedition.entitlements; sourceTree = "<group>"; };
 		00A91DBA23A84AFF00F045F7 /* 60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@2x.png"; sourceTree = "<group>"; };
 		00A91DBB23A84AFF00F045F7 /* 60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@3x.png"; sourceTree = "<group>"; };
+		00C4A4C523C509E800C18F65 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = Expedition/Settings.bundle; sourceTree = "<group>"; };
 		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		D6030CDD23A89A96003C6911 /* Dark and Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dark and Light.swift"; sourceTree = "<group>"; };
 		D6F21CAF23C409AE004C79EC /* code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		001366AB2307B61F009A102E = {
 			isa = PBXGroup;
 			children = (
+				00C4A4C523C509E800C18F65 /* Settings.bundle */,
 				001366B62307B61F009A102E /* Expedition */,
 				001366CB2307B620009A102E /* ExpeditionTests */,
 				001366D62307B620009A102E /* ExpeditionUITests */,
@@ -277,6 +280,7 @@
 				00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */,
 				001366C22307B620009A102E /* LaunchScreen.storyboard in Resources */,
 				001366BF2307B620009A102E /* Assets.xcassets in Resources */,
+				00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */,
 				001366BD2307B61F009A102E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,7 +493,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,7 +501,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -515,7 +519,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N88X7JF75R;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -523,7 +527,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.Expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
