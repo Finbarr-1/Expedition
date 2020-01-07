@@ -49,6 +49,15 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         Code().work()
     }
 
+    func socialMedia(urlString: String) {
+        let url = URL(string: urlString)
+
+        let request = URLRequest(url: url!)
+        print(request.url?.absoluteString as Any)
+
+        webView?.load(request)
+    }
+    
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
          
          ActInd?.startAnimating()
@@ -108,8 +117,16 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         searchBar.text = searchBar.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
+        searchBar.text = searchBar.text!.lowercased()
+        
         if (verifyUrl(urlString: searchBar.text!)) {
-            let url = URL(string: "http://\(searchBar.text!)")
+            
+            var url = URL(string: searchBar.text!)
+            if (searchBar.text!.starts(with: "http://") || searchBar.text!.starts(with: "https://")) {
+                print(searchBar.text!)
+            } else {
+                url = URL(string: "http://\(searchBar.text!)")
+            }
             
             searchBar.text = url?.absoluteString;
             
@@ -133,20 +150,23 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
 
     @IBAction func igButton(_ sender: Any) {
-
-        dismiss(animated: true, completion: nil)
         
-            let url = URL(string: "https://www.instagram.com/themorningcompanymedia/")
-
-            let request = URLRequest(url: url!)
-
-            webView?.load(request)
+        dismiss(animated: true) {
+            self.socialMedia(urlString: "https://www.instagram.com/themorningcompanymedia/")
+        }
+        
+        // socialMedia(urlString: "https://www.instagram.com/themorningcompanymedia/")
     
+        if let url = URL(string: "https://www.instagram.com/themorningcompanymedia/") {
+            webView?.load(URLRequest(url: url))
+            // UIApplication.shared.open(url)
+        }
+        
     }
 
     @IBAction func ytButton(_ sender: Any) {
     
-    dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
             
         let url = URL(string: "https://www.youtube.com/channel/UCizXzjlzl6NksCf6wPLakKw")
 
