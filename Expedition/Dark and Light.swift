@@ -18,26 +18,13 @@ class darkLight {
        
     @IBAction func didTapPrimaryIcon() {  //should change to light icon
            appIconService.changeAppIcon(to: .primaryAppIcon)
-
     }
+    
     @IBAction func didTapDarkIcon() { //should change to dark icon
            appIconService.changeAppIcon(to: .darkAppIcon)
-
-
     }
-class darkLight {
-       
-    @IBAction func didTapPrimaryIcon() {  //should change to light icon
-        AppIconService().changeAppIcon(to: .primaryAppIcon)
 
-    }
-    @IBAction func didTapDarkIcon() { //should change to dark icon
-        AppIconService().changeAppIcon(to: .darkAppIcon)
-
-    }
-}
-
-func DarkModeToggle(_ sender: Any) { //turns dark mode on and off
+    func DarkModeToggle(_ sender: Any) { //detects change in dark mode
     
-}
+    }
 }

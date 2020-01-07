@@ -82,6 +82,7 @@
                     <navigationItem key="navigationItem" id="j8z-Pg-cei"/>
                     <connections>
                         <outlet property="ActInd" destination="JeA-nV-CKj" id="Nec-3V-7Ni"/>
+                        <outlet property="searchBar" destination="gA5-H8-wBy" id="GK0-Cp-j0j"/>
                         <outlet property="webView" destination="1Sr-kh-OPV" id="AbH-gy-eSn"/>
                     </connections>
                 </viewController>
@@ -198,7 +199,7 @@
                                     <nil key="highlightedColor"/>
                                     <size key="shadowOffset" width="3" height="-1"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zeqe golomb, finbarr o'connell, jackson yan, julian wright, brendan burkhart, kai morita-mcvey" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpI-gO-VeB">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="zeqe golomb, finbarr o'connell, jackson yan, julian wright, brendan burkhart, kai morita-mcvey, Sir Flansi" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpI-gO-VeB">
                                     <rect key="frame" x="38" y="86" width="244" height="93"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>

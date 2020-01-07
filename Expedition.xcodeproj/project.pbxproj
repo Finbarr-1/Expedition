@@ -21,6 +21,7 @@
 		00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBB23A84AFF00F045F7 /* 60@3x.png */; };
 		D6030CDC23A89669003C6911 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDB23A89669003C6911 /* Gestures.swift */; };
 		D6030CDE23A89A96003C6911 /* Dark and Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDD23A89A96003C6911 /* Dark and Light.swift */; };
+		D6F21CB023C409AE004C79EC /* code.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F21CAF23C409AE004C79EC /* code.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		00A91DBB23A84AFF00F045F7 /* 60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@3x.png"; sourceTree = "<group>"; };
 		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		D6030CDD23A89A96003C6911 /* Dark and Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dark and Light.swift"; sourceTree = "<group>"; };
+		D6F21CAF23C409AE004C79EC /* code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				001366B72307B61F009A102E /* AppDelegate.swift */,
 				0006AA8323ADEBD9004C30C0 /* History.swift */,
 				001366B92307B61F009A102E /* Searching and setup.swift */,
+				D6F21CAF23C409AE004C79EC /* code.swift */,
 				0016FC5D23A6BFAC000D0022 /* AppIconService.swift */,
 				D6030CDD23A89A96003C6911 /* Dark and Light.swift */,
 				D6030CDB23A89669003C6911 /* Gestures.swift */,
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0006AA8423ADEBD9004C30C0 /* History.swift in Sources */,
+				D6F21CB023C409AE004C79EC /* code.swift in Sources */,
 				001366BA2307B61F009A102E /* Searching and setup.swift in Sources */,
 				001366B82307B61F009A102E /* AppDelegate.swift in Sources */,
 				0016FC5E23A6BFAC000D0022 /* AppIconService.swift in Sources */,
@@ -485,7 +489,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				DEVELOPMENT_TEAM = N88X7JF75R;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -493,7 +497,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = a.Expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = net.Expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -511,7 +515,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				DEVELOPMENT_TEAM = N88X7JF75R;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -519,7 +523,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = a.Expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = net.Expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";

@@ -17,12 +17,14 @@ class Gestures : WKWebView, WKNavigationDelegate{
     @IBAction func back(_ sender: Any) { //makes the page go back if it can
         if webView.canGoBack{
             webView.goBack()
+            webView.reload()
         }
     }
 
     @IBAction func forward(_ sender: Any) { //makes the page go forward if it can
         if webView.canGoForward{
             webView.goForward()
+            webView.reload()
         }
     }
 
