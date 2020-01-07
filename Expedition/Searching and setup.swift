@@ -22,6 +22,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
     
     @IBOutlet weak var historySwitch: UISwitch!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() { //Setup stuff
         super.viewDidLoad()
@@ -44,26 +45,28 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         webView?.navigationDelegate = self
         ActInd?.hidesWhenStopped = true
+        
+        Code().work()
     }
 
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        
-        ActInd?.startAnimating()
-        
-    }
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        
+         
+         ActInd?.startAnimating()
+         
+     }
+     
+     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+         
         ActInd?.stopAnimating()
+        searchBar.text = webView.url?.absoluteString
         
-    }
-    
-    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-        
-        ActInd?.stopAnimating()
-        
-    }
-    
+     }
+     
+     func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+         
+         ActInd?.stopAnimating()
+         
+     }
 
     func verifyUrl (urlString: String?) -> Bool { //tests for url
         let url: URL?
@@ -87,7 +90,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     
     
-    func searchText(urlString: String) -> URLRequest { //julian please explain
+    func searchText(urlString: String) -> URLRequest { //creates the url for a query using duckduckgo
         let queryItemQuery = URLQueryItem(name: "q", value: urlString);
         
         components?.queryItems = [queryItemQuery]
@@ -103,9 +106,12 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         searchBar.resignFirstResponder()
         
+        searchBar.text = searchBar.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
         if (verifyUrl(urlString: searchBar.text!)) {
             let url = URL(string: "http://\(searchBar.text!)")
             
+            searchBar.text = url?.absoluteString;
             
             let request = URLRequest(url: url!)
             
@@ -118,7 +124,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             
             let request = URLRequest(url: (components?.url)!)
             
-            var urlForHistory = request // it is used ignore ->
+            var urlForHistory = request // <- will be used once we get a array working
             
                         
             webView?.load(request)
@@ -150,6 +156,12 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     }
     
+    @IBAction func reloadSwipe(_ sender: Any) {
+   
+        webView.reload()
+    
+    }
+
     
     
 }

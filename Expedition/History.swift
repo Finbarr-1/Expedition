@@ -3,7 +3,7 @@
 //  Expedition
 //
 //  Created by Finbarr O'Connell on 12/20/19.
-//  Copyright © 2019 Zeqe Golomb. All rights reserved.
+//  Copyright © 2019 The Morning Company. All rights reserved.
 //
 
 import Foundation

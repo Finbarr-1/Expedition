@@ -3,7 +3,7 @@
 //  Expedition
 //
 //  Created by Zeqiel Golomb on 12/15/19.
-//  Copyright © 2019 Zeqe Golomb. All rights reserved.
+//  Copyright © 2019 The Morning Company. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppIconService {
     
     enum AppIcon: String {
         case primaryAppIcon
-        case DarkAppIcon
+        case darkAppIcon
         
     }
     
