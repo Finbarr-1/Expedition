@@ -39,9 +39,11 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.themorningcompany.expedition</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>Instagram</string>
+				<string>expedition</string>
 			</array>
 		</dict>
 	</array>
