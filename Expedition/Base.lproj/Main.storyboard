@@ -274,6 +274,7 @@
                                     <color key="onTintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="historySwitch:" destination="Aez-zN-2MU" eventType="valueChanged" id="ifw-Yz-LHK"/>
+                                        <action selector="historySwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="5L1-5F-Bbx"/>
                                     </connections>
                                 </switch>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-sF-8td">

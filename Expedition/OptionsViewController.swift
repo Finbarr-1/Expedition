@@ -25,6 +25,11 @@ class OptionsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func historySwitchValueChange(_ sender: Any) {
+        UserDefaults.standard.set(historySwitch.isOn, forKey: "save_history")
+        UserDefaults.standard.synchronize()
+    }
+    
     func registerSettingsBundle(){
         let appDefaults = [String:AnyObject]()
         UserDefaults.standard.register(defaults: appDefaults)
