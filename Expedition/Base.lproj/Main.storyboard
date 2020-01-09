@@ -46,6 +46,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Gli-I6-TVR" appends="YES" id="RGQ-lH-p1y"/>
                                     <outletCollection property="gestureRecognizers" destination="AN3-pI-gg7" appends="YES" id="mmv-Yg-faM"/>
                                     <outletCollection property="gestureRecognizers" destination="0xN-Ym-Ghr" appends="YES" id="UpJ-vA-wef"/>
+                                    <outletCollection property="gestureRecognizers" destination="ltd-91-b5P" appends="YES" id="TaL-68-UQP"/>
                                 </connections>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2T-Z9-N1d">
@@ -93,12 +94,7 @@
                         <segue destination="65v-MH-vlF" kind="presentation" id="zo6-DM-YYL"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="ltd-91-b5P" userLabel="InfoSwipe">
-                    <connections>
-                        <segue destination="4Pb-2Y-0Xd" kind="presentation" id="n6b-n6-BVa"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="up" id="0xN-Ym-Ghr">
+                <swipeGestureRecognizer direction="up" id="0xN-Ym-Ghr" userLabel="UserAgentSwipe">
                     <connections>
                         <action selector="desktopSiteSwipe:" destination="BYZ-38-t0r" id="XfT-Xy-hkh"/>
                     </connections>
@@ -111,6 +107,11 @@
                 <swipeGestureRecognizer direction="down" id="AN3-pI-gg7" userLabel="ReloadSwipe">
                     <connections>
                         <action selector="reloadSwipe:" destination="BYZ-38-t0r" id="Bka-27-1de"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="ltd-91-b5P" userLabel="Credits Swipe">
+                    <connections>
+                        <segue destination="4Pb-2Y-0Xd" kind="presentation" id="n6b-n6-BVa"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
