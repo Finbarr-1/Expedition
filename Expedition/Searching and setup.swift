@@ -14,7 +14,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
 
-    let userAgent: String = "mobile" //User agent
+    let userAgentVar: String = "mobile" //User agent
     var History: Array<Any>! //history Array initialization
     var historyRuns = 0 //history runs initialization
     let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey" //Credits
@@ -86,7 +86,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-         
+         webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
          ActInd?.startAnimating()
          
      }
@@ -170,7 +170,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             
             var urlForHistory = request // <- will be used once we get a array working
             
-                        
+            print(userAgentVar)
+            
             webView?.load(request)
         }
         
@@ -208,22 +209,22 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
 
     @IBAction func desktopSiteSwipe(_ sender: Any) {
+        if userAgentVar == "mobile" {
+            webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Expedition/605.1.15"
+        let userAgentVar: String = "desktop"
+            print(userAgentVar)
+            webView.reload()
+        }
+        
+        if userAgentVar == "desktop" {
+            webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
+               let userAgentVar: String = "mobile"
+                   print(userAgentVar)
+            webView.reload()
+        }
+   
     
-        if userAgent == "mobile" {
-        webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.0 Expedition/605.1.15"
-        let userAgent: String = "desktop" //user agent. please fix
-            webView.reload()
-        }
-       else {
-       webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
-       let userAgent: String = "mobile" //user agent. please fix
-            webView.reload()
-        }
-       
     }
-    
-    
-
 
 // webView.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil) What's this for?
 
