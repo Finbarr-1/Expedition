@@ -13,7 +13,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
 
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
-    
+
     
     var History: Array<Any>! //history Array initialization
     var historyRuns = 0 //history runs initialization
@@ -182,6 +182,12 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     }
 
+    @IBAction func desktopSiteSwipe(_ sender: Any) {
+    
+        webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.0 Expedition/605.1.15"
+    
+        webView.reload()
+    }
     
     
 }
