@@ -20,7 +20,7 @@ class PersistenceService {
     }
     
     static var persistentContainer: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "Expedition")
+        let container = NSPersistentContainer(name: "History")
         container.loadPersistentStores { description, error in
             if let error = error {
                 fatalError("Unable to load persistent stores: \(error)")
