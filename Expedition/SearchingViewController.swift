@@ -21,7 +21,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
     
-    @IBOutlet weak var historySwitch: UISwitch!
     @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() { //Setup stuff
@@ -56,35 +55,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         webView?.load(request)
     }
     
-    func application(_ application: UIApplication,
-                     open url: URL,
-                     options: [UIApplication.OpenURLOptionsKey : Any] = [:] ) -> Bool {
-        
-        // Determine who sent the URL.
-        let sendingAppID = options[.sourceApplication]
-        print("source application = \(sendingAppID ?? "Unknown")")
-        
-        // Process the URL.
-        guard let components = NSURLComponents(url: url, resolvingAgainstBaseURL: true),
-            let componentsPath = components.path,
-            let params = components.queryItems else {
-                print("Something is missing.")
-                return false
-        }
-        
-        print(componentsPath, params)
-        return false
-        
-//        if let photoIndex = params.first(where: { $0.name == "index" })?.value {
-//            print("albumPath = \(albumPath)")
-//            print("photoIndex = \(photoIndex)")
-//            return true
-//        } else {
-//            print("Photo index missing")
-//            return false
-//        }
-    }
-    
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
          webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
          ActInd?.startAnimating()
@@ -95,7 +65,12 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
          
         ActInd?.stopAnimating()
         searchBar.text = webView.url?.absoluteString
-        
+        let historyElementToAdd = HistoryElement(context: PersistenceService.context)
+        historyElementToAdd.url = searchBar.text
+        historyElementToAdd.title = webView.title
+        PersistenceService.saveContext()
+        HistoryTableViewController().historyArray.append(historyElementToAdd)
+        HistoryTableViewController().tableView.reloadData()
      }
      
      func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
@@ -123,29 +98,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             return false
     }
     
-    
-    
-    
-    func searchText(urlString: String) -> URLRequest { //creates the url for a query using duckduckgo
-        let queryItemQuery = URLQueryItem(name: "q", value: urlString);
-        
-        components?.queryItems = [queryItemQuery]
-        
-        let request = URLRequest(url: (components?.url)!)
-        
-        return request
-    }
-    
-
-
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) { //turns the users input into something that the search engine can use
-        
-        searchBar.resignFirstResponder()
-        
-        searchBar.text = searchBar.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        searchBar.text = searchBar.text!.lowercased()
-        
+    func openUrl(urlString: String) {
         if (verifyUrl(urlString: searchBar.text!)) {
             
             var url = URL(string: searchBar.text!)
@@ -174,8 +127,60 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             
             webView?.load(request)
         }
+    }
+    
+    
+    func searchText(urlString: String) -> URLRequest { //creates the url for a query using duckduckgo
+        let queryItemQuery = URLQueryItem(name: "q", value: urlString);
+        
+        components?.queryItems = [queryItemQuery]
+        
+        let request = URLRequest(url: (components?.url)!)
+        
+        return request
+    }
+    
+
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) { //turns the users input into something that the search engine can use
+        
+        searchBar.resignFirstResponder()
+        
+        searchBar.text = searchBar.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        searchBar.text = searchBar.text!.lowercased()
+        
+        openUrl(urlString: searchBar.text!)
         
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+            
+            let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
+            
+            if let components = components {
+                components.host
+                components.query
+                components.percentEncodedQuery
+
+                if let queryItems = components.queryItems {
+                    for queryItem in queryItems {
+                        if queryItem.name == "url" {
+                            openUrl(urlString: queryItem.value!)
+                        }
+                    }
+                }
+            }
+
+            
+    //        let alertController = UIAlertController(title: "Incoming Message", message: message, preferredStyle: .alert)
+    //            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+    //        alertController.addAction(okAction)
+    //
+    //        window?.rootViewController?.present(alertController, animated: true, completion: nil)
+            
+            return true
+        }
 
     @IBAction func igButton(_ sender: Any) {
         
