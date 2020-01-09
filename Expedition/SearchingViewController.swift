@@ -14,7 +14,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
 
-    let userAgentVar: String = "mobile" //User agent
+    var userAgentVar: String = "mobile" //User agent
     let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
@@ -180,33 +180,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     //        window?.rootViewController?.present(alertController, animated: true, completion: nil)
             
             return true
-        }
-
-    @IBAction func igButton(_ sender: Any) {
-        
-        dismiss(animated: true, completion: nil)
-        
-        socialMedia(urlString: "https://www.instagram.com/themorningcompanymedia/")
-    
-//        if let url = URL(string: "https://www.instagram.com/themorningcompanymedia/") {
-//            webView?.load(URLRequest(url: url))
-//            // UIApplication.shared.open(url)
-//        }
-        
     }
 
-    @IBAction func ytButton(_ sender: Any) {
-    
-        dismiss(animated: true, completion: nil)
-            
-        let url = URL(string: "https://www.youtube.com/channel/UCizXzjlzl6NksCf6wPLakKw")
-
-        let request = URLRequest(url: url!)
-
-        webView?.load(request)
-    
-    }
-    
     @IBAction func reloadSwipe(_ sender: Any) {
    
         webView.reload()
