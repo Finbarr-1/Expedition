@@ -16,6 +16,16 @@
 			<key>DefaultValue</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>DefaultValue</key>
+			<string>Credits</string>
+			<key>Type</key>
+			<string>PSTitleValueSpecifier</string>
+			<key>Title</key>
+			<string>Credits</string>
+			<key>Key</key>
+			<string>creditsTitle</string>
+		</dict>
 	</array>
 </dict>
 </plist>

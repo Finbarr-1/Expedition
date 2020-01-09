@@ -3,7 +3,7 @@
 //  Expedition
 //
 //  Created by Zeqiel Golomb on 8/16/19.
-//  Copyright © 2019 The Morning Company All rights reserved.
+//  Copyright © 2019-2020 The Morning Company All rights reserved.
 
 import UIKit
 import WebKit
@@ -15,7 +15,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
 
     var userAgentVar: String = "mobile" //User agent
-    let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey" //Credits
+    let credits: String = "zeqe golomb, finbarr o'connell, jackson yan, julian wright" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
     
