@@ -9,6 +9,7 @@
 import UIKit
 import WebKit
 import Foundation
+import CoreData
 
 class OptionsViewController: UIViewController {
 
@@ -25,6 +26,18 @@ class OptionsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func clearHistory(_ sender: UIButton) {
+        HistoryTableViewController().historyArray = [HistoryElement]()
+        let fetchRequest: NSFetchRequest<HistoryElement> = HistoryElement.fetchRequest()
+        if let result = try? PersistenceService.context.fetch(fetchRequest) {
+            for object in result {
+                PersistenceService.context.delete(object)
+            }
+            PersistenceService.saveContext()
+            HistoryTableViewController().tableView.reloadData()
+        }
+        print("history cleared",HistoryTableViewController().historyArray)
+    }
     @IBAction func historySwitchValueChange(_ sender: Any) {
         UserDefaults.standard.set(historySwitch.isOn, forKey: "save_history")
         UserDefaults.standard.synchronize()

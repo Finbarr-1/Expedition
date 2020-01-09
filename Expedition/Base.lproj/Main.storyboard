@@ -201,6 +201,14 @@
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4em-CD-h6R">
+                                    <rect key="frame" x="38" y="118" width="85" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="clear history"/>
+                                    <connections>
+                                        <action selector="clearHistory:" destination="bgj-w0-VgC" eventType="touchUpInside" id="PzQ-EP-xh4"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="Wc4-Vs-hNj" firstAttribute="centerY" secondItem="bzd-j1-tNi" secondAttribute="centerY" id="0eA-Wn-ngi"/>
@@ -232,4 +240,5 @@
         <image name="moon.fill" catalog="system" width="64" height="60"/>
         <image name="sun.max.fill" catalog="system" width="64" height="62"/>
     </resources>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
