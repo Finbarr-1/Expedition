@@ -15,8 +15,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
 
     let userAgentVar: String = "mobile" //User agent
-    var History: Array<Any>! //history Array initialization
-    var historyRuns = 0 //history runs initialization
     let credits: String = "Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
@@ -65,12 +63,14 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
          
         ActInd?.stopAnimating()
         searchBar.text = webView.url?.absoluteString
-        let historyElementToAdd = HistoryElement(context: PersistenceService.context)
-        historyElementToAdd.url = searchBar.text
-        historyElementToAdd.title = webView.title
-        PersistenceService.saveContext()
-        HistoryTableViewController().historyArray.append(historyElementToAdd)
-        HistoryTableViewController().tableView.reloadData()
+        if (UserDefaults.standard.bool(forKey: "save_history")) {
+            let historyElementToAdd = HistoryElement(context: PersistenceService.context)
+            historyElementToAdd.url = searchBar.text
+            historyElementToAdd.title = webView.title
+            PersistenceService.saveContext()
+            HistoryTableViewController().historyArray.append(historyElementToAdd)
+            HistoryTableViewController().tableView.reloadData()
+        }
      }
      
      func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
