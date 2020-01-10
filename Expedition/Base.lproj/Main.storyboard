@@ -161,13 +161,13 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keep history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul4-TQ-1nE">
-                                    <rect key="frame" x="38" y="86" width="96" height="24"/>
+                                    <rect key="frame" x="38" y="93" width="96" height="24"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-tN-yD7">
-                                    <rect key="frame" x="327" y="82.5" width="51" height="31"/>
+                                    <rect key="frame" x="327" y="89.5" width="51" height="31"/>
                                     <color key="onTintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="historySwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="5L1-5F-Bbx"/>
@@ -180,13 +180,13 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="app icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuS-5G-FcM">
-                                    <rect key="frame" x="38" y="257" width="122" height="40"/>
+                                    <rect key="frame" x="38" y="264" width="122" height="40"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4em-CD-h6R">
-                                    <rect key="frame" x="38" y="125" width="95" height="36"/>
+                                    <rect key="frame" x="38" y="132" width="95" height="36"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" title="clear history">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -196,7 +196,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es1-Lj-mt9">
-                                    <rect key="frame" x="38" y="176" width="154" height="36"/>
+                                    <rect key="frame" x="38" y="183" width="154" height="36"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" title="clear browsing data">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -206,7 +206,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-Vs-hNj">
-                                    <rect key="frame" x="276" y="312" width="100" height="100"/>
+                                    <rect key="frame" x="276" y="319" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="AppIconForUILight">
@@ -214,25 +214,33 @@
                                     </state>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi">
-                                    <rect key="frame" x="38" y="312" width="100" height="100"/>
+                                    <rect key="frame" x="38" y="319" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="AppIconForUIDark">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                 </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="©2019-2020 The Morning Company" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wz9-3j-Dit">
+                                    <rect key="frame" x="63.5" y="778" width="287" height="24"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="es1-Lj-mt9" firstAttribute="top" secondItem="4em-CD-h6R" secondAttribute="bottom" constant="15" id="77K-uQ-r6H"/>
                                 <constraint firstAttribute="trailing" secondItem="4S2-tN-yD7" secondAttribute="trailing" constant="38" id="80G-bb-mCO"/>
                                 <constraint firstItem="ul4-TQ-1nE" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="38" id="9T8-iN-aCZ"/>
                                 <constraint firstItem="bzd-j1-tNi" firstAttribute="top" secondItem="KuS-5G-FcM" secondAttribute="bottom" constant="15" id="AT3-Zj-Z9b"/>
+                                <constraint firstAttribute="bottom" secondItem="Wz9-3j-Dit" secondAttribute="bottom" constant="40" id="Aft-9O-jnl"/>
                                 <constraint firstItem="4em-CD-h6R" firstAttribute="top" secondItem="ul4-TQ-1nE" secondAttribute="bottom" constant="15" id="Glt-XU-N0E"/>
                                 <constraint firstItem="4S2-tN-yD7" firstAttribute="centerY" secondItem="ul4-TQ-1nE" secondAttribute="centerY" id="NcP-mR-m7j"/>
                                 <constraint firstItem="es1-Lj-mt9" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="38" id="TMH-ce-zhy"/>
                                 <constraint firstItem="ClN-sF-8td" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="38" id="XmK-Uu-eBk"/>
                                 <constraint firstItem="KuS-5G-FcM" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="38" id="YQJ-vV-Vgy"/>
-                                <constraint firstItem="ul4-TQ-1nE" firstAttribute="top" secondItem="ClN-sF-8td" secondAttribute="bottom" constant="8" id="bC2-ve-s4z"/>
+                                <constraint firstItem="ul4-TQ-1nE" firstAttribute="top" secondItem="ClN-sF-8td" secondAttribute="bottom" constant="15" id="bC2-ve-s4z"/>
+                                <constraint firstItem="Wz9-3j-Dit" firstAttribute="centerX" secondItem="0UT-MA-a3z" secondAttribute="centerX" id="cOY-K4-DGq"/>
                                 <constraint firstItem="Wc4-Vs-hNj" firstAttribute="centerY" secondItem="bzd-j1-tNi" secondAttribute="centerY" id="dyN-hh-6Ph"/>
                                 <constraint firstItem="4em-CD-h6R" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="38" id="eOM-RY-ETF"/>
                                 <constraint firstItem="ClN-sF-8td" firstAttribute="top" secondItem="0UT-MA-a3z" secondAttribute="top" constant="38" id="fMA-f4-Hx6"/>

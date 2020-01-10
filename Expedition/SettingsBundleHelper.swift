@@ -3,7 +3,7 @@
 //  Expedition
 //
 //  Created by Julian Wright on 1/7/20.
-//  Copyright © 2020 Zeqe Golomb. All rights reserved.
+//  Copyright © 2020 The Morning Company. All rights reserved.
 //
 
 import Foundation
