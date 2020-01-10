@@ -6,10 +6,10 @@
 Expedition is a light-weight web browser with advanced gesture control, letting users find what they need as fast as possible. We are focused on creating an outstanding user experience, as well as simply making the app look incredible overall.
 
 ---
-# How to Use
+## How to Use
 
-Expedition has advanced gesture control for almost every action. A swipe left on the searchbar shows history, right shows options, down is reload and also switches back to the mobile website after a swipe up goes to the desktop version. Swipe betweern websites to go back and forth.
+Expedition has advanced gesture control for almost every action. A swipe left on the searchbar shows history, right shows options, down is reload and also switches back to the mobile website after a swipe up goes to the desktop version. Swipe between websites to go back and forth.
 
 ## Credits
 
-### Created by The Morning Company with additional help from Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, Brendan Burkhart, Kai Morita-McVey.
+### Created by The Morning Company with additional help from Zeqe Golomb, Finbarr O'Connell, Jackson Yan, Julian Wright, and Sir Flansi.
