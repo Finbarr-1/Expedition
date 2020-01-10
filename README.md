@@ -12,4 +12,4 @@ Expedition has advanced gesture control for almost every action. A swipe left on
 
 ## Credits
 
-### Created by The Morning Company and Zeqe Golomb, Finbarr O'Connell, Jackson Yan, and Julian Wright.
+Created by The Morning Company with help from Zeqe Golomb, Finbarr O'Connell, Jackson Yan, and Julian Wright.
