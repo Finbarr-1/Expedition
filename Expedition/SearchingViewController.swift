@@ -215,5 +215,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
 
 // webView.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil) What's this for?
-
+ 
 }
+
+

@@ -91,7 +91,7 @@
                 </swipeGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Gli-I6-TVR" userLabel="SharePress">
                     <connections>
-                        <action selector="longPress:" destination="BYZ-38-t0r" id="ANq-sl-ehK"/>
+                        <action selector="clearCookies:" destination="BYZ-38-t0r" id="kGb-Tt-0Vy"/>
                     </connections>
                 </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="AN3-pI-gg7" userLabel="ReloadSwipe">
@@ -202,6 +202,7 @@
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
                                     <connections>
+                                        <action selector="clearBrowsingData:" destination="U2w-H1-PkZ" eventType="touchUpInside" id="VkQ-JB-rHa"/>
                                         <action selector="clearHistory:" destination="bgj-w0-VgC" eventType="touchUpInside" id="eNd-gX-FXO"/>
                                     </connections>
                                 </button>
@@ -256,6 +257,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzH-Lv-A1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="U2w-H1-PkZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1267.5" y="-482.74647887323943"/>
         </scene>
