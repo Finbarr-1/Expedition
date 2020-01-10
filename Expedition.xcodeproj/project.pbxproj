@@ -134,13 +134,13 @@
 				00C4A4C523C509E800C18F65 /* Settings.bundle */,
 				0016FC3C23A6B801000D0022 /* DarkAppIcon */,
 				005932CF234D747100DC2323 /* Expedition.entitlements */,
+				5D1D0D5623C6AE7600B4377E /* History.xcdatamodeld */,
 				001366B72307B61F009A102E /* AppDelegate.swift */,
 				5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */,
 				5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */,
 				001366B92307B61F009A102E /* SearchingViewController.swift */,
 				5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */,
 				5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */,
-				5D1D0D5623C6AE7600B4377E /* History.xcdatamodeld */,
 				5D1D0D5B23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift */,
 				5D1D0D5C23C6F1CB00B4377E /* HistoryElement+CoreDataProperties.swift */,
 				D6F21CAF23C409AE004C79EC /* code.swift */,
@@ -517,15 +517,15 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.expedition;
+				MARKETING_VERSION = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -543,15 +543,15 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 6.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.expedition;
+				MARKETING_VERSION = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
