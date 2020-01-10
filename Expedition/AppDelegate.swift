@@ -16,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        UserDefaults.standard.set(ViewController().credits, forKey: "creditsTitle")
+        let roleArray = ViewController().credits.components(separatedBy: ";")
+        for person in roleArray {
+            let personArray = person.components(separatedBy: ":")
+            let personName = personArray[0]
+            let personRole = personArray[1]
+            UserDefaults.standard.set(personName, forKey: personRole)
+        }
+//        UserDefaults.standard.set(ViewController().credits, forKey: "creditsTitle")
         return true
     }
 
