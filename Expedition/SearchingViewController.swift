@@ -15,7 +15,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
 
     var userAgentVar: String = "mobile" //User agent
-    let credits: String = "zeqe golomb, finbarr o'connell, jackson yan, julian wright" //Credits
+    let credits: String = "zeqe golomb:ui designer;finbarr oconnell:programmer;jackson yan:programmer;julian wright:programmer" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
     var components = URLComponents(string: "https://duckduckgo.com/") //search engine
     
