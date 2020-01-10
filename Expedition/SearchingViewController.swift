@@ -8,6 +8,7 @@
 import UIKit
 import WebKit
 import Foundation
+import CoreData
 
 class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegate {
 
@@ -99,33 +100,41 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     func openUrl(urlString: String) {
-        if (verifyUrl(urlString: searchBar.text!)) {
+        if (verifyUrl(urlString: urlString)) {
             
-            var url = URL(string: searchBar.text!)
-            if (searchBar.text!.starts(with: "http://") || searchBar.text!.starts(with: "https://")) {
-                print(searchBar.text!)
+            var url = URL(string: urlString)
+            if (urlString.starts(with: "http://") || urlString.starts(with: "https://")) {
+                print(urlString)
             } else {
-                url = URL(string: "http://\(searchBar.text!)")
+                url = URL(string: "http://\(urlString)")
             }
             
-            searchBar.text = url?.absoluteString;
+            //searchBar.text = url?.absoluteString;
             
             let request = URLRequest(url: url!)
             
             webView?.load(request)
         }
         else {
-            let queryItemQuery = URLQueryItem(name: "q", value: searchBar.text!);
-            
-            components?.queryItems = [queryItemQuery]
-            
-            let request = URLRequest(url: (components?.url)!)
-            
-            var urlForHistory = request // <- will be used once we get a array working
-            
-            print(userAgentVar)
+            let request = searchText(urlString: urlString)
             
             webView?.load(request)
+        }
+    }
+    
+    func openHistoryUrl(index: Int) {
+        print(HistoryTableViewController().historyArray)
+        
+        let fetchRequest: NSFetchRequest<HistoryElement> = HistoryElement.fetchRequest()
+        
+        var historyArray = [HistoryElement]()
+        
+        do {
+            historyArray = try PersistenceService.context.fetch(fetchRequest)
+            let url = historyArray[index].url
+            openUrl(urlString: url!)
+        } catch {
+            print("ERROR OCCURRED")
         }
     }
     
@@ -155,32 +164,31 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-            
+        
+        print("yes")
+        
             let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
             
-            if let components = components {
-                components.host
-                components.query
-                components.percentEncodedQuery
+        if let components = components {
+            components.host
+            components.query
+            components.percentEncodedQuery
+            
+            print("query items")
+            print(components.queryItems)
 
-                if let queryItems = components.queryItems {
-                    for queryItem in queryItems {
-                        if queryItem.name == "url" {
-                            openUrl(urlString: queryItem.value!)
-                        }
+            if let queryItems = components.queryItems {
+                for queryItem in queryItems {
+                    if queryItem.name == "url" {
+                        openUrl(urlString: queryItem.value!)
                     }
                 }
             }
-
-            
-    //        let alertController = UIAlertController(title: "Incoming Message", message: message, preferredStyle: .alert)
-    //            let okAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
-    //        alertController.addAction(okAction)
-    //
-    //        window?.rootViewController?.present(alertController, animated: true, completion: nil)
-            
-            return true
+        }
+        
+        return true;
     }
+    
 
     @IBAction func reloadSwipe(_ sender: Any) {
    
@@ -191,15 +199,15 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBAction func desktopSiteSwipe(_ sender: Any) {
         if userAgentVar == "mobile" {
             webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Expedition/605.1.15"
-        let userAgentVar: String = "desktop"
+            let userAgentVar: String = "desktop"
             print(userAgentVar)
             webView.reload()
         }
         
         if userAgentVar == "desktop" {
             webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
-               let userAgentVar: String = "mobile"
-                   print(userAgentVar)
+            let userAgentVar: String = "mobile"
+            print(userAgentVar)
             webView.reload()
         }
    

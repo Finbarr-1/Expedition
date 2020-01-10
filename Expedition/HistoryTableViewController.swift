@@ -77,6 +77,13 @@ class HistoryTableViewController: UITableViewController {
         return true
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        dismiss(animated: true, completion: nil)
+        ViewController().openHistoryUrl(index: indexPath.row)
+    }
+
+
+    
 
     /*
     // Override to support editing the table view.
