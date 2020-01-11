@@ -44,7 +44,12 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         Code().work()
     }
-
+    
+    func displayShareSheet(shareContent:String) {
+        let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
+        present(activityViewController, animated: true, completion: {})
+    }
+    
     func socialMedia(urlString: String) {
         let url = URL(string: urlString)
 
