@@ -31,7 +31,7 @@ class OptionsViewController: UIViewController {
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
-        alert.addAction(UIAlertAction(title: "Clear", style: .destructive, handler: { action in
+        alert.addAction(UIAlertAction(title: "Clear", style: .default, handler: { action in
             self.doTheClearHistory()
         }))
 
