@@ -178,9 +178,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             components.host
             components.query
             components.percentEncodedQuery
-            
-            print("query items")
-            print(components.queryItems)
 
             if let queryItems = components.queryItems {
                 for queryItem in queryItems {
@@ -203,14 +200,14 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
 
     @IBAction func desktopSiteSwipe(_ sender: Any) {
         if userAgentVar == "mobile" {
-            webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Expedition/605.1.15"
+            webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Expedition/605.1.15"
             let userAgentVar: String = "desktop"
             print(userAgentVar)
             webView.reload()
         }
         
         if userAgentVar == "desktop" {
-            webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
+            webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Mobile/15E148 Expedition/604.1"
             let userAgentVar: String = "mobile"
             print(userAgentVar)
             webView.reload()
