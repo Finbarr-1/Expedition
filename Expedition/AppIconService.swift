@@ -13,8 +13,8 @@ class AppIconService {
     let application = UIApplication.shared
     
     enum AppIcon: String {
-        case primaryAppIcon
-        case darkAppIcon
+        case LightIcon
+        case DarkIcon
         
     }
     

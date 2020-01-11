@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let personArray = person.components(separatedBy: ":")
             let personName = personArray[0]
             let personRole = personArray[1]
-            UserDefaults.standard.set(personName, forKey: personRole)
+            print(personName + ": " + personRole)
+            UserDefaults.standard.set(personRole, forKey: personName)
         }
 //        UserDefaults.standard.set(ViewController().credits, forKey: "creditsTitle")
         return true

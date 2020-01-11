@@ -16,7 +16,7 @@
 		001366D82307B620009A102E /* ExpeditionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366D72307B620009A102E /* ExpeditionUITests.swift */; };
 		001366E72307BEA9009A102E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001366E62307BEA9009A102E /* WebKit.framework */; };
 		0016FC5E23A6BFAC000D0022 /* AppIconService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0016FC5D23A6BFAC000D0022 /* AppIconService.swift */; };
-		00A91DBC23A84AFF00F045F7 /* 60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBA23A84AFF00F045F7 /* 60@2x.png */; };
+		00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBA23A84AFF00F045F7 /* DarkIcon@2x.png */; };
 		00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBB23A84AFF00F045F7 /* 60@3x.png */; };
 		00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00C4A4C523C509E800C18F65 /* Settings.bundle */; };
 		5D1D0D5823C6AE7600B4377E /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5623C6AE7600B4377E /* History.xcdatamodeld */; };
@@ -28,6 +28,7 @@
 		5D5BA2E223C5910C00D98050 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */; };
 		D6030CDC23A89669003C6911 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDB23A89669003C6911 /* Gestures.swift */; };
 		D6030CDE23A89A96003C6911 /* Dark and Light.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDD23A89A96003C6911 /* Dark and Light.swift */; };
+		D64CA0C923C94E6600619E00 /* LightIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CA0C823C94E6600619E00 /* LightIcon@2x.png */; };
 		D6F21CB023C409AE004C79EC /* code.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F21CAF23C409AE004C79EC /* code.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +66,7 @@
 		001366E62307BEA9009A102E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		0016FC5D23A6BFAC000D0022 /* AppIconService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconService.swift; sourceTree = "<group>"; };
 		005932CF234D747100DC2323 /* Expedition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expedition.entitlements; sourceTree = "<group>"; };
-		00A91DBA23A84AFF00F045F7 /* 60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@2x.png"; sourceTree = "<group>"; };
+		00A91DBA23A84AFF00F045F7 /* DarkIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DarkIcon@2x.png"; sourceTree = "<group>"; };
 		00A91DBB23A84AFF00F045F7 /* 60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@3x.png"; sourceTree = "<group>"; };
 		00C4A4C523C509E800C18F65 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		5D1D0D5723C6AE7600B4377E /* History.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = History.xcdatamodel; sourceTree = "<group>"; };
@@ -77,6 +78,7 @@
 		5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		D6030CDD23A89A96003C6911 /* Dark and Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dark and Light.swift"; sourceTree = "<group>"; };
+		D64CA0C823C94E6600619E00 /* LightIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightIcon@2x.png"; sourceTree = "<group>"; };
 		D6F21CAF23C409AE004C79EC /* code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 				00C4A4C523C509E800C18F65 /* Settings.bundle */,
 				0016FC3C23A6B801000D0022 /* DarkAppIcon */,
 				005932CF234D747100DC2323 /* Expedition.entitlements */,
+				00A91DBA23A84AFF00F045F7 /* DarkIcon@2x.png */,
 				5D1D0D5623C6AE7600B4377E /* History.xcdatamodeld */,
 				001366B72307B61F009A102E /* AppDelegate.swift */,
 				5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */,
@@ -143,6 +146,7 @@
 				5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */,
 				5D1D0D5B23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift */,
 				5D1D0D5C23C6F1CB00B4377E /* HistoryElement+CoreDataProperties.swift */,
+				D64CA0C823C94E6600619E00 /* LightIcon@2x.png */,
 				D6F21CAF23C409AE004C79EC /* code.swift */,
 				0016FC5D23A6BFAC000D0022 /* AppIconService.swift */,
 				D6030CDD23A89A96003C6911 /* Dark and Light.swift */,
@@ -184,7 +188,6 @@
 		0016FC3C23A6B801000D0022 /* DarkAppIcon */ = {
 			isa = PBXGroup;
 			children = (
-				00A91DBA23A84AFF00F045F7 /* 60@2x.png */,
 				00A91DBB23A84AFF00F045F7 /* 60@3x.png */,
 			);
 			path = DarkAppIcon;
@@ -294,8 +297,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00A91DBC23A84AFF00F045F7 /* 60@2x.png in Resources */,
+				00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */,
 				00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */,
+				D64CA0C923C94E6600619E00 /* LightIcon@2x.png in Resources */,
 				001366C22307B620009A102E /* LaunchScreen.storyboard in Resources */,
 				001366BF2307B620009A102E /* Assets.xcassets in Resources */,
 				00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */,
@@ -517,7 +521,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				DEVELOPMENT_TEAM = N88X7JF75R;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -525,7 +529,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = net.Expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -543,7 +547,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				DEVELOPMENT_TEAM = N88X7JF75R;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -551,7 +555,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = net.Expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";

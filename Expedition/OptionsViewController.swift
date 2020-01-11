@@ -54,7 +54,20 @@ class OptionsViewController: UIViewController {
             historySwitch.setOn(saveHistory, animated: false)
         }
     }
-
+    
+    let appIconService = AppIconService()
+       //app icon changer
+    
+    
+    @IBAction func didTapLightIcon(_ sender: UIButton) {
+        print("LIGHT ICON TAPPED")
+        UIApplication.shared.setAlternateIconName("LightIcon")
+    }
+    
+    @IBAction func didTapDarkIcon(_ sender: UIButton) {
+        print("DARK ICON TAPPED")
+        UIApplication.shared.setAlternateIconName("DarkIcon")
+    }
     /*
     // MARK: - Navigation
 
