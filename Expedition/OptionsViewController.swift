@@ -47,7 +47,7 @@ class OptionsViewController: UIViewController {
            PersistenceService.saveContext()
            HistoryTableViewController().tableView.reloadData()
         }
-        print("history cleared",HistoryTableViewController().historyArray)
+        print("history cleared", HistoryTableViewController().historyArray)
     }
     
     @IBAction func historySwitchValueChange(_ sender: Any) {
