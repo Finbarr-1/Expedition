@@ -27,12 +27,12 @@ class OptionsViewController: UIViewController {
     }
     
     @IBAction func clearHistory(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Warning", message: "Clear history?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Clear History?", message: "Are you sure you want to clear history?", preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+        alert.addAction(UIAlertAction(title: "Clear", style: .default, handler: { action in
             self.doTheClearHistory()
         }))
-        alert.addAction(UIAlertAction(title: "False", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
 
         self.present(alert, animated: true)
     }
