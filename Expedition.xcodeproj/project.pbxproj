@@ -136,9 +136,8 @@
 				00C4A4C523C509E800C18F65 /* Settings.bundle */,
 				0016FC3C23A6B801000D0022 /* DarkAppIcon */,
 				005932CF234D747100DC2323 /* Expedition.entitlements */,
-				D64CA0C823C94E6600619E00 /* LightIcon@2x.png */,
-				00A91DBA23A84AFF00F045F7 /* DarkIcon@2x.png */,
 				5D1D0D5623C6AE7600B4377E /* History.xcdatamodeld */,
+				D64CA0C823C94E6600619E00 /* LightIcon@2x.png */,
 				001366B72307B61F009A102E /* AppDelegate.swift */,
 				5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */,
 				5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */,
@@ -188,6 +187,7 @@
 		0016FC3C23A6B801000D0022 /* DarkAppIcon */ = {
 			isa = PBXGroup;
 			children = (
+				00A91DBA23A84AFF00F045F7 /* DarkIcon@2x.png */,
 				00A91DBB23A84AFF00F045F7 /* 60@3x.png */,
 			);
 			path = DarkAppIcon;
