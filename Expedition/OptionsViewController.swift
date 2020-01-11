@@ -27,17 +27,29 @@ class OptionsViewController: UIViewController {
     }
     
     @IBAction func clearHistory(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Warning", message: "Clear history?", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+            self.doTheClearHistory()
+        }))
+        alert.addAction(UIAlertAction(title: "False", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true)
+    }
+    
+    func doTheClearHistory() {
         HistoryTableViewController().historyArray = [HistoryElement]()
         let fetchRequest: NSFetchRequest<HistoryElement> = HistoryElement.fetchRequest()
         if let result = try? PersistenceService.context.fetch(fetchRequest) {
-            for object in result {
-                PersistenceService.context.delete(object)
-            }
-            PersistenceService.saveContext()
-            HistoryTableViewController().tableView.reloadData()
+           for object in result {
+               PersistenceService.context.delete(object)
+           }
+           PersistenceService.saveContext()
+           HistoryTableViewController().tableView.reloadData()
         }
         print("history cleared",HistoryTableViewController().historyArray)
     }
+    
     @IBAction func historySwitchValueChange(_ sender: Any) {
         UserDefaults.standard.set(historySwitch.isOn, forKey: "save_history")
         UserDefaults.standard.synchronize()
@@ -55,17 +67,11 @@ class OptionsViewController: UIViewController {
         }
     }
     
-    let appIconService = AppIconService()
-       //app icon changer
-    
-    
     @IBAction func didTapLightIcon(_ sender: UIButton) {
-        print("LIGHT ICON TAPPED")
         UIApplication.shared.setAlternateIconName("LightIcon")
     }
     
     @IBAction func didTapDarkIcon(_ sender: UIButton) {
-        print("DARK ICON TAPPED")
         UIApplication.shared.setAlternateIconName("DarkIcon")
     }
     /*
