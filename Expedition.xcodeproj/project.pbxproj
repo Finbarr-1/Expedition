@@ -17,6 +17,7 @@
 		00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBA23A84AFF00F045F7 /* DarkIcon@2x.png */; };
 		00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBB23A84AFF00F045F7 /* 60@3x.png */; };
 		00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00C4A4C523C509E800C18F65 /* Settings.bundle */; };
+		5D04120E23CBE25F008F0C6B /* VortexIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D04120D23CBE25F008F0C6B /* VortexIcon@2x.png */; };
 		5D1D0D5823C6AE7600B4377E /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5623C6AE7600B4377E /* History.xcdatamodeld */; };
 		5D1D0D5A23C6B0B300B4377E /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */; };
 		5D1D0D5D23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5B23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift */; };
@@ -25,7 +26,6 @@
 		5D41CBF123C569B6003A16F9 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */; };
 		5D41CBF323C5745C003A16F9 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */; };
 		5D5BA2E223C5910C00D98050 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */; };
-		5DAF618823CBE10000FF395A /* VortexIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DAF618723CBE10000FF395A /* VortexIcon@2x.png */; };
 		5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59FD23CB98C1007C6495 /* GlyphFade@2x.png */; };
 		5DE81BC323CBB45000F6FA33 /* ColorShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59E923CB986E007C6495 /* ColorShadow@2x.png */; };
 		5DE81BC423CBB45300F6FA33 /* Fading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59F623CB98AC007C6495 /* Fading@2x.png */; };
@@ -77,6 +77,7 @@
 		00AD5A0423CB98DB007C6495 /* LightBlue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightBlue@3x.png"; sourceTree = "<group>"; };
 		00AD5A0523CB98DC007C6495 /* LightBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightBlue@2x.png"; sourceTree = "<group>"; };
 		00C4A4C523C509E800C18F65 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		5D04120D23CBE25F008F0C6B /* VortexIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VortexIcon@2x.png"; path = "../../../../Expedition Icons/VortexIcon@2x.png"; sourceTree = "<group>"; };
 		5D1D0D5723C6AE7600B4377E /* History.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = History.xcdatamodel; sourceTree = "<group>"; };
 		5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		5D1D0D5B23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryElement+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 		5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
-		5DAF618723CBE10000FF395A /* VortexIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "VortexIcon@2x.png"; path = "../../../../Expedition Icons/VortexIcon@2x.png"; sourceTree = "<group>"; };
 		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		D64CA0C823C94E6600619E00 /* LightIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightIcon@2x.png"; sourceTree = "<group>"; };
 		D6F21CAF23C409AE004C79EC /* code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code.swift; sourceTree = "<group>"; };
@@ -235,7 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				5D30FC0C23CBBF4E00A1F9E1 /* DramaticIcon@2x.png */,
-				5DAF618723CBE10000FF395A /* VortexIcon@2x.png */,
+				5D04120D23CBE25F008F0C6B /* VortexIcon@2x.png */,
 			);
 			path = SecretIcons;
 			sourceTree = "<group>";
@@ -347,7 +347,7 @@
 				00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */,
 				5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */,
 				00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */,
-				5DAF618823CBE10000FF395A /* VortexIcon@2x.png in Resources */,
+				5D04120E23CBE25F008F0C6B /* VortexIcon@2x.png in Resources */,
 				D64CA0C923C94E6600619E00 /* LightIcon@2x.png in Resources */,
 				001366C22307B620009A102E /* LaunchScreen.storyboard in Resources */,
 				001366BF2307B620009A102E /* Assets.xcassets in Resources */,
