@@ -113,6 +113,19 @@ class OptionsViewController: UIViewController {
     @IBAction func didTapGlyphIcon(_ sender: UIButton) {
         UIApplication.shared.setAlternateIconName("GlyphIcon")
     }
+    
+    @IBAction func didTapShadowIcon(_ sender: UIButton) {
+        UIApplication.shared.setAlternateIconName("ColorShadow")
+    }
+    
+    @IBAction func didTapFadingIcon(_ sender: UIButton) {
+        UIApplication.shared.setAlternateIconName("FadingIcon")
+    }
+    
+    @IBAction func didTapLightBlueIcon(_ sender: Any) {
+        UIApplication.shared.setAlternateIconName("LightBlueIcon")
+    }
+    
     /*
     // MARK: - Navigation
 

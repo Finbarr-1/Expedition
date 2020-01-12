@@ -37,6 +37,33 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+            <key>ColorShadow</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>ColorShadow</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            <key>FadingIcon</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>Fading</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            <key>LightBlueIcon</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>LightBlue</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
 		</dict>
 		<key>CFBundlePrimaryIcon</key>
 		<dict>

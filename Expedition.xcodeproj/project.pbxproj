@@ -24,6 +24,10 @@
 		5D41CBF123C569B6003A16F9 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */; };
 		5D41CBF323C5745C003A16F9 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */; };
 		5D5BA2E223C5910C00D98050 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */; };
+		5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59FD23CB98C1007C6495 /* GlyphFade@2x.png */; };
+		5DE81BC323CBB45000F6FA33 /* ColorShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59E923CB986E007C6495 /* ColorShadow@2x.png */; };
+		5DE81BC423CBB45300F6FA33 /* Fading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59F623CB98AC007C6495 /* Fading@2x.png */; };
+		5DE81BC523CBB45700F6FA33 /* LightBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD5A0523CB98DC007C6495 /* LightBlue@2x.png */; };
 		D6030CDC23A89669003C6911 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDB23A89669003C6911 /* Gestures.swift */; };
 		D64CA0C923C94E6600619E00 /* LightIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CA0C823C94E6600619E00 /* LightIcon@2x.png */; };
 		D6F21CB023C409AE004C79EC /* code.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F21CAF23C409AE004C79EC /* code.swift */; };
@@ -66,7 +70,7 @@
 		00AD59E923CB986E007C6495 /* ColorShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ColorShadow@2x.png"; sourceTree = "<group>"; };
 		00AD59F623CB98AC007C6495 /* Fading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fading@2x.png"; sourceTree = "<group>"; };
 		00AD59F723CB98AC007C6495 /* Fading@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fading@3x.png"; sourceTree = "<group>"; };
-		00AD59FD23CB98C1007C6495 /* GlyphFade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GlyphFade@2x.png"; sourceTree = "<group>"; };
+		00AD59FD23CB98C1007C6495 /* GlyphFade@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "GlyphFade@2x.png"; path = "../GlyphFade@2x.png"; sourceTree = "<group>"; };
 		00AD59FE23CB98C2007C6495 /* GlyphFade@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GlyphFade@3x.png"; sourceTree = "<group>"; };
 		00AD5A0423CB98DB007C6495 /* LightBlue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightBlue@3x.png"; sourceTree = "<group>"; };
 		00AD5A0523CB98DC007C6495 /* LightBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightBlue@2x.png"; sourceTree = "<group>"; };
@@ -134,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				00C4A4C523C509E800C18F65 /* Settings.bundle */,
-				00AD59FD23CB98C1007C6495 /* GlyphFade@2x.png */,
 				D64CA0C823C94E6600619E00 /* LightIcon@2x.png */,
 				0016FC3C23A6B801000D0022 /* DarkAppIcon */,
 				00AD59E723CB9865007C6495 /* ColorShadowAppIcon */,
@@ -208,6 +211,7 @@
 		00AD59FC23CB98B8007C6495 /* GlyphFadeAppIcon */ = {
 			isa = PBXGroup;
 			children = (
+				00AD59FD23CB98C1007C6495 /* GlyphFade@2x.png */,
 				00AD59FE23CB98C2007C6495 /* GlyphFade@3x.png */,
 			);
 			path = GlyphFadeAppIcon;
@@ -327,12 +331,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */,
+				5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */,
 				00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */,
 				D64CA0C923C94E6600619E00 /* LightIcon@2x.png in Resources */,
 				001366C22307B620009A102E /* LaunchScreen.storyboard in Resources */,
 				001366BF2307B620009A102E /* Assets.xcassets in Resources */,
+				5DE81BC323CBB45000F6FA33 /* ColorShadow@2x.png in Resources */,
+				5DE81BC423CBB45300F6FA33 /* Fading@2x.png in Resources */,
 				00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */,
 				001366BD2307B61F009A102E /* Main.storyboard in Resources */,
+				5DE81BC523CBB45700F6FA33 /* LightBlue@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

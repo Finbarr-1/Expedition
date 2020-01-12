@@ -260,6 +260,9 @@
                                     <state key="normal" image="ShadowUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
+                                    <connections>
+                                        <action selector="didTapShadowIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="XzW-hT-Ol8"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-Vs-hNj" userLabel="Light">
                                     <rect key="frame" x="64" y="305" width="248" height="248"/>
@@ -277,6 +280,9 @@
                                     <state key="normal" image="FadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
+                                    <connections>
+                                        <action selector="didTapFadingIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="lJx-rB-YT7"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi" userLabel="Dark">
                                     <rect key="frame" x="8" y="305" width="248" height="248"/>
@@ -295,6 +301,9 @@
                                     <state key="normal" image="BlueLightUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     </state>
+                                    <connections>
+                                        <action selector="didTapLightBlueIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="Zoc-HA-bSx"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
