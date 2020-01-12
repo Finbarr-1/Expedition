@@ -10,6 +10,15 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
+			<key>ColorShadow</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>ColorShadow</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>DarkIcon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -19,11 +28,11 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>LightIcon</key>
+			<key>FadingIcon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>LightIcon</string>
+					<string>Fading</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
@@ -37,33 +46,24 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-            <key>ColorShadow</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>ColorShadow</string>
-                </array>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-            </dict>
-            <key>FadingIcon</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>Fading</string>
-                </array>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-            </dict>
-            <key>LightBlueIcon</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>LightBlue</string>
-                </array>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-            </dict>
+			<key>LightBlueIcon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>LightBlue</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>LightIcon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>LightIcon</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 		</dict>
 		<key>CFBundlePrimaryIcon</key>
 		<dict>

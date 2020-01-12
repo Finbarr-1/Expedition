@@ -190,7 +190,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             userAgentVar = "desktop"
             print("USER AGENT: " + userAgentVar)
             webView.reload()
-        } else if userAgentVar == "desktop" {
+        } else {
             // switchtes to mobile useragent
             webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Mobile/15E148 Expedition/604.1"
             userAgentVar = "mobile"
@@ -206,9 +206,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }, completion: nil)
     
     }
-
-// webView.addObserver(self, forKeyPath: #keyPath(WKWebView.title), options: .new, context: nil) What's this for?
- 
+    
 }
 
 
