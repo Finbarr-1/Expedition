@@ -39,7 +39,7 @@ class OptionsViewController: UIViewController {
     }
     
     @IBAction func clearBrowsingData(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Clear Browsing Data", message: "Are you sure you want to clear browsing data?", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Clear Browsing Data", message: "Are you sure you want to clear cookies and history?", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
