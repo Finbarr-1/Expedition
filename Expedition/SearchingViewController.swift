@@ -14,7 +14,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
 
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
-
+    
     var userAgentVar: String = "mobile" //User agent
     let credits: String = "zeqe golomb:ui designer;finbarr oconnell:programmer;jackson yan:programmer;julian wright:programmer" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
@@ -197,7 +197,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         return true;
     }
-    
 
     @IBAction func reloadSwipe(_ sender: Any) {
    
@@ -219,10 +218,13 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             print("USER AGENT: " + userAgentVar)
             webView.reload()
         }
-   
-        UIView.animate(withDuration: 2, animations: {
-            self.searchBar.text = self.userAgentVar
-        })
+        
+        UIView.transition(with: searchBar,
+             duration: 1,
+              options: .transitionCrossDissolve,
+           animations: { [weak self] in
+            self?.searchBar.text = self?.userAgentVar
+        }, completion: nil)
     
     }
 
