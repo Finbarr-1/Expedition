@@ -13,6 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var scheme: String!
+    var path: String!
+
+    var query: String!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -49,6 +53,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         PersistenceService.saveContext()
+    }
+    
+    private func application(app: UIApplication, openURL url: NSURL, options: [String: AnyObject]) -> Bool {
+
+        scheme = url.scheme
+        path = url.path
+        query = url.query
+        
+        print("URL OPENED")
+        
+        return true
     }
 
 }
