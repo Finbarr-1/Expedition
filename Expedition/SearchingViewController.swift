@@ -74,7 +74,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
                             if queries[0] == "url" {
                                 openUrl(urlString: String(queries[1]))
                             }
-                            if queries[0] == "appIcon" {
+                            if queries[0].lowercased() == "appicon" {
                                 print("SHOULD CHANGE APP ICON")
                                 UIApplication.shared.setAlternateIconName(String(queries[1]))
                             }
@@ -85,8 +85,18 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             } else {
                 print("URL QUERY IS NIL")
             }
-            if url.host != nil {
-                
+            
+            let totalHost = url.absoluteString.split(separator: "?")[0].split(separator: "/")[1]
+            
+            if totalHost != nil {
+                let host = totalHost
+                print("URL HOST: " + host)
+                if (host.lowercased().contains(":")) {
+                    var parameters = host.split(separator: ":")
+                    if parameters[0].lowercased() == "icon" {
+                        UIApplication.shared.setAlternateIconName(String(parameters[1]))
+                    }
+                }
             } else {
                 print("URL HOST IS NIL")
             }
