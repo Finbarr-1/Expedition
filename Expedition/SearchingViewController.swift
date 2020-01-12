@@ -45,6 +45,13 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         Code().work()
     }
     
+    @IBAction func searchBarShare(_ sender: UILongPressGestureRecognizer) {
+        let textToShare = searchBar.text
+        if textToShare != nil {
+            displayShareSheet(shareContent: textToShare!)
+        }
+    }
+    
     func displayShareSheet(shareContent:String) {
         let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
         present(activityViewController, animated: true, completion: {})
