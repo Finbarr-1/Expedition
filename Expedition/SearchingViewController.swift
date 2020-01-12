@@ -15,6 +15,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
     
+    var appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     var userAgentVar: String = "mobile" //User agent
     let credits: String = "zeqe golomb:ui designer;finbarr oconnell:programmer;jackson yan:programmer;julian wright:programmer" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization
@@ -173,29 +175,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         openUrl(urlString: searchBar.text!)
         
-    }
-    
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        
-        print("yes")
-        
-            let components = URLComponents(url: url, resolvingAgainstBaseURL: false)
-            
-        if let components = components {
-            components.host
-            components.query
-            components.percentEncodedQuery
-
-            if let queryItems = components.queryItems {
-                for queryItem in queryItems {
-                    if queryItem.name == "url" {
-                        openUrl(urlString: queryItem.value!)
-                    }
-                }
-            }
-        }
-        
-        return true;
     }
 
     @IBAction func reloadSwipe(_ sender: Any) {
