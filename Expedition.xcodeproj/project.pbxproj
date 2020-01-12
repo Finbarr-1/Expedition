@@ -141,7 +141,7 @@
 			children = (
 				00C4A4C523C509E800C18F65 /* Settings.bundle */,
 				D64CA0C823C94E6600619E00 /* LightIcon@2x.png */,
-				5DE81BC623CBB83400F6FA33 /* DramaticAppIcon */,
+				5DE81BC623CBB83400F6FA33 /* SecretIcons */,
 				0016FC3C23A6B801000D0022 /* DarkAppIcon */,
 				00AD59E723CB9865007C6495 /* ColorShadowAppIcon */,
 				00AD59F523CB98A5007C6495 /* FadingAppIcon */,
@@ -229,12 +229,12 @@
 			path = LightBlueAppIcon;
 			sourceTree = "<group>";
 		};
-		5DE81BC623CBB83400F6FA33 /* DramaticAppIcon */ = {
+		5DE81BC623CBB83400F6FA33 /* SecretIcons */ = {
 			isa = PBXGroup;
 			children = (
 				5D30FC0C23CBBF4E00A1F9E1 /* DramaticIcon@2x.png */,
 			);
-			path = DramaticAppIcon;
+			path = SecretIcons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
