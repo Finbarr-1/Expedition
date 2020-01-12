@@ -72,7 +72,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
                         let queries = query.split(separator: "=")
                         if (queries[0] != nil && queries[1] != nil) {
                             if queries[0] == "url" {
-                                ViewController().openUrl(urlString: String(queries[1]))
+                                openUrl(urlString: String(queries[1]))
                             }
                             if queries[0] == "appIcon" {
                                 print("SHOULD CHANGE APP ICON")
