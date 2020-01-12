@@ -38,6 +38,27 @@ class OptionsViewController: UIViewController {
         self.present(alert, animated: true)
     }
     
+    @IBAction func clearBrowsingData(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Clear Browsing Data", message: "Are you sure you want to clear browsing data?", preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        alert.addAction(UIAlertAction(title: "Clear", style: .destructive, handler: { action in
+            self.doTheClearHistory()
+            self.removeCookies()
+        }))
+
+        self.present(alert, animated: true)
+    }
+    
+    func removeCookies(){
+        let cookieJar = HTTPCookieStorage.shared
+
+        for cookie in cookieJar.cookies! {
+            cookieJar.deleteCookie(cookie)
+        }
+    }
+    
     func doTheClearHistory() {
         HistoryTableViewController().historyArray = [HistoryElement]()
         let fetchRequest: NSFetchRequest<HistoryElement> = HistoryElement.fetchRequest()

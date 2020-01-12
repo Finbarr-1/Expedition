@@ -208,15 +208,13 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBAction func desktopSiteSwipe(_ sender: Any) {
         if userAgentVar == "mobile" {
             webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Expedition/605.1.15"
-            let userAgentVar: String = "desktop"
-            print(userAgentVar)
+            userAgentVar = "desktop"
+            print("USER AGENT: " + userAgentVar)
             webView.reload()
-        }
-        
-        if userAgentVar == "desktop" {
+        } else if userAgentVar == "desktop" {
             webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Mobile/15E148 Expedition/604.1"
-            let userAgentVar: String = "mobile"
-            print(userAgentVar)
+            userAgentVar = "mobile"
+            print("USER AGENT: " + userAgentVar)
             webView.reload()
         }
    
