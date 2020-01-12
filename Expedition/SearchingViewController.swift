@@ -15,6 +15,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
     
+    var appIconToChange:String = "nil"
+    
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     var userAgentVar: String = "mobile" //User agent
@@ -45,6 +47,12 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         ActInd?.hidesWhenStopped = true
         
         Code().work()
+        
+        print("ICON TO CHANGE: " + appIconToChange)
+        
+        if (appIconToChange != nil && appIconToChange != "nil") {
+            UIApplication.shared.setAlternateIconName(appIconToChange)
+        }
     }
     
     @IBAction func searchBarShare(_ sender: UILongPressGestureRecognizer) {
