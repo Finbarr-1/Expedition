@@ -210,7 +210,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-Vs-hNj">
-                                    <rect key="frame" x="162" y="359" width="120" height="120"/>
+                                    <rect key="frame" x="42" y="359" width="240" height="240"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="AppIconForUILight">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -220,7 +220,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi">
-                                    <rect key="frame" x="38" y="359" width="120" height="120"/>
+                                    <rect key="frame" x="38" y="359" width="240" height="240"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="AppIconForUIDark">
@@ -240,6 +240,7 @@
                                     <rect key="frame" x="233" y="134.5" width="51" height="31"/>
                                     <color key="onTintColor" name="Expedition Blue"/>
                                     <connections>
+                                        <action selector="cookiesSwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="I75-oW-yD2"/>
                                         <action selector="historySwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="PSJ-Bk-F2c"/>
                                     </connections>
                                 </switch>
@@ -307,6 +308,7 @@
                     </visualEffectView>
                     <connections>
                         <outlet property="historySwitch" destination="4S2-tN-yD7" id="WTe-wa-xHc"/>
+                        <outlet property="keepCookiesSwitch" destination="upf-2I-yKl" id="SmG-0j-0J0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzH-Lv-A1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
