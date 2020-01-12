@@ -3,7 +3,7 @@
 //  Expedition
 //
 //  Created by Zeqiel Golomb on 8/16/19.
-//  Copyright © 2019-2020 The Morning Company All rights reserved.
+//  Copyright © 2019-2020 The Morning Company. All rights reserved.
 
 import UIKit
 import WebKit
