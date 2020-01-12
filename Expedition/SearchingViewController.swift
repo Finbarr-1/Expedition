@@ -62,6 +62,39 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         }
     }
     
+    func schemeHandling(url: URL) {
+        if url != nil {
+            print("URL: " + url.absoluteString)
+            if url.query != nil {
+                let queryArray = url.query?.split(separator: "&")
+                if queryArray != nil {
+                    for query in queryArray! {
+                        let queries = query.split(separator: "=")
+                        if (queries[0] != nil && queries[1] != nil) {
+                            if queries[0] == "url" {
+                                ViewController().openUrl(urlString: String(queries[1]))
+                            }
+                            if queries[0] == "appIcon" {
+                                print("SHOULD CHANGE APP ICON")
+                                UIApplication.shared.setAlternateIconName(String(queries[1]))
+                            }
+                        }
+                        print("URL", queries[0], queries[1])
+                    }
+                }
+            } else {
+                print("URL QUERY IS NIL")
+            }
+            if url.host != nil {
+                
+            } else {
+                print("URL HOST IS NIL")
+            }
+        } else {
+            print("URL IS NIL")
+        }
+    }
+    
     func displayShareSheet(shareContent:String) {
         let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
         present(activityViewController, animated: true, completion: {})
@@ -177,11 +210,16 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         searchBar.resignFirstResponder()
         
-        searchBar.text = searchBar.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-        
-        searchBar.text = searchBar.text!.lowercased()
-        
-        openUrl(urlString: searchBar.text!)
+        if (searchBar.text?.lowercased().starts(with: "expedition://"))! {
+            print(searchBar.text!)
+            let urlToHandle = URL(string: searchBar.text!)
+            schemeHandling(url: urlToHandle!)
+        } else {
+            searchBar.text = searchBar.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+            searchBar.text = searchBar.text!.lowercased()
+            openUrl(urlString: searchBar.text!)
+        }
         
     }
 

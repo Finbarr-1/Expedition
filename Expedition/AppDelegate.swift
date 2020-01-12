@@ -65,36 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         print("URL OPENED")
         
-        if url != nil {
-            print("URL: " + url.absoluteString)
-            if url.query != nil {
-                let queryArray = url.query?.split(separator: "&")
-                if queryArray != nil {
-                    for query in queryArray! {
-                        let queries = query.split(separator: "=")
-                        if (queries[0] != nil && queries[1] != nil) {
-                            if queries[0] == "url" {
-                                ViewController().openUrl(urlString: String(queries[1]))
-                            }
-                            if queries[0] == "appIcon" {
-                                print("SHOULD CHANGE APP ICON")
-                                ViewController().appIconToChange = String(queries[1])
-                            }
-                        }
-                        print("URL", queries[0], queries[1])
-                    }
-                }
-            } else {
-                print("URL QUERY IS NIL")
-            }
-            if url.host != nil {
-                
-            } else {
-                print("URL HOST IS NIL")
-            }
-        } else {
-            print("URL IS NIL")
-        }
+        ViewController().schemeHandling(url: url)
         
         return true
     }
