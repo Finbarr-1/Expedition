@@ -109,6 +109,10 @@ class OptionsViewController: UIViewController {
     @IBAction func didTapDarkIcon(_ sender: UIButton) {
         UIApplication.shared.setAlternateIconName("DarkIcon")
     }
+    
+    @IBAction func didTapGlyphIcon(_ sender: UIButton) {
+        UIApplication.shared.setAlternateIconName("GlyphIcon")
+    }
     /*
     // MARK: - Navigation
 

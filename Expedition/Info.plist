@@ -28,6 +28,15 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+			<key>GlyphIcon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>GlyphFade</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 		</dict>
 		<key>CFBundlePrimaryIcon</key>
 		<dict>
