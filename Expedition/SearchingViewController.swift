@@ -207,17 +207,22 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
 
     @IBAction func desktopSiteSwipe(_ sender: Any) {
         if userAgentVar == "mobile" {
+            // switches to desktop useragent
             webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Expedition/605.1.15"
             userAgentVar = "desktop"
             print("USER AGENT: " + userAgentVar)
             webView.reload()
         } else if userAgentVar == "desktop" {
+            // switchtes to mobile useragent
             webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Mobile/15E148 Expedition/604.1"
             userAgentVar = "mobile"
             print("USER AGENT: " + userAgentVar)
             webView.reload()
         }
    
+        UIView.animate(withDuration: 2, animations: {
+            self.searchBar.text = self.userAgentVar
+        })
     
     }
 
