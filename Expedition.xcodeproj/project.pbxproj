@@ -21,6 +21,7 @@
 		5D1D0D5A23C6B0B300B4377E /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */; };
 		5D1D0D5D23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5B23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift */; };
 		5D1D0D5E23C6F1CB00B4377E /* HistoryElement+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5C23C6F1CB00B4377E /* HistoryElement+CoreDataProperties.swift */; };
+		5D30FC0D23CBBF4E00A1F9E1 /* DramaticIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D30FC0C23CBBF4E00A1F9E1 /* DramaticIcon@2x.png */; };
 		5D41CBF123C569B6003A16F9 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */; };
 		5D41CBF323C5745C003A16F9 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */; };
 		5D5BA2E223C5910C00D98050 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */; };
@@ -79,6 +80,7 @@
 		5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		5D1D0D5B23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryElement+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5D1D0D5C23C6F1CB00B4377E /* HistoryElement+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryElement+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5D30FC0C23CBBF4E00A1F9E1 /* DramaticIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DramaticIcon@2x.png"; sourceTree = "<group>"; };
 		5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 		5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			children = (
 				00C4A4C523C509E800C18F65 /* Settings.bundle */,
 				D64CA0C823C94E6600619E00 /* LightIcon@2x.png */,
+				5DE81BC623CBB83400F6FA33 /* DramaticAppIcon */,
 				0016FC3C23A6B801000D0022 /* DarkAppIcon */,
 				00AD59E723CB9865007C6495 /* ColorShadowAppIcon */,
 				00AD59F523CB98A5007C6495 /* FadingAppIcon */,
@@ -224,6 +227,14 @@
 				00AD5A0423CB98DB007C6495 /* LightBlue@3x.png */,
 			);
 			path = LightBlueAppIcon;
+			sourceTree = "<group>";
+		};
+		5DE81BC623CBB83400F6FA33 /* DramaticAppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				5D30FC0C23CBBF4E00A1F9E1 /* DramaticIcon@2x.png */,
+			);
+			path = DramaticAppIcon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 				00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */,
 				001366BD2307B61F009A102E /* Main.storyboard in Resources */,
 				5DE81BC523CBB45700F6FA33 /* LightBlue@2x.png in Resources */,
+				5D30FC0D23CBBF4E00A1F9E1 /* DramaticIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -581,7 +593,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -589,7 +601,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
