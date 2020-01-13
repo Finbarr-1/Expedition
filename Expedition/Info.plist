@@ -10,6 +10,15 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
+            <key>morningicon</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>MorningIcon</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
             <key>blurryicon</key>
             <dict>
                 <key>CFBundleIconFiles</key>
