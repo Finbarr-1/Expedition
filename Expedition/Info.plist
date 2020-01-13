@@ -10,6 +10,24 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
+            <key>blurryicon</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>BlurryIcon</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            <key>pixelatedicon</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>PixelatedIcon</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
 			<key>paper</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
