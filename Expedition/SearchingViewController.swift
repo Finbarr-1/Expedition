@@ -48,10 +48,19 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         Code().work()
         
-        print("ICON TO CHANGE: " + appIconToChange)
+        let fetchRequest: NSFetchRequest<HistoryElement> = HistoryElement.fetchRequest()
         
-        if (appIconToChange != nil && appIconToChange != "nil") {
-            UIApplication.shared.setAlternateIconName(appIconToChange)
+        do {
+            let historyArray = try PersistenceService.context.fetch(fetchRequest)
+            if historyArray.count > 0 {
+                openUrl(urlString: historyArray[0].url!)
+                print("OPEN: ", historyArray[0].url!)
+            } else {
+                openUrl(urlString: url!.absoluteString)
+                print("OPEN: ", url?.absoluteString)
+            }
+        } catch {
+            print("ERROR OCCURRED")
         }
     }
     
