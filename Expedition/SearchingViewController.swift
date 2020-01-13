@@ -50,7 +50,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         do {
             let historyArray = try PersistenceService.context.fetch(fetchRequest)
-            print("HISTORY ARRAY: ", historyArray[0].url!)
             if historyArray.count > 0 {
                 openUrl(urlString: historyArray[0].url!)
             }
