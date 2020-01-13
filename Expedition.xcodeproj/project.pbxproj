@@ -33,6 +33,7 @@
 		5DE81BC423CBB45300F6FA33 /* Fading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59F623CB98AC007C6495 /* Fading@2x.png */; };
 		5DE81BC523CBB45700F6FA33 /* LightBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD5A0523CB98DC007C6495 /* LightBlue@2x.png */; };
 		D6030CDC23A89669003C6911 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDB23A89669003C6911 /* Gestures.swift */; };
+		D635B71A23CC07D6006B33F1 /* ThePurpleOne@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D635B71923CC07D6006B33F1 /* ThePurpleOne@2x.png */; };
 		D64CA0C923C94E6600619E00 /* LightIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CA0C823C94E6600619E00 /* LightIcon@2x.png */; };
 		D6F21CB023C409AE004C79EC /* code.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F21CAF23C409AE004C79EC /* code.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		5D9B0E4223CBE355006713A4 /* VortexIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VortexIcon@2x.png"; sourceTree = "<group>"; };
 		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
+		D635B71923CC07D6006B33F1 /* ThePurpleOne@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThePurpleOne@2x.png"; sourceTree = "<group>"; };
 		D64CA0C823C94E6600619E00 /* LightIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightIcon@2x.png"; sourceTree = "<group>"; };
 		D6F21CAF23C409AE004C79EC /* code.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = code.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +242,7 @@
 			children = (
 				006302BA23CC04760074BE1C /* DramaticIcon@2x.png */,
 				006302B923CC04760074BE1C /* Halftone@2x.png */,
+				D635B71923CC07D6006B33F1 /* ThePurpleOne@2x.png */,
 				006302BB23CC04760074BE1C /* IOS6@2x.png */,
 				5D9B0E4223CBE355006713A4 /* VortexIcon@2x.png */,
 			);
@@ -361,6 +364,7 @@
 				5DE81BC323CBB45000F6FA33 /* ColorShadow@2x.png in Resources */,
 				5DE81BC423CBB45300F6FA33 /* Fading@2x.png in Resources */,
 				00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */,
+				D635B71A23CC07D6006B33F1 /* ThePurpleOne@2x.png in Resources */,
 				006302BD23CC04760074BE1C /* DramaticIcon@2x.png in Resources */,
 				006302BC23CC04760074BE1C /* Halftone@2x.png in Resources */,
 				001366BD2307B61F009A102E /* Main.storyboard in Resources */,

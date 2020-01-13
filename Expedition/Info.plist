@@ -91,6 +91,15 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+			<key>thepurpleone</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>ThePurpleOne</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>vortexicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
