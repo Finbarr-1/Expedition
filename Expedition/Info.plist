@@ -10,33 +10,6 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<key>soft</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>Soft</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>ios6</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>IOS6</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>halftone</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>Halftone</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
 			<key>colorshadow</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -82,6 +55,24 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+			<key>halftone</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Halftone</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>ios6</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>IOS6</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>lightblueicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -96,6 +87,15 @@
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>LightIcon</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>soft</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Soft</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>

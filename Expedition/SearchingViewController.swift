@@ -86,17 +86,10 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
                 print("URL QUERY IS NIL")
             }
             
-            let totalHost = url.absoluteString.split(separator: "?")[0].split(separator: "/")[1]
-            
-            if totalHost != nil {
-                let host = totalHost
-                print("URL HOST: " + host)
-                if (host.lowercased().contains(":")) {
-                    var parameters = host.split(separator: ":")
-                    if parameters[0].lowercased() == "icon" {
-                        UIApplication.shared.setAlternateIconName(String(parameters[1]).lowercased())
-                    }
-                }
+            if url.host != nil {
+                let host = url.host
+                print("URL HOST: " + host!)
+                UIApplication.shared.setAlternateIconName(host!.lowercased())
             } else {
                 print("URL HOST IS NIL")
             }
