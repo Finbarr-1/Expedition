@@ -10,7 +10,7 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<key>ColorShadow</key>
+			<key>colorshadow</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
@@ -19,7 +19,7 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>DarkIcon</key>
+			<key>darkicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
@@ -28,7 +28,7 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>DramaticIcon</key>
+			<key>dramaticicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
@@ -37,7 +37,7 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>FadingIcon</key>
+			<key>fadingicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
@@ -46,7 +46,7 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>GlyphIcon</key>
+			<key>glyphicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
@@ -55,7 +55,7 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>LightBlueIcon</key>
+			<key>lightblueicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
@@ -64,7 +64,7 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>LightIcon</key>
+			<key>lighticon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
@@ -73,7 +73,7 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>VortexIcon</key>
+			<key>vortexicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>

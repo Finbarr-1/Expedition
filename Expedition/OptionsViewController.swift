@@ -103,27 +103,27 @@ class OptionsViewController: UIViewController {
     }
     
     @IBAction func didTapLightIcon(_ sender: UIButton) {
-        UIApplication.shared.setAlternateIconName("LightIcon")
+        UIApplication.shared.setAlternateIconName("lighticon")
     }
     
     @IBAction func didTapDarkIcon(_ sender: UIButton) {
-        UIApplication.shared.setAlternateIconName("DarkIcon")
+        UIApplication.shared.setAlternateIconName("darkicon")
     }
     
     @IBAction func didTapGlyphIcon(_ sender: UIButton) {
-        UIApplication.shared.setAlternateIconName("GlyphIcon")
+        UIApplication.shared.setAlternateIconName("glyphicon")
     }
     
     @IBAction func didTapShadowIcon(_ sender: UIButton) {
-        UIApplication.shared.setAlternateIconName("ColorShadow")
+        UIApplication.shared.setAlternateIconName("coloricon")
     }
     
     @IBAction func didTapFadingIcon(_ sender: UIButton) {
-        UIApplication.shared.setAlternateIconName("FadingIcon")
+        UIApplication.shared.setAlternateIconName("fadingicon")
     }
     
     @IBAction func didTapLightBlueIcon(_ sender: Any) {
-        UIApplication.shared.setAlternateIconName("LightBlueIcon")
+        UIApplication.shared.setAlternateIconName("lightblueicon")
     }
     
     /*
