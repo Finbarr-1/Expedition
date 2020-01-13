@@ -10,7 +10,16 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<key>colorshadow</key>
+			<key>paper</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Paper</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>soft</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
@@ -96,6 +105,15 @@
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>Soft</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>thepurpleone</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>ThePurpleOne</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
