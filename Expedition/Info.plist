@@ -10,6 +10,24 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
+			<key>paper</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Paper</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>soft</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Soft</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>ios6</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
