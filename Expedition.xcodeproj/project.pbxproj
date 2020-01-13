@@ -21,6 +21,7 @@
 		006302BE23CC04760074BE1C /* IOS6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006302BB23CC04760074BE1C /* IOS6@2x.png */; };
 		00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBA23A84AFF00F045F7 /* DarkIcon@2x.png */; };
 		00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBB23A84AFF00F045F7 /* 60@3x.png */; };
+		00AB6BA623CD37DE0088E269 /* Metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AB6BA523CD37DD0088E269 /* Metal@2x.png */; };
 		00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00C4A4C523C509E800C18F65 /* Settings.bundle */; };
 		00EED5FC23CD370C00A1E258 /* Black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EED5FB23CD370C00A1E258 /* Black@2x.png */; };
 		5D1D0D5823C6AE7600B4377E /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5623C6AE7600B4377E /* History.xcdatamodeld */; };
@@ -81,6 +82,7 @@
 		006302BB23CC04760074BE1C /* IOS6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IOS6@2x.png"; sourceTree = "<group>"; };
 		00A91DBA23A84AFF00F045F7 /* DarkIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DarkIcon@2x.png"; sourceTree = "<group>"; };
 		00A91DBB23A84AFF00F045F7 /* 60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60@3x.png"; sourceTree = "<group>"; };
+		00AB6BA523CD37DD0088E269 /* Metal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Metal@2x.png"; sourceTree = "<group>"; };
 		00AD59E823CB986D007C6495 /* ColorShadow@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ColorShadow@3x.png"; sourceTree = "<group>"; };
 		00AD59E923CB986E007C6495 /* ColorShadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ColorShadow@2x.png"; sourceTree = "<group>"; };
 		00AD59F623CB98AC007C6495 /* Fading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fading@2x.png"; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 			children = (
 				00EED5FB23CD370C00A1E258 /* Black@2x.png */,
 				006302BA23CC04760074BE1C /* DramaticIcon@2x.png */,
+				00AB6BA523CD37DD0088E269 /* Metal@2x.png */,
 				0003C0E223CC08A200111AA1 /* Soft@2x.png */,
 				0003C0E423CC10AA00111AA1 /* Paper@2x.png */,
 				006302B923CC04760074BE1C /* Halftone@2x.png */,
@@ -389,6 +392,7 @@
 				006302BC23CC04760074BE1C /* Halftone@2x.png in Resources */,
 				001366BD2307B61F009A102E /* Main.storyboard in Resources */,
 				5DE81BC523CBB45700F6FA33 /* LightBlue@2x.png in Resources */,
+				00AB6BA623CD37DE0088E269 /* Metal@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

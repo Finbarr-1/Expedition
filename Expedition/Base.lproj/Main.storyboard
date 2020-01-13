@@ -30,6 +30,9 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                                 <string key="customUserAgent">Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1</string>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Gli-I6-TVR" appends="YES" id="RBe-9s-JSI"/>
+                                </connections>
                             </wkWebView>
                             <searchBar opaque="NO" contentMode="redraw" layoutMarginsFollowReadableWidth="YES" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-H8-wBy">
                                 <rect key="frame" x="2" y="0.0" width="283" height="56"/>
@@ -44,7 +47,6 @@
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="If8-vV-6zM"/>
                                     <outletCollection property="gestureRecognizers" destination="Srt-5a-Pr4" appends="YES" id="qrt-YL-BIT"/>
-                                    <outletCollection property="gestureRecognizers" destination="Gli-I6-TVR" appends="YES" id="RGQ-lH-p1y"/>
                                     <outletCollection property="gestureRecognizers" destination="AN3-pI-gg7" appends="YES" id="mmv-Yg-faM"/>
                                     <outletCollection property="gestureRecognizers" destination="0xN-Ym-Ghr" appends="YES" id="UpJ-vA-wef"/>
                                     <outletCollection property="gestureRecognizers" destination="ltd-91-b5P" appends="YES" id="TaL-68-UQP"/>
@@ -90,11 +92,6 @@
                         <action selector="desktopSiteSwipe:" destination="BYZ-38-t0r" id="XfT-Xy-hkh"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="Gli-I6-TVR" userLabel="SharePress">
-                    <connections>
-                        <action selector="searchBarShare:" destination="BYZ-38-t0r" id="bkJ-9e-51l"/>
-                    </connections>
-                </pongPressGestureRecognizer>
                 <swipeGestureRecognizer direction="down" id="AN3-pI-gg7" userLabel="ReloadSwipe">
                     <connections>
                         <action selector="reloadSwipe:" destination="BYZ-38-t0r" id="Bka-27-1de"/>
@@ -105,6 +102,11 @@
                         <segue destination="bgj-w0-VgC" kind="presentation" id="dyC-su-jYw"/>
                     </connections>
                 </swipeGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" numberOfTouchesRequired="3" id="Gli-I6-TVR" userLabel="SharePress">
+                    <connections>
+                        <action selector="searchBarShare:" destination="BYZ-38-t0r" id="bkJ-9e-51l"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="22.767857142857142"/>
         </scene>
@@ -233,7 +235,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookie" translatesAutoresizingMaskIntoConstraints="NO" id="4h6-na-ztX">
-                                    <rect key="frame" x="34" y="123" width="14" height="34"/>
+                                    <rect key="frame" x="34" y="131.5" width="14" height="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reopen on last page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-S2-yJa">
@@ -266,7 +268,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-xQ-9or" userLabel="GlyphFade">
-                                    <rect key="frame" x="36" y="320" width="248" height="248"/>
+                                    <rect key="frame" x="98" y="320" width="124" height="124"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="GlyphFadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -276,7 +278,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-Ey-JIH" userLabel="Shadow">
-                                    <rect key="frame" x="8" y="537" width="248" height="248"/>
+                                    <rect key="frame" x="8" y="413" width="124" height="124"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="ShadowUI">
@@ -287,7 +289,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-Vs-hNj" userLabel="Light">
-                                    <rect key="frame" x="64" y="320" width="248" height="248"/>
+                                    <rect key="frame" x="188" y="320" width="124" height="124"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="LightUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -297,7 +299,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lny-al-JS1" userLabel="FadeBG">
-                                    <rect key="frame" x="64" y="537" width="248" height="248"/>
+                                    <rect key="frame" x="188" y="413" width="124" height="124"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="FadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -307,7 +309,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi" userLabel="Dark">
-                                    <rect key="frame" x="8" y="320" width="248" height="248"/>
+                                    <rect key="frame" x="8" y="320" width="124" height="124"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="DarkUI">
@@ -318,7 +320,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-31-vf2" userLabel="Blue">
-                                    <rect key="frame" x="36" y="537" width="248" height="248"/>
+                                    <rect key="frame" x="98" y="413" width="124" height="124"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="BlueLightUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
