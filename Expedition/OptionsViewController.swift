@@ -100,6 +100,9 @@ class OptionsViewController: UIViewController {
         if let keepCookies:Bool = UserDefaults.standard.bool(forKey: "keep_cookies") {
             keepCookiesSwitch.setOn(keepCookies, animated: false)
         }
+        if let reopenTabs:Bool = UserDefaults.standard.bool(forKey: "reopen_tabs") {
+            // reopenTabsSwitch.setOn(reopenTabs, animated: false)
+        }
     }
     
     @IBAction func didTapLightIcon(_ sender: UIButton) {
