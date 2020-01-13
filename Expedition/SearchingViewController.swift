@@ -15,6 +15,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
     
+    var appIconToChange:String = "nil"
+    
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     var userAgentVar: String = "mobile" //User agent
@@ -46,15 +48,10 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         
         Code().work()
         
-        let fetchRequest: NSFetchRequest<HistoryElement> = HistoryElement.fetchRequest()
+        print("ICON TO CHANGE: " + appIconToChange)
         
-        do {
-            let historyArray = try PersistenceService.context.fetch(fetchRequest)
-            if historyArray.count > 0 {
-                openUrl(urlString: historyArray[0].url!)
-            }
-        } catch {
-            print("ERROR OCCURRED")
+        if (appIconToChange != nil && appIconToChange != "nil") {
+            UIApplication.shared.setAlternateIconName(appIconToChange)
         }
     }
     
