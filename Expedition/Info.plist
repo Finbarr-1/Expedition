@@ -10,15 +10,6 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<key>metal</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>Metal</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
 			<key>black</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -107,11 +98,29 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+			<key>metal</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Metal</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>morningicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>MorningIcon</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>orange</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>TheOrangeOne</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
@@ -152,20 +161,20 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
-			<key>thepurpleone</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>ThePurpleOne</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
 			<key>thepinkone</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>ThePinkOne</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>thepurpleone</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>ThePurpleOne</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
@@ -202,6 +211,10 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>

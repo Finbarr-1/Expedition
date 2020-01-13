@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0003C0E323CC08A200111AA1 /* Soft@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0003C0E223CC08A200111AA1 /* Soft@2x.png */; };
 		0003C0E523CC10AA00111AA1 /* Paper@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0003C0E423CC10AA00111AA1 /* Paper@2x.png */; };
+		0004B01B23CD3A0D00F67723 /* TheOrangeOne@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0004B01A23CD3A0C00F67723 /* TheOrangeOne@2x.png */; };
+		0004B01F23CD3B0100F67723 /* MorningIcon@2x.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0004B01E23CD3B0100F67723 /* MorningIcon@2x.jpeg */; };
 		001366B82307B61F009A102E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366B72307B61F009A102E /* AppDelegate.swift */; };
 		001366BA2307B61F009A102E /* SearchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366B92307B61F009A102E /* SearchingViewController.swift */; };
 		001366BD2307B61F009A102E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001366BB2307B61F009A102E /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		0003C0E223CC08A200111AA1 /* Soft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Soft@2x.png"; sourceTree = "<group>"; };
 		0003C0E423CC10AA00111AA1 /* Paper@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Paper@2x.png"; sourceTree = "<group>"; };
+		0004B01A23CD3A0C00F67723 /* TheOrangeOne@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TheOrangeOne@2x.png"; sourceTree = "<group>"; };
+		0004B01E23CD3B0100F67723 /* MorningIcon@2x.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MorningIcon@2x.jpeg"; sourceTree = "<group>"; };
 		001366B42307B61F009A102E /* Expedition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expedition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001366B72307B61F009A102E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		001366B92307B61F009A102E /* SearchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
@@ -258,9 +262,11 @@
 				0003C0E223CC08A200111AA1 /* Soft@2x.png */,
 				0003C0E423CC10AA00111AA1 /* Paper@2x.png */,
 				006302B923CC04760074BE1C /* Halftone@2x.png */,
+				0004B01E23CD3B0100F67723 /* MorningIcon@2x.jpeg */,
 				D635B71923CC07D6006B33F1 /* ThePurpleOne@2x.png */,
 				006302BB23CC04760074BE1C /* IOS6@2x.png */,
 				5D9B0E4223CBE355006713A4 /* VortexIcon@2x.png */,
+				0004B01A23CD3A0C00F67723 /* TheOrangeOne@2x.png */,
 				D65C4E5D23CD396E00B83EC8 /* ThePinkOne@2x.png */,
 				5D7845A123CC243A006E6CE1 /* BlurryIcon@2x.png */,
 			);
@@ -379,6 +385,7 @@
 				5D7845A223CC243A006E6CE1 /* BlurryIcon@2x.png in Resources */,
 				00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */,
 				5D9B0E4323CBE355006713A4 /* VortexIcon@2x.png in Resources */,
+				0004B01B23CD3A0D00F67723 /* TheOrangeOne@2x.png in Resources */,
 				0003C0E323CC08A200111AA1 /* Soft@2x.png in Resources */,
 				D64CA0C923C94E6600619E00 /* LightIcon@2x.png in Resources */,
 				001366C22307B620009A102E /* LaunchScreen.storyboard in Resources */,
@@ -390,6 +397,7 @@
 				D635B71A23CC07D6006B33F1 /* ThePurpleOne@2x.png in Resources */,
 				006302BD23CC04760074BE1C /* DramaticIcon@2x.png in Resources */,
 				006302BC23CC04760074BE1C /* Halftone@2x.png in Resources */,
+				0004B01F23CD3B0100F67723 /* MorningIcon@2x.jpeg in Resources */,
 				001366BD2307B61F009A102E /* Main.storyboard in Resources */,
 				5DE81BC523CBB45700F6FA33 /* LightBlue@2x.png in Resources */,
 				00AB6BA623CD37DE0088E269 /* Metal@2x.png in Resources */,
@@ -607,15 +615,15 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N88X7JF75R;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.Expedition;
+				MARKETING_VERSION = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -633,15 +641,15 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N88X7JF75R;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.Expedition;
+				MARKETING_VERSION = 7.1;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
