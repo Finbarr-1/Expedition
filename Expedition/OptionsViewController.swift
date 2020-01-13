@@ -15,6 +15,7 @@ class OptionsViewController: UIViewController {
 
     @IBOutlet weak var historySwitch: UISwitch!
     @IBOutlet weak var keepCookiesSwitch: UISwitch!
+    @IBOutlet weak var reopenTabSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -87,6 +88,11 @@ class OptionsViewController: UIViewController {
         UserDefaults.standard.set(keepCookiesSwitch.isOn, forKey: "keep_cookies")
         UserDefaults.standard.synchronize()
     }
+    
+    @IBAction func reopenTabSwitchValueChanged(_ sender: UISwitch) {
+        UserDefaults.standard.set(reopenTabSwitch.isOn, forKey: "reopen_tabs")
+        UserDefaults.standard.synchronize()
+    }
     func registerSettingsBundle(){
         let appDefaults = [String:AnyObject]()
         UserDefaults.standard.register(defaults: appDefaults)
@@ -101,7 +107,7 @@ class OptionsViewController: UIViewController {
             keepCookiesSwitch.setOn(keepCookies, animated: false)
         }
         if let reopenTabs:Bool = UserDefaults.standard.bool(forKey: "reopen_tabs") {
-            // reopenTabsSwitch.setOn(reopenTabs, animated: false)
+            reopenTabSwitch.setOn(reopenTabs, animated: false)
         }
     }
     
