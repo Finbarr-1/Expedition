@@ -10,47 +10,20 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-            <key>morningicon</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>MorningIcon</string>
-                </array>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-            </dict>
-            <key>blurryicon</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>BlurryIcon</string>
-                </array>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-            </dict>
-            <key>pixelatedicon</key>
-            <dict>
-                <key>CFBundleIconFiles</key>
-                <array>
-                    <string>PixelatedIcon</string>
-                </array>
-                <key>UIPrerenderedIcon</key>
-                <false/>
-            </dict>
-			<key>paper</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>Paper</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>soft</key>
+			<key>shadow</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>ColorShadow</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>blurryicon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>BlurryIcon</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
@@ -94,9 +67,7 @@
 			<key>halftone</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
-				<array>
-					<string>Halftone</string>
-				</array>
+				<array/>
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
@@ -123,6 +94,33 @@
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>LightIcon</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>morningicon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>MorningIcon</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>paper</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Paper</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>pixelatedicon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>PixelatedIcon</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>

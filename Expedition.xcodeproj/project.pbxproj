@@ -30,8 +30,6 @@
 		5D41CBF323C5745C003A16F9 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */; };
 		5D5BA2E223C5910C00D98050 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */; };
 		5D7845A223CC243A006E6CE1 /* BlurryIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7845A123CC243A006E6CE1 /* BlurryIcon@2x.png */; };
-		5D7845A623CC2562006E6CE1 /* PixelatedIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7845A523CC2562006E6CE1 /* PixelatedIcon@3x.png */; };
-		5D7845AA23CC28EE006E6CE1 /* MorningIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7845A923CC28EE006E6CE1 /* MorningIcon.png */; };
 		5D9B0E4323CBE355006713A4 /* VortexIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9B0E4223CBE355006713A4 /* VortexIcon@2x.png */; };
 		5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59FD23CB98C1007C6495 /* GlyphFade@2x.png */; };
 		5DE81BC323CBB45000F6FA33 /* ColorShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59E923CB986E007C6495 /* ColorShadow@2x.png */; };
@@ -98,8 +96,6 @@
 		5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		5D7845A123CC243A006E6CE1 /* BlurryIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BlurryIcon@2x.png"; sourceTree = "<group>"; };
-		5D7845A523CC2562006E6CE1 /* PixelatedIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "PixelatedIcon@3x.png"; path = "../../../../Expedition Icons/PixelatedIcon@3x.png"; sourceTree = "<group>"; };
-		5D7845A923CC28EE006E6CE1 /* MorningIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MorningIcon.png; path = "../../../../Expedition Icons/MorningIcon.png"; sourceTree = "<group>"; };
 		5D9B0E4223CBE355006713A4 /* VortexIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VortexIcon@2x.png"; sourceTree = "<group>"; };
 		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		D635B71923CC07D6006B33F1 /* ThePurpleOne@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThePurpleOne@2x.png"; sourceTree = "<group>"; };
@@ -258,8 +254,6 @@
 				006302BB23CC04760074BE1C /* IOS6@2x.png */,
 				5D9B0E4223CBE355006713A4 /* VortexIcon@2x.png */,
 				5D7845A123CC243A006E6CE1 /* BlurryIcon@2x.png */,
-				5D7845A523CC2562006E6CE1 /* PixelatedIcon@3x.png */,
-				5D7845A923CC28EE006E6CE1 /* MorningIcon.png */,
 			);
 			path = SecretIcons;
 			sourceTree = "<group>";
@@ -371,9 +365,7 @@
 				00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */,
 				5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */,
 				0003C0E523CC10AA00111AA1 /* Paper@2x.png in Resources */,
-				5D7845A623CC2562006E6CE1 /* PixelatedIcon@3x.png in Resources */,
 				5D7845A223CC243A006E6CE1 /* BlurryIcon@2x.png in Resources */,
-				5D7845AA23CC28EE006E6CE1 /* MorningIcon.png in Resources */,
 				00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */,
 				5D9B0E4323CBE355006713A4 /* VortexIcon@2x.png in Resources */,
 				0003C0E323CC08A200111AA1 /* Soft@2x.png in Resources */,
@@ -603,7 +595,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -611,7 +603,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -629,7 +621,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -637,7 +629,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
