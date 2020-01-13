@@ -30,7 +30,7 @@
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
-			<string>Reopen Last Tab</string>
+			<string>Reopen Last Open Page</string>
 			<key>Key</key>
 			<string>reopen_tabs</string>
 			<key>DefaultValue</key>
