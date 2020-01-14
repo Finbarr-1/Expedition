@@ -226,7 +226,6 @@
                                     <color key="onTintColor" name="Expedition Blue"/>
                                     <connections>
                                         <action selector="cookiesSwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="I75-oW-yD2"/>
-                                        <action selector="historySwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="PSJ-Bk-F2c"/>
                                     </connections>
                                 </switch>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xrk-VK-R3z">
@@ -248,8 +247,7 @@
                                     <rect key="frame" x="243" y="166.5" width="51" height="31"/>
                                     <color key="onTintColor" name="Expedition Blue"/>
                                     <connections>
-                                        <action selector="cookiesSwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="bzr-ew-rOZ"/>
-                                        <action selector="historySwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="Bpe-L4-pBY"/>
+                                        <action selector="reopenTabsSwitchValueChanged:" destination="bgj-w0-VgC" eventType="valueChanged" id="TfA-nO-YOJ"/>
                                     </connections>
                                 </switch>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.counterclockwise.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3XD-eW-ziY">
@@ -393,6 +391,7 @@
                     <connections>
                         <outlet property="historySwitch" destination="4S2-tN-yD7" id="WTe-wa-xHc"/>
                         <outlet property="keepCookiesSwitch" destination="upf-2I-yKl" id="SmG-0j-0J0"/>
+                        <outlet property="reopenTabsSwitch" destination="5RC-3q-jpM" id="etq-nJ-uT8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzH-Lv-A1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
