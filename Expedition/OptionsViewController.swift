@@ -115,7 +115,7 @@ class OptionsViewController: UIViewController {
     }
     
     @IBAction func didTapShadowIcon(_ sender: UIButton) {
-        UIApplication.shared.setAlternateIconName("coloricon")
+        UIApplication.shared.setAlternateIconName("shadow")
     }
     
     @IBAction func didTapFadingIcon(_ sender: UIButton) {
