@@ -10,6 +10,15 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
+			<key>doesfacebooktrackme</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Zuckerberg</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>prismicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>

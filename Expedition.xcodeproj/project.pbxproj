@@ -17,6 +17,7 @@
 		001366C22307B620009A102E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001366C02307B620009A102E /* LaunchScreen.storyboard */; };
 		001366D82307B620009A102E /* ExpeditionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366D72307B620009A102E /* ExpeditionUITests.swift */; };
 		001366E72307BEA9009A102E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001366E62307BEA9009A102E /* WebKit.framework */; };
+		0040048923CD7DAC002926E9 /* Zuckerberg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0040048823CD7DAB002926E9 /* Zuckerberg@2x.png */; };
 		006302BC23CC04760074BE1C /* Halftone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006302B923CC04760074BE1C /* Halftone@2x.png */; };
 		006302BD23CC04760074BE1C /* DramaticIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006302BA23CC04760074BE1C /* DramaticIcon@2x.png */; };
 		006302BE23CC04760074BE1C /* IOS6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006302BB23CC04760074BE1C /* IOS6@2x.png */; };
@@ -80,6 +81,7 @@
 		001366D72307B620009A102E /* ExpeditionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpeditionUITests.swift; sourceTree = "<group>"; };
 		001366D92307B620009A102E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001366E62307BEA9009A102E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		0040048823CD7DAB002926E9 /* Zuckerberg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zuckerberg@2x.png"; sourceTree = "<group>"; };
 		005932CF234D747100DC2323 /* Expedition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expedition.entitlements; sourceTree = "<group>"; };
 		006302B923CC04760074BE1C /* Halftone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Halftone@2x.png"; sourceTree = "<group>"; };
 		006302BA23CC04760074BE1C /* DramaticIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DramaticIcon@2x.png"; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				00AB6BA523CD37DD0088E269 /* Metal@2x.png */,
 				0003C0E223CC08A200111AA1 /* Soft@2x.png */,
 				0003C0E423CC10AA00111AA1 /* Paper@2x.png */,
+				0040048823CD7DAB002926E9 /* Zuckerberg@2x.png */,
 				0078502E23CD688E00BDB94C /* Prism@2x.png */,
 				006302B923CC04760074BE1C /* Halftone@2x.png */,
 				D635B71923CC07D6006B33F1 /* ThePurpleOne@2x.png */,
@@ -382,6 +385,7 @@
 			files = (
 				D65C4E5E23CD396E00B83EC8 /* ThePinkOne@2x.png in Resources */,
 				00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */,
+				0040048923CD7DAC002926E9 /* Zuckerberg@2x.png in Resources */,
 				D65C4E6023CD3D5900B83EC8 /* MorningIcon@2x.png in Resources */,
 				5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */,
 				00EED5FC23CD370C00A1E258 /* Black@2x.png in Resources */,
