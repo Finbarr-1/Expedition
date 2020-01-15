@@ -69,6 +69,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     @IBAction func searchBarShare(_ sender: UILongPressGestureRecognizer) {
+      impact.impactOccurred() // Haptic
         let textToShare = searchBar.text
         if textToShare != nil {
             displayShareSheet(shareContent: textToShare!)
@@ -135,7 +136,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
      }
      
      func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-         notification.notificationOccurred(.success)
+         notification.notificationOccurred(.success)//Haptic
 
         ActInd?.stopAnimating()
         searchBar.text = webView.url?.absoluteString
@@ -150,7 +151,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
      }
      
      func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-         notification.notificationOccurred(.error)
+         notification.notificationOccurred(.error)//Haptic
          ActInd?.stopAnimating()
          
      }
@@ -250,6 +251,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
 
     @IBAction func desktopSiteSwipe(_ sender: Any) {
+        impact.impactOccurred()//haptic
         if userAgentVar == "mobile" {
             // switches to desktop useragent
             webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Expedition/605.1.15"
@@ -257,7 +259,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
             print("USER AGENT: " + userAgentVar)
             webView.reload()
         } else {
-            // switchtes to mobile useragent
+            impact.impactOccurred()//Haptic // switchtes to mobile useragent
             webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Mobile/15E148 Expedition/604.1"
             userAgentVar = "mobile"
             print("USER AGENT: " + userAgentVar)
