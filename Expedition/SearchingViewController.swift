@@ -18,7 +18,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     var appIconToChange:String = "nil"
     
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
-    
+    let impact = UIImpactFeedbackGenerator() // 1
     var userAgentVar: String = "mobile" //User agent
     let credits: String = "zeqe golomb:ui designer;finbarr oconnell:programmer;jackson yan:programmer;julian wright:programmer" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization

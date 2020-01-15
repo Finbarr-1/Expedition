@@ -9,6 +9,7 @@ import WebKit
 import UIKit
 import Foundation
 
+let impact = UIImpactFeedbackGenerator() // 1
 class Gestures : WKWebView, WKNavigationDelegate{
      @IBOutlet weak var webView: WKWebView!
      @IBOutlet weak var ActInd: UIActivityIndicatorView!
@@ -29,7 +30,7 @@ class Gestures : WKWebView, WKNavigationDelegate{
     }
 
     @IBAction func reload(_ sender: Any) {
-   
+   impact.impactOccurred() // 2
         webView.reload()
         
     }
