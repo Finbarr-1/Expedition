@@ -18,6 +18,8 @@
 		001366D82307B620009A102E /* ExpeditionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366D72307B620009A102E /* ExpeditionUITests.swift */; };
 		001366E72307BEA9009A102E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001366E62307BEA9009A102E /* WebKit.framework */; };
 		001F7E8E23CE99A200521DA8 /* introSequence.gif in Resources */ = {isa = PBXBuildFile; fileRef = 001F7E8D23CE99A200521DA8 /* introSequence.gif */; };
+		0039254823CED16700AD77EB /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0039254723CED16700AD77EB /* Stickers.xcassets */; };
+		0039254C23CED16700AD77EB /* Expedition Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0039254523CED16100AD77EB /* Expedition Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0040048923CD7DAC002926E9 /* Zuckerberg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0040048823CD7DAB002926E9 /* Zuckerberg@2x.png */; };
 		006302BC23CC04760074BE1C /* Halftone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006302B923CC04760074BE1C /* Halftone@2x.png */; };
 		006302BD23CC04760074BE1C /* DramaticIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006302BA23CC04760074BE1C /* DramaticIcon@2x.png */; };
@@ -64,7 +66,28 @@
 			remoteGlobalIDString = 001366B32307B61F009A102E;
 			remoteInfo = Expedition;
 		};
+		0039254A23CED16700AD77EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001366AC2307B61F009A102E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0039254423CED16100AD77EB;
+			remoteInfo = "Expedition Stickers";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0039255023CED16700AD77EB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0039254C23CED16700AD77EB /* Expedition Stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0003C0E223CC08A200111AA1 /* Soft@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Soft@2x.png"; sourceTree = "<group>"; };
@@ -83,6 +106,9 @@
 		001366D92307B620009A102E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001366E62307BEA9009A102E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		001F7E8D23CE99A200521DA8 /* introSequence.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = introSequence.gif; path = Expedition/introSequence.gif; sourceTree = SOURCE_ROOT; };
+		0039254523CED16100AD77EB /* Expedition Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Expedition Stickers.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0039254723CED16700AD77EB /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		0039254923CED16700AD77EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0040048823CD7DAB002926E9 /* Zuckerberg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zuckerberg@2x.png"; sourceTree = "<group>"; };
 		005932CF234D747100DC2323 /* Expedition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expedition.entitlements; sourceTree = "<group>"; };
 		006302B923CC04760074BE1C /* Halftone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Halftone@2x.png"; sourceTree = "<group>"; };
@@ -150,6 +176,7 @@
 			children = (
 				001366B62307B61F009A102E /* Expedition */,
 				001366D62307B620009A102E /* ExpeditionUITests */,
+				0039254623CED16100AD77EB /* Expedition Stickers */,
 				001366B52307B61F009A102E /* Products */,
 				001366E52307BEA9009A102E /* Frameworks */,
 			);
@@ -162,6 +189,7 @@
 				001366B42307B61F009A102E /* Expedition.app */,
 				001366C82307B620009A102E /* ExpeditionTests.xctest */,
 				001366D32307B620009A102E /* ExpeditionUITests.xctest */,
+				0039254523CED16100AD77EB /* Expedition Stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,6 +250,15 @@
 				00A91DBB23A84AFF00F045F7 /* 60@3x.png */,
 			);
 			path = DarkAppIcon;
+			sourceTree = "<group>";
+		};
+		0039254623CED16100AD77EB /* Expedition Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				0039254723CED16700AD77EB /* Stickers.xcassets */,
+				0039254923CED16700AD77EB /* Info.plist */,
+			);
+			path = "Expedition Stickers";
 			sourceTree = "<group>";
 		};
 		00AD59E723CB9865007C6495 /* ColorShadowAppIcon */ = {
@@ -292,10 +329,12 @@
 				001366B02307B61F009A102E /* Sources */,
 				001366B12307B61F009A102E /* Frameworks */,
 				001366B22307B61F009A102E /* Resources */,
+				0039255023CED16700AD77EB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0039254B23CED16700AD77EB /* PBXTargetDependency */,
 			);
 			name = Expedition;
 			productName = Expedition;
@@ -338,6 +377,21 @@
 			productReference = 001366D32307B620009A102E /* ExpeditionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0039254423CED16100AD77EB /* Expedition Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0039254D23CED16700AD77EB /* Build configuration list for PBXNativeTarget "Expedition Stickers" */;
+			buildPhases = (
+				0039254323CED16100AD77EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Expedition Stickers";
+			productName = "Expedition Stickers";
+			productReference = 0039254523CED16100AD77EB /* Expedition Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -359,6 +413,9 @@
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 001366B32307B61F009A102E;
 					};
+					0039254423CED16100AD77EB = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 001366AF2307B61F009A102E /* Build configuration list for PBXProject "Expedition" */;
@@ -377,6 +434,7 @@
 				001366B32307B61F009A102E /* Expedition */,
 				001366C72307B620009A102E /* ExpeditionTests */,
 				001366D22307B620009A102E /* ExpeditionUITests */,
+				0039254423CED16100AD77EB /* Expedition Stickers */,
 			);
 		};
 /* End PBXProject section */
@@ -430,6 +488,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0039254323CED16100AD77EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0039254823CED16700AD77EB /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -478,6 +544,11 @@
 			isa = PBXTargetDependency;
 			target = 001366B32307B61F009A102E /* Expedition */;
 			targetProxy = 001366D42307B620009A102E /* PBXContainerItemProxy */;
+		};
+		0039254B23CED16700AD77EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0039254423CED16100AD77EB /* Expedition Stickers */;
+			targetProxy = 0039254A23CED16700AD77EB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -634,7 +705,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.1;
+				MARKETING_VERSION = 7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -660,7 +731,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 7.1;
+				MARKETING_VERSION = 7.2;
 				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -749,6 +820,40 @@
 			};
 			name = Release;
 		};
+		0039254E23CED16700AD77EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				INFOPLIST_FILE = "Expedition Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.expedition.Expedition-Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0039254F23CED16700AD77EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
+				INFOPLIST_FILE = "Expedition Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "a.expedition.Expedition-Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -784,6 +889,15 @@
 			buildConfigurations = (
 				001366E32307B620009A102E /* Debug */,
 				001366E42307B620009A102E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0039254D23CED16700AD77EB /* Build configuration list for PBXNativeTarget "Expedition Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0039254E23CED16700AD77EB /* Debug */,
+				0039254F23CED16700AD77EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

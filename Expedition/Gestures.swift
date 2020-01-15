@@ -16,6 +16,7 @@ class Gestures : WKWebView, WKNavigationDelegate{
     
     
     @IBAction func back(_ sender: Any) { //makes the page go back if it can
+        impact.impactOccurred() // 2
         if webView.canGoBack{
             webView.goBack()
             webView.reload()
@@ -23,6 +24,7 @@ class Gestures : WKWebView, WKNavigationDelegate{
     }
 
     @IBAction func forward(_ sender: Any) { //makes the page go forward if it can
+       impact.impactOccurred() // 2
         if webView.canGoForward{
             webView.goForward()
             webView.reload()

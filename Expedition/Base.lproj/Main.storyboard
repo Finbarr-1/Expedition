@@ -403,7 +403,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzH-Lv-A1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="U2w-H1-PkZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1174" y="-400"/>
+            <point key="canvasLocation" x="1173.75" y="-400.35211267605632"/>
         </scene>
         <!--PrivacyPolicy-->
         <scene sceneID="Wyd-Ju-5DR">

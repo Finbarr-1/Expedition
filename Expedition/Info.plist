@@ -10,24 +10,6 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<key>isfacebooktrackingme</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>Zuckerberg</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>prismicon</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>Prism</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
 			<key>black</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -98,6 +80,15 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+			<key>isfacebooktrackingme</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Zuckerberg</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>lightblueicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -157,6 +148,15 @@
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>PixelatedIcon</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>prismicon</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Prism</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>

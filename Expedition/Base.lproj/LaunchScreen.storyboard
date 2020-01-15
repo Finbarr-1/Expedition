@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,10 +21,19 @@
                                 <color key="barTintColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MorningLogoDark" translatesAutoresizingMaskIntoConstraints="NO" id="Qpi-nd-cnt">
+                                <rect key="frame" x="87" y="644" width="240" height="236"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qpi-nd-cnt" secondAttribute="height" multiplier="60:59" id="GyB-Vu-V8M"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Qpi-nd-cnt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="Dbm-Sx-XNg"/>
                             <constraint firstItem="iAt-xH-pvi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="2" id="NcA-TS-uSH"/>
+                            <constraint firstItem="Qpi-nd-cnt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="18" id="cjb-lm-f71"/>
+                            <constraint firstItem="Qpi-nd-cnt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="khC-FQ-53h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iAt-xH-pvi" secondAttribute="trailing" constant="35" id="lBF-d9-aty"/>
                             <constraint firstItem="iAt-xH-pvi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zHK-G7-RwQ"/>
                         </constraints>
@@ -36,4 +45,7 @@
             <point key="canvasLocation" x="47.826086956521742" y="372.99107142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MorningLogoDark" width="124" height="124"/>
+    </resources>
 </document>

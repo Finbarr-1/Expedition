@@ -1,0 +1,62 @@
+{
+  "stickers" : [
+    {
+      "filename" : "Black@2x.sticker"
+    },
+    {
+      "filename" : "BlurryIcon@2x.sticker"
+    },
+    {
+      "filename" : "DramaticIcon@2x.sticker"
+    },
+    {
+      "filename" : "Halftone@2x.sticker"
+    },
+    {
+      "filename" : "IOS6@2x.sticker"
+    },
+    {
+      "filename" : "Metal@2x.sticker"
+    },
+    {
+      "filename" : "MorningIcon@2x.sticker"
+    },
+    {
+      "filename" : "Paper@2x.sticker"
+    },
+    {
+      "filename" : "PixelatedIcon@2x.sticker"
+    },
+    {
+      "filename" : "PixelatedIcon@3x.sticker"
+    },
+    {
+      "filename" : "Prism@2x.sticker"
+    },
+    {
+      "filename" : "Soft@2x.sticker"
+    },
+    {
+      "filename" : "TheOrangeOne@2x.sticker"
+    },
+    {
+      "filename" : "ThePinkOne@2x.sticker"
+    },
+    {
+      "filename" : "ThePurpleOne@2x.sticker"
+    },
+    {
+      "filename" : "VortexIcon@2x.sticker"
+    },
+    {
+      "filename" : "Zuckerberg@2x.sticker"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  }
+}
