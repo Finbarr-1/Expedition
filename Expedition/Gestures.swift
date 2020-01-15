@@ -9,8 +9,8 @@ import WebKit
 import UIKit
 import Foundation
 
-let impact = UIImpactFeedbackGenerator() // 1
-let notification = UINotificationFeedbackGenerator()
+let impact = UIImpactFeedbackGenerator() // Haptics
+let notification = UINotificationFeedbackGenerator()//Haptics
 
 
 class Gestures : WKWebView, WKNavigationDelegate{
@@ -19,7 +19,7 @@ class Gestures : WKWebView, WKNavigationDelegate{
     
     
     @IBAction func back(_ sender: Any) { //makes the page go back if it can
-        impact.impactOccurred() // 2
+        impact.impactOccurred() // Haptics
         if webView.canGoBack{
             webView.goBack()
             webView.reload()
@@ -27,7 +27,7 @@ class Gestures : WKWebView, WKNavigationDelegate{
     }
 
     @IBAction func forward(_ sender: Any) { //makes the page go forward if it can
-       impact.impactOccurred() // 2
+       impact.impactOccurred() // Haptics
         if webView.canGoForward{
             webView.goForward()
             webView.reload()
@@ -35,7 +35,7 @@ class Gestures : WKWebView, WKNavigationDelegate{
     }
 
     @IBAction func reload(_ sender: Any) {
-   notification.notificationOccurred(.success)
+   notification.notificationOccurred(.success)//Haptics
         webView.reload()
         
     }

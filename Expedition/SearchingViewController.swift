@@ -14,11 +14,11 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
 
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
-    let notification = UINotificationFeedbackGenerator()
+    let notification = UINotificationFeedbackGenerator()//Haptics
     var appIconToChange:String = "nil"
     
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
-    let impact = UIImpactFeedbackGenerator() // 1
+    let impact = UIImpactFeedbackGenerator() // Haptics
     var userAgentVar: String = "mobile" //User agent
     let credits: String = "zeqe golomb:ui designer;finbarr oconnell:programmer;jackson yan:programmer;julian wright:programmer" //Credits
     var searchEngine: String = "https://duckduckgo.com/" //Search engine initialization

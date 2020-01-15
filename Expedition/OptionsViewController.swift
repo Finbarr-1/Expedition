@@ -12,7 +12,8 @@ import Foundation
 import CoreData
 
 class OptionsViewController: UIViewController {
-
+let notification = UINotificationFeedbackGenerator()//Haptics
+let impact = UIImpactFeedbackGenerator() // Haptics
     @IBOutlet weak var historySwitch: UISwitch!
     @IBOutlet weak var keepCookiesSwitch: UISwitch!
     @IBOutlet weak var reopenTabsSwitch: UISwitch!
@@ -34,9 +35,11 @@ class OptionsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         alert.addAction(UIAlertAction(title: "Clear", style: .destructive, handler: { action in
+          
             self.doTheClearHistory()
+            self.notification.notificationOccurred(.success)//Haptics
         }))
-
+        
         self.present(alert, animated: true)
     }
     
@@ -48,6 +51,7 @@ class OptionsViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Clear", style: .destructive, handler: { action in
             self.doTheClearHistory()
             self.removeCookies()
+            self.notification.notificationOccurred(.success)//Haptics
         }))
 
         self.present(alert, animated: true)
@@ -111,26 +115,32 @@ class OptionsViewController: UIViewController {
     }
     
     @IBAction func didTapLightIcon(_ sender: UIButton) {
+   impact.impactOccurred() // Haptics
         UIApplication.shared.setAlternateIconName("lighticon")
     }
     
     @IBAction func didTapDarkIcon(_ sender: UIButton) {
+       impact.impactOccurred() // Haptics
         UIApplication.shared.setAlternateIconName("darkicon")
     }
     
     @IBAction func didTapGlyphIcon(_ sender: UIButton) {
+     impact.impactOccurred() // Haptics
         UIApplication.shared.setAlternateIconName("glyphicon")
     }
     
     @IBAction func didTapShadowIcon(_ sender: UIButton) {
+      impact.impactOccurred() // Haptics
         UIApplication.shared.setAlternateIconName("shadow")
     }
     
     @IBAction func didTapFadingIcon(_ sender: UIButton) {
+       impact.impactOccurred() // Haptics
         UIApplication.shared.setAlternateIconName("fadingicon")
     }
     
     @IBAction func didTapLightBlueIcon(_ sender: Any) {
+       impact.impactOccurred() // Haptics
         UIApplication.shared.setAlternateIconName("lightblueicon")
     }
     
