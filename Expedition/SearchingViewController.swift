@@ -130,12 +130,13 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
          webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
-         ActInd?.startAnimating()
+        ActInd?.startAnimating()
          
      }
      
      func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
          notification.notificationOccurred(.success)
+
         ActInd?.stopAnimating()
         searchBar.text = webView.url?.absoluteString
         if (UserDefaults.standard.bool(forKey: "save_history")) {
