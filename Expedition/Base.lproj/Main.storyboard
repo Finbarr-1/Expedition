@@ -50,7 +50,6 @@
                                     <outletCollection property="gestureRecognizers" destination="AN3-pI-gg7" appends="YES" id="mmv-Yg-faM"/>
                                     <outletCollection property="gestureRecognizers" destination="0xN-Ym-Ghr" appends="YES" id="UpJ-vA-wef"/>
                                     <outletCollection property="gestureRecognizers" destination="ltd-91-b5P" appends="YES" id="TaL-68-UQP"/>
-                                    <outletCollection property="gestureRecognizers" destination="gsu-x9-hHN" appends="YES" id="371-j5-Imr"/>
                                 </connections>
                             </searchBar>
                         </subviews>
@@ -108,11 +107,6 @@
                         <action selector="searchBarShare:" destination="BYZ-38-t0r" id="bkJ-9e-51l"/>
                     </connections>
                 </pongPressGestureRecognizer>
-                <swipeGestureRecognizer direction="down" numberOfTouchesRequired="3" id="gsu-x9-hHN">
-                    <connections>
-                        <segue destination="ITb-Tq-qem" kind="presentation" id="eUC-Ri-qOT"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="46.875" y="22.183098591549296"/>
         </scene>
@@ -416,10 +410,10 @@
             <objects>
                 <viewController storyboardIdentifier="privacyPolicyView" title="PrivacyPolicy" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ITb-Tq-qem" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="IEF-PY-Mgv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bMA-ik-RRg">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         </view>
                         <blurEffect style="regular"/>

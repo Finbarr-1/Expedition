@@ -17,6 +17,7 @@
 		001366C22307B620009A102E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001366C02307B620009A102E /* LaunchScreen.storyboard */; };
 		001366D82307B620009A102E /* ExpeditionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001366D72307B620009A102E /* ExpeditionUITests.swift */; };
 		001366E72307BEA9009A102E /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001366E62307BEA9009A102E /* WebKit.framework */; };
+		001F7E8E23CE99A200521DA8 /* introSequence.gif in Resources */ = {isa = PBXBuildFile; fileRef = 001F7E8D23CE99A200521DA8 /* introSequence.gif */; };
 		0040048923CD7DAC002926E9 /* Zuckerberg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0040048823CD7DAB002926E9 /* Zuckerberg@2x.png */; };
 		006302BC23CC04760074BE1C /* Halftone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006302B923CC04760074BE1C /* Halftone@2x.png */; };
 		006302BD23CC04760074BE1C /* DramaticIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006302BA23CC04760074BE1C /* DramaticIcon@2x.png */; };
@@ -81,6 +82,7 @@
 		001366D72307B620009A102E /* ExpeditionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpeditionUITests.swift; sourceTree = "<group>"; };
 		001366D92307B620009A102E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001366E62307BEA9009A102E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		001F7E8D23CE99A200521DA8 /* introSequence.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = introSequence.gif; path = Expedition/introSequence.gif; sourceTree = SOURCE_ROOT; };
 		0040048823CD7DAB002926E9 /* Zuckerberg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zuckerberg@2x.png"; sourceTree = "<group>"; };
 		005932CF234D747100DC2323 /* Expedition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expedition.entitlements; sourceTree = "<group>"; };
 		006302B923CC04760074BE1C /* Halftone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Halftone@2x.png"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				00AD59FC23CB98B8007C6495 /* GlyphFadeAppIcon */,
 				00AD5A0323CB98D5007C6495 /* LightBlueAppIcon */,
 				5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */,
+				001F7E8D23CE99A200521DA8 /* introSequence.gif */,
 				5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */,
 				001366B72307B61F009A102E /* AppDelegate.swift */,
 				005932CF234D747100DC2323 /* Expedition.entitlements */,
@@ -390,6 +393,7 @@
 				5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */,
 				00EED5FC23CD370C00A1E258 /* Black@2x.png in Resources */,
 				0003C0E523CC10AA00111AA1 /* Paper@2x.png in Resources */,
+				001F7E8E23CE99A200521DA8 /* introSequence.gif in Resources */,
 				5D7845A223CC243A006E6CE1 /* BlurryIcon@2x.png in Resources */,
 				00A91DBD23A84AFF00F045F7 /* 60@3x.png in Resources */,
 				5D9B0E4323CBE355006713A4 /* VortexIcon@2x.png in Resources */,
