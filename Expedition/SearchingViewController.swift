@@ -14,7 +14,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
 
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
-    
+    let notification = UINotificationFeedbackGenerator()
     var appIconToChange:String = "nil"
     
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -135,7 +135,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
      }
      
      func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-         
+         notification.notificationOccurred(.success)
         ActInd?.stopAnimating()
         searchBar.text = webView.url?.absoluteString
         if (UserDefaults.standard.bool(forKey: "save_history")) {
@@ -149,7 +149,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
      }
      
      func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
-         
+         notification.notificationOccurred(.error)
          ActInd?.stopAnimating()
          
      }
