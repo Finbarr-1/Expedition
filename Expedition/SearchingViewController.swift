@@ -89,6 +89,9 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
                             }
                             if queries[0].lowercased() == "appicon" {
                                 print("SHOULD CHANGE APP ICON")
+                                if queries[1].lowercased() == "isfacebooktrackingme" {
+                                  
+                                }
                                 UIApplication.shared.setAlternateIconName(String(queries[1]).lowercased())
                             }
                         }
@@ -271,4 +274,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
 }
 
-
+//This presents privacy policy?
+//let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                                  let controller = storyboard.instantiateViewController(withIdentifier: "privacyPolicyView")
+//                                  self.present(controller, animated: true, completion: nil)
