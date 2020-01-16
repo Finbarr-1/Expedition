@@ -279,7 +279,4 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     
 }
 
-//This presents privacy policy?
-//let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//                                  let controller = storyboard.instantiateViewController(withIdentifier: "privacyPolicyView")
-//                                  self.present(controller, animated: true, completion: nil)
+
