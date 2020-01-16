@@ -116,6 +116,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     func displayShareSheet(shareContent:String) {
+        notification.notificationOccurred(.success)//Haptic
         let activityViewController = UIActivityViewController(activityItems: [shareContent as NSString], applicationActivities: nil)
         present(activityViewController, animated: true, completion: {})
     }
@@ -130,7 +131,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-         webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
+        notification.notificationOccurred(.success)//Haptic
+        webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
         ActInd?.startAnimating()
          
      }
