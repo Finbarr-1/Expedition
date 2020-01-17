@@ -81,8 +81,7 @@ class HistoryTableViewController: UITableViewController {
         dismiss(animated: true, completion: nil)
         ViewController().openHistoryUrl(index: indexPath.row)
     }
-
-
+   
     
 
     /*
