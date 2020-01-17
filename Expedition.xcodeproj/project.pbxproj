@@ -32,6 +32,7 @@
 		00AB6BA623CD37DE0088E269 /* Metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AB6BA523CD37DD0088E269 /* Metal@2x.png */; };
 		00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00C4A4C523C509E800C18F65 /* Settings.bundle */; };
 		00EED5FC23CD370C00A1E258 /* Black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EED5FB23CD370C00A1E258 /* Black@2x.png */; };
+		00F7071123D16FB400C0B8E2 /* Diamond@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F7071023D16FB400C0B8E2 /* Diamond@2x.png */; };
 		5D1D0D5823C6AE7600B4377E /* History.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5623C6AE7600B4377E /* History.xcdatamodeld */; };
 		5D1D0D5A23C6B0B300B4377E /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */; };
 		5D1D0D5D23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5B23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift */; };
@@ -125,6 +126,7 @@
 		00AD5A0523CB98DC007C6495 /* LightBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightBlue@2x.png"; sourceTree = "<group>"; };
 		00C4A4C523C509E800C18F65 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		00EED5FB23CD370C00A1E258 /* Black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black@2x.png"; sourceTree = "<group>"; };
+		00F7071023D16FB400C0B8E2 /* Diamond@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Diamond@2x.png"; sourceTree = "<group>"; };
 		5D1D0D5723C6AE7600B4377E /* History.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = History.xcdatamodel; sourceTree = "<group>"; };
 		5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		5D1D0D5B23C6F1CB00B4377E /* HistoryElement+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryElement+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 		5DE81BC623CBB83400F6FA33 /* TotallyNotSecretIcons */ = {
 			isa = PBXGroup;
 			children = (
+				00F7071023D16FB400C0B8E2 /* Diamond@2x.png */,
 				00EED5FB23CD370C00A1E258 /* Black@2x.png */,
 				006302BA23CC04760074BE1C /* DramaticIcon@2x.png */,
 				00AB6BA523CD37DD0088E269 /* Metal@2x.png */,
@@ -431,6 +434,7 @@
 				D65C4E6023CD3D5900B83EC8 /* MorningIcon@2x.png in Resources */,
 				5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */,
 				00EED5FC23CD370C00A1E258 /* Black@2x.png in Resources */,
+				00F7071123D16FB400C0B8E2 /* Diamond@2x.png in Resources */,
 				0003C0E523CC10AA00111AA1 /* Paper@2x.png in Resources */,
 				001F7E8E23CE99A200521DA8 /* introSequence.gif in Resources */,
 				0007CD0323D1253F00E3535C /* blurrylogoforui.png in Resources */,

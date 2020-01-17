@@ -10,6 +10,15 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
+			<key>diamond</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Diamond</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>darkshatter</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
