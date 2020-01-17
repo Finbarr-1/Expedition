@@ -138,7 +138,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
      }
      
      func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-         notification.notificationOccurred(.success)//Haptic
+        impact.impactOccurred()//haptics
 
         ActInd?.stopAnimating()
         searchBar.text = webView.url?.absoluteString
