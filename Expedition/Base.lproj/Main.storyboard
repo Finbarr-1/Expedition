@@ -101,7 +101,7 @@
                         <action selector="reloadSwipe:" destination="BYZ-38-t0r" id="Bka-27-1de"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.10000000000000001" numberOfTouchesRequired="3" id="Gli-I6-TVR" userLabel="SharePress">
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.01" numberOfTouchesRequired="3" id="Gli-I6-TVR" userLabel="SharePress">
                     <connections>
                         <action selector="searchBarShare:" destination="BYZ-38-t0r" id="bkJ-9e-51l"/>
                     </connections>
