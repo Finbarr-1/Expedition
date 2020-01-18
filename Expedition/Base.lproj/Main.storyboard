@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -237,7 +237,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookie" translatesAutoresizingMaskIntoConstraints="NO" id="4h6-na-ztX">
-                                    <rect key="frame" x="34" y="113" width="14" height="34"/>
+                                    <rect key="frame" x="34" y="121.5" width="14" height="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reopen on last page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-S2-yJa">
@@ -274,7 +274,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-xQ-9or" userLabel="GlyphFade">
-                                    <rect key="frame" x="60" y="345" width="200" height="200"/>
+                                    <rect key="frame" x="110" y="345" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="GlyphFadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -284,7 +284,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-Ey-JIH" userLabel="Shadow">
-                                    <rect key="frame" x="13" y="531" width="200" height="200"/>
+                                    <rect key="frame" x="13" y="431" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="ShadowUI">
@@ -295,7 +295,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-Vs-hNj" userLabel="Light">
-                                    <rect key="frame" x="107" y="345" width="200" height="200"/>
+                                    <rect key="frame" x="207" y="345" width="100" height="100"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="LightUI">
@@ -306,7 +306,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lny-al-JS1" userLabel="FadeBG">
-                                    <rect key="frame" x="107" y="531" width="200" height="200"/>
+                                    <rect key="frame" x="207" y="431" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="FadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -316,7 +316,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi" userLabel="Dark">
-                                    <rect key="frame" x="13" y="345" width="200" height="200"/>
+                                    <rect key="frame" x="13" y="345" width="100" height="100"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                     <gestureRecognizers/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -329,7 +329,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-31-vf2" userLabel="Blue">
-                                    <rect key="frame" x="60" y="531" width="200" height="200"/>
+                                    <rect key="frame" x="110" y="431" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="BlueLightUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -549,22 +549,38 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDI-I7-sVL">
-                                    <rect key="frame" x="38" y="86" width="244" height="444"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <string key="text">We care very deeply about our personal data. We know that you do too, so we have designed expedition to not harvest user data. We do not run ads, or store your personal information in any way. The only data collected by expedition is from websites that you may visit, such as Google or websites with Google trackers. In this case, the data goes to Google, not us. You can somewhat prevent this by turning off cookies. We do not know who you are, anything about you, or what you are using Expedition for.</string>
-                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                </textView>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdS-Mo-wDz">
+                                    <rect key="frame" x="32" y="86" width="256" height="444"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDI-I7-sVL">
+                                            <rect key="frame" x="0.0" y="0.0" width="256" height="444"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <mutableString key="text">We care very profoundly about our personal data. We know that you do too, so we have created Expedition to not harvest user data. We do not run ads, or store your personal information in any way. The only data collected by Expedition is from websites that you may visit, such as Google or websites with Google trackers. In this case, the data goes to Google, not us. You can somewhat prevent this by turning off cookies. We do not know who you are, anything about you, or what you are using Expedition for. If you want to more harshly protect yourself, we have tools to block all cookies from working, though some websites rely on these cookies to work properly. If you care that much, you can, however, switch them off.</mutableString>
+                                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wDI-I7-sVL" firstAttribute="top" secondItem="Lo9-Bh-vkb" secondAttribute="top" id="1Aa-AR-6qa"/>
+                                        <constraint firstAttribute="trailing" secondItem="wDI-I7-sVL" secondAttribute="trailing" id="9Ba-Ek-4kU"/>
+                                        <constraint firstAttribute="bottom" secondItem="wDI-I7-sVL" secondAttribute="bottom" id="G13-D3-vWO"/>
+                                        <constraint firstItem="wDI-I7-sVL" firstAttribute="leading" secondItem="FdS-Mo-wDz" secondAttribute="leading" id="Jkm-3M-4wo"/>
+                                        <constraint firstItem="wDI-I7-sVL" firstAttribute="centerX" secondItem="FdS-Mo-wDz" secondAttribute="centerX" id="KeI-5i-saU"/>
+                                        <constraint firstItem="wDI-I7-sVL" firstAttribute="bottom" secondItem="DDu-xQ-kYY" secondAttribute="bottom" id="yCv-88-46e"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="contentLayoutGuide" id="Lo9-Bh-vkb"/>
+                                    <viewLayoutGuide key="frameLayoutGuide" id="DDu-xQ-kYY"/>
+                                </scrollView>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="wDI-I7-sVL" firstAttribute="leading" secondItem="bMA-ik-RRg" secondAttribute="leading" constant="38" id="GOT-0W-M57"/>
-                                <constraint firstAttribute="bottom" secondItem="wDI-I7-sVL" secondAttribute="bottom" constant="38" id="Maq-XR-Ydm"/>
+                                <constraint firstAttribute="trailing" secondItem="FdS-Mo-wDz" secondAttribute="trailing" constant="32" id="DqN-dy-cIP"/>
+                                <constraint firstAttribute="bottom" secondItem="FdS-Mo-wDz" secondAttribute="bottom" constant="38" id="KyF-0J-ZWe"/>
                                 <constraint firstItem="Dfg-vg-I3h" firstAttribute="top" secondItem="bMA-ik-RRg" secondAttribute="top" constant="28" id="UAj-wR-IeS"/>
+                                <constraint firstItem="FdS-Mo-wDz" firstAttribute="leading" secondItem="bMA-ik-RRg" secondAttribute="leading" constant="32" id="UtD-EH-zoJ"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dfg-vg-I3h" secondAttribute="trailing" constant="20" symbolic="YES" id="dut-kR-UhW"/>
                                 <constraint firstItem="Dfg-vg-I3h" firstAttribute="leading" secondItem="bMA-ik-RRg" secondAttribute="leading" constant="38" id="mTZ-FD-ib3"/>
-                                <constraint firstAttribute="trailing" secondItem="wDI-I7-sVL" secondAttribute="trailing" constant="38" id="xZL-NK-kd7"/>
-                                <constraint firstItem="wDI-I7-sVL" firstAttribute="top" secondItem="Dfg-vg-I3h" secondAttribute="bottom" constant="18" id="xk9-EI-bsJ"/>
+                                <constraint firstItem="FdS-Mo-wDz" firstAttribute="top" secondItem="Dfg-vg-I3h" secondAttribute="bottom" constant="18" id="yIY-go-c34"/>
                             </constraints>
                         </view>
                         <blurEffect style="regular"/>
@@ -572,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yc-B9-wG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="197" y="-717"/>
+            <point key="canvasLocation" x="196.875" y="-717.25352112676057"/>
         </scene>
     </scenes>
     <resources>
