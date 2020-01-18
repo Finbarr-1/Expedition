@@ -131,7 +131,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     }
     
     func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
-        notification.notificationOccurred(.success)//Haptic
+        impact.impactOccurred() // Haptics
         webView.customUserAgent = "Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/5.2 Mobile/15E148 Expedition/604.1"
         ActInd?.startAnimating()
          

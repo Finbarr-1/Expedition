@@ -28,8 +28,13 @@ let impact = UIImpactFeedbackGenerator() // Haptics
         
         // Do any additional setup after loading the view.
     }
+    @IBAction func didTapHowToUse(_ sender: UIButton) {
+        impact.impactOccurred() // Haptics
+        //present(, animated: true)
+    }
     
     @IBAction func clearHistory(_ sender: UIButton) {
+        impact.impactOccurred() // Haptics
         let alert = UIAlertController(title: "Clear History", message: "Are you sure you want to clear history?", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
@@ -44,6 +49,7 @@ let impact = UIImpactFeedbackGenerator() // Haptics
     }
     
     @IBAction func clearBrowsingData(_ sender: UIButton) {
+        impact.impactOccurred() // Haptics
         let alert = UIAlertController(title: "Clear Browsing Data", message: "Are you sure you want to clear cookies and history?", preferredStyle: .actionSheet)
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
@@ -115,7 +121,7 @@ let impact = UIImpactFeedbackGenerator() // Haptics
     }
     
     @IBAction func didTapLightIcon(_ sender: UIButton) {
-   impact.impactOccurred() // Haptics
+        impact.impactOccurred() // Haptics
         UIApplication.shared.setAlternateIconName("lighticon")
     }
     
