@@ -10,33 +10,6 @@
 	<dict>
 		<key>CFBundleAlternateIcons</key>
 		<dict>
-			<key>diamond</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>Diamond</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>darkshatter</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>DarkShatter</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>shatter</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>LightShatter</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
 			<key>black</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -60,6 +33,24 @@
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>DarkIcon</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>darkshatter</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>DarkShatter</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>diamond</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Diamond</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
@@ -103,15 +94,6 @@
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>IOS6</string>
-				</array>
-				<key>UIPrerenderedIcon</key>
-				<false/>
-			</dict>
-			<key>thezucc</key>
-			<dict>
-				<key>CFBundleIconFiles</key>
-				<array>
-					<string>Zuckerberg</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
@@ -197,6 +179,15 @@
 				<key>UIPrerenderedIcon</key>
 				<false/>
 			</dict>
+			<key>shatter</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>LightShatter</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
 			<key>softicon</key>
 			<dict>
 				<key>CFBundleIconFiles</key>
@@ -220,6 +211,15 @@
 				<key>CFBundleIconFiles</key>
 				<array>
 					<string>ThePurpleOne</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+			<key>thezucc</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>Zuckerberg</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
