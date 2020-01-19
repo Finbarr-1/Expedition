@@ -514,10 +514,17 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoui.png" translatesAutoresizingMaskIntoConstraints="NO" id="EpC-IZ-12f">
-                                    <rect key="frame" x="0.0" y="373" width="175" height="175"/>
+                                    <rect key="frame" x="20" y="398" width="125" height="125"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="175" id="jbd-Wd-hTn"/>
-                                        <constraint firstAttribute="height" constant="175" id="oI2-Ki-PTk"/>
+                                        <constraint firstAttribute="width" constant="125" id="jbd-Wd-hTn"/>
+                                        <constraint firstAttribute="height" constant="125" id="oI2-Ki-PTk"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MorningLogoDark" translatesAutoresizingMaskIntoConstraints="NO" id="26z-zd-wEY">
+                                    <rect key="frame" x="165" y="398" width="125" height="125"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="125" id="7m3-Fg-TYe"/>
+                                        <constraint firstAttribute="width" constant="125" id="dL3-90-TCy"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
@@ -529,7 +536,8 @@
                                 <constraint firstItem="yFo-uR-ly2" firstAttribute="trailing" secondItem="uqn-CR-j65" secondAttribute="trailing" id="H8a-gf-ezd"/>
                                 <constraint firstItem="R6c-gu-oCh" firstAttribute="top" secondItem="j0b-7h-1ZU" secondAttribute="top" constant="45" id="HIK-Qh-uEw"/>
                                 <constraint firstItem="bcr-H7-VYf" firstAttribute="trailing" secondItem="uqn-CR-j65" secondAttribute="trailing" id="O1w-pd-zaK"/>
-                                <constraint firstItem="EpC-IZ-12f" firstAttribute="leading" secondItem="j0b-7h-1ZU" secondAttribute="leading" id="PRh-ci-eNn"/>
+                                <constraint firstAttribute="bottom" secondItem="26z-zd-wEY" secondAttribute="bottom" constant="25" id="O64-xn-jN2"/>
+                                <constraint firstItem="EpC-IZ-12f" firstAttribute="leading" secondItem="j0b-7h-1ZU" secondAttribute="leading" constant="20" id="PRh-ci-eNn"/>
                                 <constraint firstItem="bcr-H7-VYf" firstAttribute="leading" secondItem="uqn-CR-j65" secondAttribute="leading" id="Pk3-Zv-BSh"/>
                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W7N-Mg-UZc" secondAttribute="trailing" constant="20" symbolic="YES" id="Qd3-9n-1Wl"/>
                                 <constraint firstItem="uqn-CR-j65" firstAttribute="leading" secondItem="j0b-7h-1ZU" secondAttribute="leading" constant="28" id="SIE-2e-imQ"/>
@@ -540,10 +548,11 @@
                                 <constraint firstAttribute="trailing" secondItem="uqn-CR-j65" secondAttribute="trailing" constant="28" id="ith-qT-Qxt"/>
                                 <constraint firstItem="XuH-MP-99j" firstAttribute="top" secondItem="yFo-uR-ly2" secondAttribute="bottom" constant="9" id="l4k-4O-jf3"/>
                                 <constraint firstItem="Cq2-yv-Z0T" firstAttribute="trailing" secondItem="uqn-CR-j65" secondAttribute="trailing" id="lK7-jD-M2r"/>
-                                <constraint firstAttribute="bottom" secondItem="EpC-IZ-12f" secondAttribute="bottom" id="mqD-H5-dI7"/>
+                                <constraint firstAttribute="bottom" secondItem="EpC-IZ-12f" secondAttribute="bottom" constant="25" id="mqD-H5-dI7"/>
                                 <constraint firstItem="bcr-H7-VYf" firstAttribute="top" secondItem="uqn-CR-j65" secondAttribute="bottom" constant="8" id="pVN-Kq-Vgg"/>
                                 <constraint firstItem="R6c-gu-oCh" firstAttribute="leading" secondItem="j0b-7h-1ZU" secondAttribute="leading" constant="-327" id="rcF-FV-FCy"/>
                                 <constraint firstItem="Cq2-yv-Z0T" firstAttribute="top" secondItem="bcr-H7-VYf" secondAttribute="bottom" constant="6" id="tU9-IB-xO0"/>
+                                <constraint firstAttribute="trailing" secondItem="26z-zd-wEY" secondAttribute="trailing" constant="30" id="yhB-B0-kt6"/>
                             </constraints>
                         </view>
                         <blurEffect style="systemChromeMaterial"/>
@@ -618,6 +627,7 @@
         <image name="FadeUI" width="100" height="100"/>
         <image name="GlyphFadeUI" width="100" height="100"/>
         <image name="LightUI" width="100" height="100"/>
+        <image name="MorningLogoDark" width="125" height="125"/>
         <image name="ShadowUI" width="100" height="100"/>
         <image name="arrow.counterclockwise.circle" catalog="system" width="64" height="60"/>
         <image name="blurrylogoforui.png" width="1024" height="1024"/>
