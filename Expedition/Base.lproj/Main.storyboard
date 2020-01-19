@@ -16,12 +16,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-XX-UMS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-XX-UMS">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Bwc-XX-UMS" firstAttribute="centerX" secondItem="3n1-9b-CYd" secondAttribute="centerX" id="5HQ-V9-FrK"/>
+                            <constraint firstItem="v5J-8J-4Di" firstAttribute="bottom" secondItem="Bwc-XX-UMS" secondAttribute="bottom" id="Qez-Z8-TC8"/>
+                            <constraint firstItem="Bwc-XX-UMS" firstAttribute="top" secondItem="v5J-8J-4Di" secondAttribute="top" id="g9X-ln-HOA"/>
+                            <constraint firstItem="Bwc-XX-UMS" firstAttribute="leading" secondItem="v5J-8J-4Di" secondAttribute="leading" id="n8c-7H-YML"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v5J-8J-4Di"/>
                     </view>
                     <connections>
@@ -261,7 +266,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookie" translatesAutoresizingMaskIntoConstraints="NO" id="4h6-na-ztX">
-                                    <rect key="frame" x="34" y="119.5" width="14" height="17"/>
+                                    <rect key="frame" x="34" y="111" width="14" height="34"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reopen on last page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-S2-yJa">
@@ -298,7 +303,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-xQ-9or" userLabel="GlyphFade">
-                                    <rect key="frame" x="110" y="355" width="100" height="100"/>
+                                    <rect key="frame" x="60" y="355" width="200" height="200"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="GlyphFadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -308,7 +313,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-Ey-JIH" userLabel="Shadow">
-                                    <rect key="frame" x="13" y="430" width="100" height="100"/>
+                                    <rect key="frame" x="13" y="530" width="200" height="200"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="ShadowUI">
@@ -319,7 +324,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-Vs-hNj" userLabel="Light">
-                                    <rect key="frame" x="207" y="355" width="100" height="100"/>
+                                    <rect key="frame" x="107" y="355" width="200" height="200"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="LightUI">
@@ -330,7 +335,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lny-al-JS1" userLabel="FadeBG">
-                                    <rect key="frame" x="207" y="430" width="100" height="100"/>
+                                    <rect key="frame" x="107" y="530" width="200" height="200"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="FadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -340,7 +345,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi" userLabel="Dark">
-                                    <rect key="frame" x="13" y="355" width="100" height="100"/>
+                                    <rect key="frame" x="13" y="355" width="200" height="200"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                     <gestureRecognizers/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -353,7 +358,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-31-vf2" userLabel="Blue">
-                                    <rect key="frame" x="110" y="430" width="100" height="100"/>
+                                    <rect key="frame" x="60" y="530" width="200" height="200"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="BlueLightUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -546,7 +551,7 @@
                                     </constraints>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MorningLogoDark" translatesAutoresizingMaskIntoConstraints="NO" id="26z-zd-wEY">
-                                    <rect key="frame" x="165" y="398" width="125.00000000000003" height="125"/>
+                                    <rect key="frame" x="165" y="398" width="125" height="125"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="125" id="7m3-Fg-TYe"/>
                                         <constraint firstAttribute="width" constant="125" id="dL3-90-TCy"/>
