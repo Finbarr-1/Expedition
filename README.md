@@ -1,4 +1,3 @@
-
 # Expedition
 
 ## What it is

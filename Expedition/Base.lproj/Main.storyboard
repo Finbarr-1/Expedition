@@ -8,6 +8,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--GifView-->
+        <scene sceneID="OSu-mv-Y6J">
+            <objects>
+                <viewController title="GifView" id="E3a-YU-zsV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3n1-9b-CYd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="introSequence.gif" translatesAutoresizingMaskIntoConstraints="NO" id="f7w-lD-Yqn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="v5J-8J-4Di" firstAttribute="bottom" secondItem="f7w-lD-Yqn" secondAttribute="bottom" id="BFR-g9-y3Y"/>
+                            <constraint firstItem="v5J-8J-4Di" firstAttribute="trailing" secondItem="f7w-lD-Yqn" secondAttribute="trailing" id="k1K-gf-8S0"/>
+                            <constraint firstItem="f7w-lD-Yqn" firstAttribute="leading" secondItem="v5J-8J-4Di" secondAttribute="leading" id="krm-Q2-8u5"/>
+                            <constraint firstItem="f7w-lD-Yqn" firstAttribute="top" secondItem="v5J-8J-4Di" secondAttribute="top" id="nRs-so-Qrh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="v5J-8J-4Di"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsQ-Iq-tM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-889" y="25"/>
+        </scene>
         <!--Web-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -237,7 +263,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookie" translatesAutoresizingMaskIntoConstraints="NO" id="4h6-na-ztX">
-                                    <rect key="frame" x="34" y="111" width="14" height="34"/>
+                                    <rect key="frame" x="34" y="119.5" width="14" height="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reopen on last page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-S2-yJa">
@@ -274,7 +300,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-xQ-9or" userLabel="GlyphFade">
-                                    <rect key="frame" x="60" y="355" width="200" height="200"/>
+                                    <rect key="frame" x="110" y="355" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="GlyphFadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -284,7 +310,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-Ey-JIH" userLabel="Shadow">
-                                    <rect key="frame" x="13" y="530" width="200" height="200"/>
+                                    <rect key="frame" x="13" y="430" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <state key="normal" image="ShadowUI">
@@ -295,7 +321,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-Vs-hNj" userLabel="Light">
-                                    <rect key="frame" x="107" y="355" width="200" height="200"/>
+                                    <rect key="frame" x="207" y="355" width="100" height="100"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="LightUI">
@@ -306,7 +332,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lny-al-JS1" userLabel="FadeBG">
-                                    <rect key="frame" x="107" y="530" width="200" height="200"/>
+                                    <rect key="frame" x="207" y="430" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="FadeUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -316,7 +342,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi" userLabel="Dark">
-                                    <rect key="frame" x="13" y="355" width="200" height="200"/>
+                                    <rect key="frame" x="13" y="355" width="100" height="100"/>
                                     <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                     <gestureRecognizers/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -329,7 +355,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-31-vf2" userLabel="Blue">
-                                    <rect key="frame" x="60" y="530" width="200" height="200"/>
+                                    <rect key="frame" x="110" y="430" width="100" height="100"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <state key="normal" image="BlueLightUI">
                                         <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -420,6 +446,7 @@
                                 <constraint firstItem="iZR-it-taf" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="58" id="cTe-pE-3wh"/>
                                 <constraint firstItem="b04-xd-9wp" firstAttribute="top" secondItem="iZR-it-taf" secondAttribute="bottom" constant="-2" id="cWx-2i-hLJ"/>
                                 <constraint firstItem="iZR-it-taf" firstAttribute="top" secondItem="es1-Lj-mt9" secondAttribute="bottom" id="dBQ-LS-Bcg"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b04-xd-9wp" secondAttribute="trailing" constant="20" symbolic="YES" id="dCF-m0-Ubk"/>
                                 <constraint firstItem="lny-al-JS1" firstAttribute="centerY" secondItem="ydw-Ey-JIH" secondAttribute="centerY" id="ddc-Q5-r4h"/>
                                 <constraint firstItem="5RC-3q-jpM" firstAttribute="centerY" secondItem="TAD-S2-yJa" secondAttribute="centerY" id="ePE-Xx-b0d"/>
                                 <constraint firstItem="5RC-3q-jpM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TAD-S2-yJa" secondAttribute="trailing" constant="8" symbolic="YES" id="f5V-Ah-oIb"/>
@@ -521,7 +548,7 @@
                                     </constraints>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MorningLogoDark" translatesAutoresizingMaskIntoConstraints="NO" id="26z-zd-wEY">
-                                    <rect key="frame" x="165" y="398" width="125" height="125"/>
+                                    <rect key="frame" x="165" y="398" width="125.00000000000003" height="125"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="125" id="7m3-Fg-TYe"/>
                                         <constraint firstAttribute="width" constant="125" id="dL3-90-TCy"/>
@@ -627,13 +654,14 @@
         <image name="FadeUI" width="100" height="100"/>
         <image name="GlyphFadeUI" width="100" height="100"/>
         <image name="LightUI" width="100" height="100"/>
-        <image name="MorningLogoDark" width="125" height="125"/>
+        <image name="MorningLogoDark" width="124.5" height="124.5"/>
         <image name="ShadowUI" width="100" height="100"/>
         <image name="arrow.counterclockwise.circle" catalog="system" width="64" height="60"/>
         <image name="blurrylogoforui.png" width="1024" height="1024"/>
         <image name="circle.bottomthird.split" catalog="system" width="64" height="60"/>
         <image name="clock" catalog="system" width="64" height="60"/>
         <image name="cookie" width="17" height="17"/>
+        <image name="introSequence.gif" width="1080" height="1920"/>
         <image name="lock.circle" catalog="system" width="64" height="60"/>
         <image name="logoui.png" width="1024" height="1024"/>
         <image name="questionmark.circle" catalog="system" width="64" height="60"/>
