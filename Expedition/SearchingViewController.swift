@@ -15,7 +15,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var ActInd: UIActivityIndicatorView!
     let notification = UINotificationFeedbackGenerator()//Haptics
-    var appIconToChange:String = "nil"
     
     var appDelegate = UIApplication.shared.delegate as! AppDelegate
     let impact = UIImpactFeedbackGenerator() // Haptics
@@ -66,6 +65,8 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         } else {
             openUrl(urlString: url!.absoluteString)
         }
+        
+        performSegue(withIdentifier: "showIntro", sender: self)
     }
     
     @IBAction func searchBarShare(_ sender: UILongPressGestureRecognizer) {
