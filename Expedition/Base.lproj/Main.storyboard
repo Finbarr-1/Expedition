@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="IntroViewController" title="GifView" id="E3a-YU-zsV" customClass="IntroViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3n1-9b-CYd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-XX-UMS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="Expedition White"/>
@@ -36,7 +36,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsQ-Iq-tM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-887" y="20"/>
+            <point key="canvasLocation" x="197" y="907"/>
         </scene>
         <!--Web-->
         <scene sceneID="tne-QT-ifu">
@@ -107,7 +107,7 @@
                         <outlet property="ActInd" destination="JeA-nV-CKj" id="Nec-3V-7Ni"/>
                         <outlet property="searchBar" destination="gA5-H8-wBy" id="GK0-Cp-j0j"/>
                         <outlet property="webView" destination="1Sr-kh-OPV" id="AbH-gy-eSn"/>
-                        <segue destination="E3a-YU-zsV" kind="show" identifier="showIntro" id="b16-5W-GaX"/>
+                        <segue destination="E3a-YU-zsV" kind="presentation" identifier="showIntro" modalPresentationStyle="fullScreen" id="b16-5W-GaX"/>
                     </connections>
                 </viewController>
                 <swipeGestureRecognizer direction="right" id="ltd-91-b5P" userLabel="Credits Swipe">
