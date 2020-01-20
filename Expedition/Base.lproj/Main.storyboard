@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="Expedition White"/>
                         <constraints>
                             <constraint firstItem="Bwc-XX-UMS" firstAttribute="centerX" secondItem="3n1-9b-CYd" secondAttribute="centerX" id="5HQ-V9-FrK"/>
                             <constraint firstItem="v5J-8J-4Di" firstAttribute="bottom" secondItem="Bwc-XX-UMS" secondAttribute="bottom" id="Qez-Z8-TC8"/>
@@ -590,7 +590,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfm-OU-gtd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2083" y="-401"/>
+            <point key="canvasLocation" x="2145" y="-888"/>
         </scene>
         <!--PrivacyPolicy-->
         <scene sceneID="Wyd-Ju-5DR">
@@ -648,7 +648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yc-B9-wG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="196.875" y="-717.25352112676057"/>
+            <point key="canvasLocation" x="2145" y="85"/>
         </scene>
     </scenes>
     <resources>
@@ -670,6 +670,9 @@
         <image name="xmark.circle" catalog="system" width="64" height="60"/>
         <namedColor name="Expedition Blue">
             <color red="0.0" green="0.6119999885559082" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Expedition White">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
