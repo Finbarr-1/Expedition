@@ -51,6 +51,8 @@
 		5DE81BC323CBB45000F6FA33 /* ColorShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59E923CB986E007C6495 /* ColorShadow@2x.png */; };
 		5DE81BC423CBB45300F6FA33 /* Fading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59F623CB98AC007C6495 /* Fading@2x.png */; };
 		5DE81BC523CBB45700F6FA33 /* LightBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD5A0523CB98DC007C6495 /* LightBlue@2x.png */; };
+		5DFC236523D58840004A3DF9 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DFC236423D58840004A3DF9 /* Stickers.xcassets */; };
+		5DFC236923D58840004A3DF9 /* Expedition Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DFC236223D5883C004A3DF9 /* Expedition Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D6030CDC23A89669003C6911 /* Gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6030CDB23A89669003C6911 /* Gestures.swift */; };
 		D635B71A23CC07D6006B33F1 /* ThePurpleOne@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D635B71923CC07D6006B33F1 /* ThePurpleOne@2x.png */; };
 		D64CA0C923C94E6600619E00 /* LightIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CA0C823C94E6600619E00 /* LightIcon@2x.png */; };
@@ -74,6 +76,13 @@
 			remoteGlobalIDString = 001366B32307B61F009A102E;
 			remoteInfo = Expedition;
 		};
+		5DFC236723D58840004A3DF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 001366AC2307B61F009A102E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DFC236123D5883C004A3DF9;
+			remoteInfo = "Expedition Stickers";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -83,6 +92,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				5DFC236923D58840004A3DF9 /* Expedition Stickers.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,15 +117,7 @@
 		001366D72307B620009A102E /* ExpeditionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpeditionUITests.swift; sourceTree = "<group>"; };
 		001366D92307B620009A102E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		001366E62307BEA9009A102E /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		0039254723CED16700AD77EB /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
-		0039254923CED16700AD77EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0040048823CD7DAB002926E9 /* Zuckerberg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Zuckerberg@2x.png"; sourceTree = "<group>"; };
-		0047D73923D3C8A8001431AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0047D73B23D3C8A8001431AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0047D73D23D3C8A8001431AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0047D74023D3C8A8001431AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0047D74223D3C8A8001431AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0047D74323D3C8A8001431AC /* Expedition_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expedition_Mac.entitlements; sourceTree = "<group>"; };
 		005932CF234D747100DC2323 /* Expedition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expedition.entitlements; sourceTree = "<group>"; };
 		006302B923CC04760074BE1C /* Halftone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Halftone@2x.png"; sourceTree = "<group>"; };
 		006302BA23CC04760074BE1C /* DramaticIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DramaticIcon@2x.png"; sourceTree = "<group>"; };
@@ -152,6 +154,9 @@
 		5D793D0423D4DF5C00539A44 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 		5D793D0623D4E02D00539A44 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		5D9B0E4223CBE355006713A4 /* VortexIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VortexIcon@2x.png"; sourceTree = "<group>"; };
+		5DFC236223D5883C004A3DF9 /* Expedition Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Expedition Stickers.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DFC236423D58840004A3DF9 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		5DFC236623D58840004A3DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		D635B71923CC07D6006B33F1 /* ThePurpleOne@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThePurpleOne@2x.png"; sourceTree = "<group>"; };
 		D64CA0C823C94E6600619E00 /* LightIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightIcon@2x.png"; sourceTree = "<group>"; };
@@ -192,8 +197,7 @@
 				00A3DC5C23D3C8EA00F96543 /* README.md */,
 				001366B62307B61F009A102E /* Expedition */,
 				001366D62307B620009A102E /* ExpeditionUITests */,
-				0039254623CED16100AD77EB /* Expedition Stickers */,
-				0047D73823D3C8A8001431AC /* Expedition Mac */,
+				5DFC236323D5883C004A3DF9 /* Expedition Stickers */,
 				001366B52307B61F009A102E /* Products */,
 				001366E52307BEA9009A102E /* Frameworks */,
 			);
@@ -206,6 +210,7 @@
 				001366B42307B61F009A102E /* Expedition.app */,
 				001366C82307B620009A102E /* ExpeditionTests.xctest */,
 				001366D32307B620009A102E /* ExpeditionUITests.xctest */,
+				5DFC236223D5883C004A3DF9 /* Expedition Stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,28 +278,6 @@
 			path = DarkAppIcon;
 			sourceTree = "<group>";
 		};
-		0039254623CED16100AD77EB /* Expedition Stickers */ = {
-			isa = PBXGroup;
-			children = (
-				0039254723CED16700AD77EB /* Stickers.xcassets */,
-				0039254923CED16700AD77EB /* Info.plist */,
-			);
-			path = "Expedition Stickers";
-			sourceTree = "<group>";
-		};
-		0047D73823D3C8A8001431AC /* Expedition Mac */ = {
-			isa = PBXGroup;
-			children = (
-				0047D73923D3C8A8001431AC /* AppDelegate.swift */,
-				0047D73B23D3C8A8001431AC /* ViewController.swift */,
-				0047D73D23D3C8A8001431AC /* Assets.xcassets */,
-				0047D73F23D3C8A8001431AC /* Main.storyboard */,
-				0047D74223D3C8A8001431AC /* Info.plist */,
-				0047D74323D3C8A8001431AC /* Expedition_Mac.entitlements */,
-			);
-			path = "Expedition Mac";
-			sourceTree = "<group>";
-		};
 		00AD59E723CB9865007C6495 /* ColorShadowAppIcon */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +340,15 @@
 			path = TotallyNotSecretIcons;
 			sourceTree = "<group>";
 		};
+		5DFC236323D5883C004A3DF9 /* Expedition Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				5DFC236423D58840004A3DF9 /* Stickers.xcassets */,
+				5DFC236623D58840004A3DF9 /* Info.plist */,
+			);
+			path = "Expedition Stickers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,6 +364,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5DFC236823D58840004A3DF9 /* PBXTargetDependency */,
 			);
 			name = Expedition;
 			productName = Expedition;
@@ -414,6 +407,21 @@
 			productReference = 001366D32307B620009A102E /* ExpeditionUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5DFC236123D5883C004A3DF9 /* Expedition Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DFC236C23D58840004A3DF9 /* Build configuration list for PBXNativeTarget "Expedition Stickers" */;
+			buildPhases = (
+				5DFC236023D5883C004A3DF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Expedition Stickers";
+			productName = "Expedition Stickers";
+			productReference = 5DFC236223D5883C004A3DF9 /* Expedition Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -435,6 +443,9 @@
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 001366B32307B61F009A102E;
 					};
+					5DFC236123D5883C004A3DF9 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 001366AF2307B61F009A102E /* Build configuration list for PBXProject "Expedition" */;
@@ -453,6 +464,7 @@
 				001366B32307B61F009A102E /* Expedition */,
 				001366C72307B620009A102E /* ExpeditionTests */,
 				001366D22307B620009A102E /* ExpeditionUITests */,
+				5DFC236123D5883C004A3DF9 /* Expedition Stickers */,
 			);
 		};
 /* End PBXProject section */
@@ -514,6 +526,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DFC236023D5883C004A3DF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFC236523D58840004A3DF9 /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -565,6 +585,11 @@
 			target = 001366B32307B61F009A102E /* Expedition */;
 			targetProxy = 001366D42307B620009A102E /* PBXContainerItemProxy */;
 		};
+		5DFC236823D58840004A3DF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DFC236123D5883C004A3DF9 /* Expedition Stickers */;
+			targetProxy = 5DFC236723D58840004A3DF9 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -582,14 +607,6 @@
 				001366C12307B620009A102E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		0047D73F23D3C8A8001431AC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0047D74023D3C8A8001431AC /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -843,6 +860,40 @@
 			};
 			name = Release;
 		};
+		5DFC236A23D58840004A3DF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				INFOPLIST_FILE = "Expedition Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themorningcompany.expedition.Expedition-Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DFC236B23D58840004A3DF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				INFOPLIST_FILE = "Expedition Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.themorningcompany.expedition.Expedition-Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -878,6 +929,15 @@
 			buildConfigurations = (
 				001366E32307B620009A102E /* Debug */,
 				001366E42307B620009A102E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DFC236C23D58840004A3DF9 /* Build configuration list for PBXNativeTarget "Expedition Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DFC236A23D58840004A3DF9 /* Debug */,
+				5DFC236B23D58840004A3DF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
