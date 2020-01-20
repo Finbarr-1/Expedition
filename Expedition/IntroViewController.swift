@@ -16,7 +16,11 @@ class IntroViewController: UIViewController {
 
         print("LOADED INTRO VIEW CONTROLLER")
         
-        gifView.loadGif(name: "introSequence")
+        if traitCollection.userInterfaceStyle == .light {
+            gifView.loadGif(name: "LightIntro")
+        } else {
+            gifView.loadGif(name: "DarkIntro")
+        }
         // Do any additional setup after loading the view.
     }
     
