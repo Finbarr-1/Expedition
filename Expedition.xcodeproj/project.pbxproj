@@ -738,7 +738,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -746,7 +746,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -764,7 +764,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = Expedition/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -772,7 +772,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 7.2;
-				PRODUCT_BUNDLE_IDENTIFIER = com.themorningcompany.expedition;
+				PRODUCT_BUNDLE_IDENTIFIER = a.expedition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -867,11 +867,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = "Expedition Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.themorningcompany.expedition.Expedition-Stickers";
+				PRODUCT_BUNDLE_IDENTIFIER = "a.expedition.Expedition-Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -884,11 +885,12 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQ7CSQ6XS5;
+				DEVELOPMENT_TEAM = 3HNBGF82F9;
 				INFOPLIST_FILE = "Expedition Stickers/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.themorningcompany.expedition.Expedition-Stickers";
+				PRODUCT_BUNDLE_IDENTIFIER = "a.expedition.Expedition-Stickers";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
