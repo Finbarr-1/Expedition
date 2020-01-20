@@ -157,6 +157,8 @@
 		5DFC236223D5883C004A3DF9 /* Expedition Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Expedition Stickers.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFC236423D58840004A3DF9 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		5DFC236623D58840004A3DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DFC236E23D58C3E004A3DF9 /* ExpeditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpeditionTests.swift; sourceTree = "<group>"; };
+		5DFC236F23D58C3E004A3DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6030CDB23A89669003C6911 /* Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gestures.swift; sourceTree = "<group>"; };
 		D635B71923CC07D6006B33F1 /* ThePurpleOne@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ThePurpleOne@2x.png"; sourceTree = "<group>"; };
 		D64CA0C823C94E6600619E00 /* LightIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightIcon@2x.png"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			children = (
 				00A3DC5C23D3C8EA00F96543 /* README.md */,
 				001366B62307B61F009A102E /* Expedition */,
+				5DFC236D23D58C3E004A3DF9 /* ExpeditionTests */,
 				001366D62307B620009A102E /* ExpeditionUITests */,
 				5DFC236323D5883C004A3DF9 /* Expedition Stickers */,
 				001366B52307B61F009A102E /* Products */,
@@ -347,6 +350,15 @@
 				5DFC236623D58840004A3DF9 /* Info.plist */,
 			);
 			path = "Expedition Stickers";
+			sourceTree = "<group>";
+		};
+		5DFC236D23D58C3E004A3DF9 /* ExpeditionTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DFC236E23D58C3E004A3DF9 /* ExpeditionTests.swift */,
+				5DFC236F23D58C3E004A3DF9 /* Info.plist */,
+			);
+			path = ExpeditionTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
