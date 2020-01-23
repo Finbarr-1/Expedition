@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="IntroViewController" title="GifView" id="E3a-YU-zsV" customClass="IntroViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3n1-9b-CYd">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-XX-UMS">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="Expedition White"/>
@@ -43,15 +43,15 @@
             <objects>
                 <viewController title="Web" id="BYZ-38-t0r" customClass="ViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="JeA-nV-CKj">
-                                <rect key="frame" x="285" y="18" width="20" height="20"/>
+                                <rect key="frame" x="340" y="18" width="20" height="20"/>
                                 <color key="color" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             </activityIndicatorView>
                             <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Sr-kh-OPV">
-                                <rect key="frame" x="0.0" y="52" width="320" height="516"/>
+                                <rect key="frame" x="0.0" y="56" width="375" height="611"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <gestureRecognizers/>
@@ -65,7 +65,7 @@
                                 </connections>
                             </wkWebView>
                             <searchBar opaque="NO" contentMode="redraw" layoutMarginsFollowReadableWidth="YES" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-H8-wBy">
-                                <rect key="frame" x="2" y="0.0" width="283" height="56"/>
+                                <rect key="frame" x="2" y="0.0" width="338" height="56"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                                 <gestureRecognizers/>
                                 <color key="barTintColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,7 +88,7 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="JeA-nV-CKj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="39F-Su-Buy"/>
-                            <constraint firstItem="1Sr-kh-OPV" firstAttribute="top" secondItem="JeA-nV-CKj" secondAttribute="bottom" constant="14" id="Lx7-e3-q0D"/>
+                            <constraint firstItem="1Sr-kh-OPV" firstAttribute="top" secondItem="JeA-nV-CKj" secondAttribute="bottom" constant="18" id="Lx7-e3-q0D"/>
                             <constraint firstItem="JeA-nV-CKj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="18" id="Pbw-X0-TzH"/>
                             <constraint firstItem="gA5-H8-wBy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="2" id="QGB-EC-opR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JeA-nV-CKj" secondAttribute="trailing" constant="15" id="RHd-kV-I4C"/>
@@ -145,21 +145,21 @@
             <objects>
                 <tableViewController title="History" id="65v-MH-vlF" customClass="HistoryTableViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="26q-fx-QMl">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="sectionIndexBackgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextCell" textLabel="7dK-fL-zc3" style="IBUITableViewCellStyleDefault" id="jPf-bm-8lT">
-                                <rect key="frame" x="16" y="55.5" width="288" height="47"/>
+                                <rect key="frame" x="16" y="55.5" width="343" height="47"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jPf-bm-8lT" id="7Wr-Ex-Ulu" customClass="UITableView">
-                                    <rect key="frame" x="0.0" y="0.0" width="288" height="47"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="343" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7dK-fL-zc3">
-                                            <rect key="frame" x="15" y="0.0" width="258" height="47"/>
+                                            <rect key="frame" x="15" y="0.0" width="313" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -183,298 +183,243 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6H6-I3-eKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1174" y="444"/>
+            <point key="canvasLocation" x="1112" y="-485"/>
         </scene>
         <!--Options-->
         <scene sceneID="oyU-ty-4iq">
             <objects>
                 <viewController storyboardIdentifier="Options" title="Options" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bgj-w0-VgC" customClass="OptionsViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="qSP-HF-leV">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0UT-MA-a3z">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keep history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul4-TQ-1nE">
-                                    <rect key="frame" x="58" y="82" width="96" height="24"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-tN-yD7">
-                                    <rect key="frame" x="243" y="78.5" width="51" height="31"/>
-                                    <color key="onTintColor" name="Expedition Blue"/>
-                                    <connections>
-                                        <action selector="historySwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="5L1-5F-Bbx"/>
-                                    </connections>
-                                </switch>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-sF-8td">
-                                    <rect key="frame" x="38" y="28" width="107" height="40"/>
-                                    <gestureRecognizers/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="app icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuS-5G-FcM">
-                                    <rect key="frame" x="38" y="325" width="122" height="40"/>
-                                    <gestureRecognizers/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4em-CD-h6R">
-                                    <rect key="frame" x="58" y="179" width="95" height="36"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <state key="normal" title="clear history">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="clearHistory:" destination="bgj-w0-VgC" eventType="touchUpInside" id="PzQ-EP-xh4"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es1-Lj-mt9">
-                                    <rect key="frame" x="58" y="214" width="154" height="36"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <state key="normal" title="clear browsing data">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="clearBrowsingData:" destination="bgj-w0-VgC" eventType="touchUpInside" id="UuC-gB-l9p"/>
-                                        <action selector="clearBrowsingData:" destination="U2w-H1-PkZ" eventType="touchUpInside" id="VkQ-JB-rHa"/>
-                                        <action selector="clearHistory:" destination="bgj-w0-VgC" eventType="touchUpInside" id="eNd-gX-FXO"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFC-Pv-qrS">
-                                    <rect key="frame" x="145" y="367" width="30" height="34"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keep cookies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe1-Jp-GEO">
-                                    <rect key="frame" x="58" y="116" width="103" height="24"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upf-2I-yKl">
-                                    <rect key="frame" x="243" y="112.5" width="51" height="31"/>
-                                    <color key="onTintColor" name="Expedition Blue"/>
-                                    <connections>
-                                        <action selector="cookiesSwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="I75-oW-yD2"/>
-                                    </connections>
-                                </switch>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xrk-VK-R3z">
-                                    <rect key="frame" x="34" y="84" width="14" height="19.5"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
-                                </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cookie" translatesAutoresizingMaskIntoConstraints="NO" id="4h6-na-ztX">
-                                    <rect key="frame" x="34" y="111" width="14" height="34"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reopen on last page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-S2-yJa">
-                                    <rect key="frame" x="58" y="150" width="157" height="24"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5RC-3q-jpM">
-                                    <rect key="frame" x="243" y="146.5" width="51" height="31"/>
-                                    <color key="onTintColor" name="Expedition Blue"/>
-                                    <connections>
-                                        <action selector="reopenTabsSwitchValueChanged:" destination="bgj-w0-VgC" eventType="valueChanged" id="TfA-nO-YOJ"/>
-                                    </connections>
-                                </switch>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.counterclockwise.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3XD-eW-ziY">
-                                    <rect key="frame" x="34" y="152" width="14" height="19.5"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
-                                </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aXv-UV-bBy">
-                                    <rect key="frame" x="34" y="187" width="14" height="19.5"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
-                                </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.bottomthird.split" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MrA-Lh-jav">
-                                    <rect key="frame" x="34" y="222" width="14" height="19.5"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
-                                </imageView>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="F0H-y3-Cwp">
-                                    <rect key="frame" x="34" y="258" width="14" height="19.5"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
-                                </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-xQ-9or" userLabel="GlyphFade">
-                                    <rect key="frame" x="60" y="355" width="200" height="200"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <state key="normal" image="GlyphFadeUI">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="didTapGlyphIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="GVa-uW-aAM"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-Ey-JIH" userLabel="Shadow">
-                                    <rect key="frame" x="13" y="530" width="200" height="200"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <state key="normal" image="ShadowUI">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="didTapShadowIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="XzW-hT-Ol8"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-Vs-hNj" userLabel="Light">
-                                    <rect key="frame" x="107" y="355" width="200" height="200"/>
-                                    <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <state key="normal" image="LightUI">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="didTapLightIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="7Mm-IR-Ij9"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lny-al-JS1" userLabel="FadeBG">
-                                    <rect key="frame" x="107" y="530" width="200" height="200"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <state key="normal" image="FadeUI">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="didTapFadingIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="lJx-rB-YT7"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi" userLabel="Dark">
-                                    <rect key="frame" x="13" y="355" width="200" height="200"/>
-                                    <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
-                                    <gestureRecognizers/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <state key="normal" image="DarkUI">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="didTapDarkIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="2CD-8Q-wY6"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-31-vf2" userLabel="Blue">
-                                    <rect key="frame" x="60" y="530" width="200" height="200"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <state key="normal" image="BlueLightUI">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="didTapLightBlueIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="Zoc-HA-bSx"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZR-it-taf">
-                                    <rect key="frame" x="58" y="250" width="86" height="36"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <state key="normal" title="how to use">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="didTapHowToUse:" destination="bgj-w0-VgC" eventType="touchUpInside" id="I4e-gS-ElR"/>
-                                        <segue destination="VIU-GY-pak" kind="presentation" id="Sog-fL-QSg"/>
-                                    </connections>
-                                </button>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="bSU-MP-3gL">
-                                    <rect key="frame" x="34" y="292" width="14" height="19.5"/>
-                                    <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="medium"/>
-                                </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b04-xd-9wp">
-                                    <rect key="frame" x="58" y="284" width="108" height="36"/>
-                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                    <state key="normal" title="privacy policy">
-                                        <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="didTapHowToUse:" destination="bgj-w0-VgC" eventType="touchUpInside" id="9SE-HN-VgF"/>
-                                        <segue destination="ITb-Tq-qem" kind="presentation" id="4zN-aQ-N27"/>
-                                    </connections>
-                                </button>
+                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KY2-RF-tBX">
+                                    <rect key="frame" x="8" y="0.0" width="359" height="647"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keep history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul4-TQ-1nE">
+                                            <rect key="frame" x="18" y="153" width="96" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-tN-yD7">
+                                            <rect key="frame" x="292" y="149.5" width="51" height="31"/>
+                                            <color key="onTintColor" name="Expedition Blue"/>
+                                            <connections>
+                                                <action selector="historySwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="5L1-5F-Bbx"/>
+                                            </connections>
+                                        </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClN-sF-8td">
+                                            <rect key="frame" x="20" y="24" width="107" height="40"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="app icon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuS-5G-FcM">
+                                            <rect key="frame" x="18" y="369" width="122" height="40"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="29"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4em-CD-h6R">
+                                            <rect key="frame" x="19" y="235" width="95" height="36"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" title="clear history">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="clearHistory:" destination="bgj-w0-VgC" eventType="touchUpInside" id="PzQ-EP-xh4"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es1-Lj-mt9">
+                                            <rect key="frame" x="19.5" y="189" width="154" height="36"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" title="clear browsing data">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="clearBrowsingData:" destination="bgj-w0-VgC" eventType="touchUpInside" id="UuC-gB-l9p"/>
+                                                <action selector="clearBrowsingData:" destination="U2w-H1-PkZ" eventType="touchUpInside" id="VkQ-JB-rHa"/>
+                                                <action selector="clearHistory:" destination="bgj-w0-VgC" eventType="touchUpInside" id="eNd-gX-FXO"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keep cookies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fe1-Jp-GEO">
+                                            <rect key="frame" x="18" y="114" width="103" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upf-2I-yKl">
+                                            <rect key="frame" x="292" y="110.5" width="51" height="31"/>
+                                            <color key="onTintColor" name="Expedition Blue"/>
+                                            <connections>
+                                                <action selector="cookiesSwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="I75-oW-yD2"/>
+                                            </connections>
+                                        </switch>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="reopen on last page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAD-S2-yJa">
+                                            <rect key="frame" x="18" y="76" width="157" height="24"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5RC-3q-jpM">
+                                            <rect key="frame" x="292" y="72.5" width="51" height="31"/>
+                                            <color key="onTintColor" name="Expedition Blue"/>
+                                            <connections>
+                                                <action selector="reopenTabsSwitchValueChanged:" destination="bgj-w0-VgC" eventType="valueChanged" id="TfA-nO-YOJ"/>
+                                            </connections>
+                                        </switch>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-xQ-9or" userLabel="GlyphFade">
+                                            <rect key="frame" x="79.5" y="603" width="200" height="200"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" image="GlyphFadeUI">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapGlyphIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="GVa-uW-aAM"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-Ey-JIH" userLabel="Shadow">
+                                            <rect key="frame" x="18" y="603" width="200" height="200"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <state key="normal" image="ShadowUI">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapShadowIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="XzW-hT-Ol8"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-Vs-hNj" userLabel="Light">
+                                            <rect key="frame" x="18" y="421" width="200" height="200"/>
+                                            <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" image="LightUI">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapLightIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="7Mm-IR-Ij9"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lny-al-JS1" userLabel="FadeBG">
+                                            <rect key="frame" x="141" y="603" width="200" height="200"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" image="FadeUI">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapFadingIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="lJx-rB-YT7"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZR-it-taf">
+                                            <rect key="frame" x="18" y="321" width="86" height="36"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" title="how to use">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapHowToUse:" destination="bgj-w0-VgC" eventType="touchUpInside" id="I4e-gS-ElR"/>
+                                                <segue destination="VIU-GY-pak" kind="presentation" id="Sog-fL-QSg"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b04-xd-9wp">
+                                            <rect key="frame" x="18" y="279" width="108" height="36"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" title="privacy policy">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapHowToUse:" destination="bgj-w0-VgC" eventType="touchUpInside" id="9SE-HN-VgF"/>
+                                                <segue destination="ITb-Tq-qem" kind="presentation" id="4zN-aQ-N27"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi" userLabel="Dark">
+                                            <rect key="frame" x="79.5" y="421" width="200" height="200"/>
+                                            <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
+                                            <gestureRecognizers/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <state key="normal" image="DarkUI">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapDarkIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="2CD-8Q-wY6"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-31-vf2" userLabel="Blue">
+                                            <rect key="frame" x="141" y="421" width="200" height="200"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" image="BlueLightUI">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapLightBlueIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="Zoc-HA-bSx"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WC4-Vs-hNj" firstAttribute="leading" secondItem="ihG-mg-cLZ" secondAttribute="leading" constant="18" id="0G0-wA-2Id"/>
+                                        <constraint firstItem="TAD-S2-yJa" firstAttribute="leading" secondItem="KY2-RF-tBX" secondAttribute="leading" constant="18" id="0e3-vx-9KU"/>
+                                        <constraint firstItem="upf-2I-yKl" firstAttribute="centerY" secondItem="Fe1-Jp-GEO" secondAttribute="centerY" id="6C3-Mk-SFu"/>
+                                        <constraint firstItem="iZR-it-taf" firstAttribute="top" secondItem="b04-xd-9wp" secondAttribute="bottom" constant="6" id="7dh-wC-a4f"/>
+                                        <constraint firstItem="Fe1-Jp-GEO" firstAttribute="top" secondItem="TAD-S2-yJa" secondAttribute="bottom" constant="14" id="85W-cb-8dZ"/>
+                                        <constraint firstItem="lny-al-JS1" firstAttribute="centerY" secondItem="ydw-Ey-JIH" secondAttribute="centerY" id="8ex-Sk-mZV"/>
+                                        <constraint firstItem="bzd-j1-tNi" firstAttribute="centerX" secondItem="KY2-RF-tBX" secondAttribute="centerX" id="Al2-MJ-eGa"/>
+                                        <constraint firstItem="lny-al-JS1" firstAttribute="centerX" secondItem="eqT-31-vf2" secondAttribute="centerX" id="Di4-xs-TCN"/>
+                                        <constraint firstItem="Jx4-xQ-9or" firstAttribute="centerX" secondItem="KY2-RF-tBX" secondAttribute="centerX" id="Ewq-B9-7wk"/>
+                                        <constraint firstItem="ul4-TQ-1nE" firstAttribute="leading" secondItem="KY2-RF-tBX" secondAttribute="leading" constant="18" id="FVL-R2-aWt"/>
+                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" secondItem="eqT-31-vf2" secondAttribute="trailing" constant="18" id="FsB-re-aGP"/>
+                                        <constraint firstItem="WC4-Vs-hNj" firstAttribute="top" secondItem="KuS-5G-FcM" secondAttribute="bottom" constant="12" id="Gws-cb-j5q"/>
+                                        <constraint firstItem="upf-2I-yKl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fe1-Jp-GEO" secondAttribute="trailing" constant="8" symbolic="YES" id="H6u-o9-Wvn"/>
+                                        <constraint firstItem="ClN-sF-8td" firstAttribute="top" secondItem="KY2-RF-tBX" secondAttribute="top" constant="24" id="Hfl-jg-Iju"/>
+                                        <constraint firstItem="Fe1-Jp-GEO" firstAttribute="leading" secondItem="KY2-RF-tBX" secondAttribute="leading" constant="18" id="I8U-W8-pLD"/>
+                                        <constraint firstItem="ydw-Ey-JIH" firstAttribute="centerX" secondItem="WC4-Vs-hNj" secondAttribute="centerX" id="NHp-ak-Miq"/>
+                                        <constraint firstAttribute="trailing" secondItem="upf-2I-yKl" secondAttribute="trailing" constant="18" id="Ngh-br-eyU"/>
+                                        <constraint firstItem="ClN-sF-8td" firstAttribute="leading" secondItem="KY2-RF-tBX" secondAttribute="leading" constant="20" id="PcB-YE-1Dw"/>
+                                        <constraint firstAttribute="bottom" secondItem="4S2-tN-yD7" secondAttribute="bottom" constant="602.5" id="Re8-DP-cIT"/>
+                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b04-xd-9wp" secondAttribute="trailing" symbolic="YES" id="S0w-b7-OT0"/>
+                                        <constraint firstItem="KuS-5G-FcM" firstAttribute="leading" secondItem="XjT-db-CDc" secondAttribute="leading" constant="18" id="Tvd-Hb-OSq"/>
+                                        <constraint firstItem="ul4-TQ-1nE" firstAttribute="top" secondItem="Fe1-Jp-GEO" secondAttribute="bottom" constant="15" id="VZu-ae-i8Z"/>
+                                        <constraint firstItem="KuS-5G-FcM" firstAttribute="top" secondItem="iZR-it-taf" secondAttribute="bottom" constant="12" id="Vhb-dd-Vqv"/>
+                                        <constraint firstItem="TAD-S2-yJa" firstAttribute="top" secondItem="ClN-sF-8td" secondAttribute="bottom" constant="12" id="Wn2-Q2-4ke"/>
+                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iZR-it-taf" secondAttribute="trailing" symbolic="YES" id="Y7S-PZ-wbx"/>
+                                        <constraint firstItem="Jx4-xQ-9or" firstAttribute="centerY" secondItem="ydw-Ey-JIH" secondAttribute="centerY" id="YHY-v0-59t"/>
+                                        <constraint firstItem="b04-xd-9wp" firstAttribute="leading" secondItem="XjT-db-CDc" secondAttribute="leading" constant="18" id="ZFP-J2-eIg"/>
+                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KuS-5G-FcM" secondAttribute="trailing" symbolic="YES" id="ZXY-oJ-2j6"/>
+                                        <constraint firstItem="eqT-31-vf2" firstAttribute="centerY" secondItem="WC4-Vs-hNj" secondAttribute="centerY" id="aet-n0-oaw"/>
+                                        <constraint firstItem="es1-Lj-mt9" firstAttribute="centerX" secondItem="TAD-S2-yJa" secondAttribute="centerX" id="aqs-B8-tdz"/>
+                                        <constraint firstItem="4S2-tN-yD7" firstAttribute="centerY" secondItem="ul4-TQ-1nE" secondAttribute="centerY" id="dTq-Qu-pO1"/>
+                                        <constraint firstItem="iZR-it-taf" firstAttribute="leading" secondItem="XjT-db-CDc" secondAttribute="leading" constant="18" id="dnS-7d-0kf"/>
+                                        <constraint firstItem="b04-xd-9wp" firstAttribute="top" secondItem="4em-CD-h6R" secondAttribute="bottom" constant="8" id="ejN-Fs-Zct"/>
+                                        <constraint firstItem="4S2-tN-yD7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ul4-TQ-1nE" secondAttribute="trailing" constant="8" symbolic="YES" id="eqF-Hv-WVV"/>
+                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" secondItem="eqT-31-vf2" secondAttribute="trailing" constant="18" id="fKa-M6-eGG"/>
+                                        <constraint firstItem="ydw-Ey-JIH" firstAttribute="top" secondItem="WC4-Vs-hNj" secondAttribute="bottom" constant="-18" id="fwN-dh-FwY"/>
+                                        <constraint firstAttribute="trailing" secondItem="4S2-tN-yD7" secondAttribute="trailing" constant="18" id="inq-QD-jEB"/>
+                                        <constraint firstItem="4em-CD-h6R" firstAttribute="leading" secondItem="ihG-mg-cLZ" secondAttribute="leading" constant="19" id="ktE-b1-2ug"/>
+                                        <constraint firstItem="ihG-mg-cLZ" firstAttribute="trailing" secondItem="5RC-3q-jpM" secondAttribute="trailing" constant="18" id="m27-ko-vB9"/>
+                                        <constraint firstAttribute="trailing" secondItem="5RC-3q-jpM" secondAttribute="trailing" constant="18" id="nJa-jS-lXp"/>
+                                        <constraint firstItem="4em-CD-h6R" firstAttribute="top" secondItem="es1-Lj-mt9" secondAttribute="bottom" constant="10" id="ngy-15-oEf"/>
+                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ClN-sF-8td" secondAttribute="trailing" symbolic="YES" id="pmP-CI-dkH"/>
+                                        <constraint firstItem="es1-Lj-mt9" firstAttribute="top" secondItem="ul4-TQ-1nE" secondAttribute="bottom" constant="12" id="qTt-9q-phj"/>
+                                        <constraint firstItem="bzd-j1-tNi" firstAttribute="centerY" secondItem="WC4-Vs-hNj" secondAttribute="centerY" id="qjl-nV-O03"/>
+                                        <constraint firstItem="5RC-3q-jpM" firstAttribute="centerY" secondItem="TAD-S2-yJa" secondAttribute="centerY" id="rFI-di-6ls"/>
+                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4em-CD-h6R" secondAttribute="trailing" id="yh9-3b-pjo"/>
+                                    </constraints>
+                                    <viewLayoutGuide key="contentLayoutGuide" id="XjT-db-CDc"/>
+                                    <viewLayoutGuide key="frameLayoutGuide" id="ihG-mg-cLZ"/>
+                                </scrollView>
                             </subviews>
                             <gestureRecognizers/>
                             <constraints>
-                                <constraint firstItem="aXv-UV-bBy" firstAttribute="centerY" secondItem="4em-CD-h6R" secondAttribute="centerY" id="04R-ct-x6t"/>
-                                <constraint firstItem="Xrk-VK-R3z" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="34" id="0fT-Nl-TtH"/>
-                                <constraint firstItem="KuS-5G-FcM" firstAttribute="top" secondItem="b04-xd-9wp" secondAttribute="bottom" constant="5" id="1gt-K8-0f7"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KuS-5G-FcM" secondAttribute="trailing" constant="20" symbolic="YES" id="2iz-6D-da1"/>
-                                <constraint firstItem="4em-CD-h6R" firstAttribute="leading" secondItem="aXv-UV-bBy" secondAttribute="trailing" constant="10" id="41e-LC-R9v"/>
-                                <constraint firstItem="eqT-31-vf2" firstAttribute="centerX" secondItem="Jx4-xQ-9or" secondAttribute="centerX" id="5sU-rq-GUS"/>
-                                <constraint firstItem="es1-Lj-mt9" firstAttribute="top" secondItem="4em-CD-h6R" secondAttribute="bottom" constant="-1" id="77K-uQ-r6H"/>
-                                <constraint firstItem="es1-Lj-mt9" firstAttribute="leading" secondItem="ul4-TQ-1nE" secondAttribute="leading" id="7F3-uW-iZB"/>
-                                <constraint firstItem="MrA-Lh-jav" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="34" id="7vm-hJ-sWw"/>
-                                <constraint firstAttribute="trailing" secondItem="4S2-tN-yD7" secondAttribute="trailing" constant="28" id="80G-bb-mCO"/>
-                                <constraint firstItem="eqT-31-vf2" firstAttribute="centerX" secondItem="0UT-MA-a3z" secondAttribute="centerX" id="94k-6I-wGK"/>
-                                <constraint firstItem="ydw-Ey-JIH" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="13" id="9wB-gi-AsH"/>
-                                <constraint firstItem="upf-2I-yKl" firstAttribute="centerY" secondItem="Fe1-Jp-GEO" secondAttribute="centerY" id="Cnt-NJ-oqy"/>
-                                <constraint firstItem="Fe1-Jp-GEO" firstAttribute="leading" secondItem="ul4-TQ-1nE" secondAttribute="leading" id="D0Q-VE-2CN"/>
-                                <constraint firstItem="b04-xd-9wp" firstAttribute="leading" secondItem="bSU-MP-3gL" secondAttribute="trailing" constant="10" id="D40-bg-AOt"/>
-                                <constraint firstItem="MrA-Lh-jav" firstAttribute="centerY" secondItem="es1-Lj-mt9" secondAttribute="centerY" id="DXl-as-ml5"/>
-                                <constraint firstItem="bSU-MP-3gL" firstAttribute="centerY" secondItem="b04-xd-9wp" secondAttribute="centerY" id="Eyn-Sm-qky"/>
-                                <constraint firstItem="TAD-S2-yJa" firstAttribute="leading" secondItem="3XD-eW-ziY" secondAttribute="trailing" constant="10" id="Ffl-rd-a1l"/>
-                                <constraint firstItem="bSU-MP-3gL" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="34" id="G3E-zu-dzX"/>
-                                <constraint firstItem="lny-al-JS1" firstAttribute="centerX" secondItem="WC4-Vs-hNj" secondAttribute="centerX" id="GXJ-eo-r3F"/>
-                                <constraint firstItem="4em-CD-h6R" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="58" id="Ga9-NM-LUg"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4em-CD-h6R" secondAttribute="trailing" constant="20" symbolic="YES" id="GxC-5h-u5S"/>
-                                <constraint firstItem="Jx4-xQ-9or" firstAttribute="centerY" secondItem="bzd-j1-tNi" secondAttribute="centerY" id="ILr-tg-BlB"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ClN-sF-8td" secondAttribute="trailing" constant="20" symbolic="YES" id="JRL-5E-fAZ"/>
-                                <constraint firstItem="upf-2I-yKl" firstAttribute="centerY" secondItem="Fe1-Jp-GEO" secondAttribute="centerY" id="Ju4-fF-KGf"/>
-                                <constraint firstAttribute="trailing" secondItem="5RC-3q-jpM" secondAttribute="trailing" constant="28" id="Kcm-gG-q8W"/>
-                                <constraint firstItem="TAD-S2-yJa" firstAttribute="top" secondItem="Fe1-Jp-GEO" secondAttribute="bottom" constant="10" id="LGn-hP-zS4"/>
-                                <constraint firstItem="4S2-tN-yD7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ul4-TQ-1nE" secondAttribute="trailing" constant="8" symbolic="YES" id="LPK-NF-ich"/>
-                                <constraint firstItem="es1-Lj-mt9" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="58" id="M8p-Tg-1C1"/>
-                                <constraint firstItem="TAD-S2-yJa" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="58" id="MPH-ew-rIu"/>
-                                <constraint firstItem="4S2-tN-yD7" firstAttribute="centerY" secondItem="ul4-TQ-1nE" secondAttribute="centerY" id="NcP-mR-m7j"/>
-                                <constraint firstItem="Jx4-xQ-9or" firstAttribute="centerX" secondItem="0UT-MA-a3z" secondAttribute="centerX" id="OMY-Eg-RTi"/>
-                                <constraint firstItem="4em-CD-h6R" firstAttribute="top" secondItem="TAD-S2-yJa" secondAttribute="bottom" constant="5" id="OiZ-wB-Dcp"/>
-                                <constraint firstAttribute="trailing" secondItem="upf-2I-yKl" secondAttribute="trailing" constant="28" id="Q2s-yw-qWl"/>
-                                <constraint firstItem="Fe1-Jp-GEO" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="58" id="QMW-oN-ioE"/>
-                                <constraint firstItem="3XD-eW-ziY" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="34" id="R9u-1N-mAO"/>
-                                <constraint firstItem="es1-Lj-mt9" firstAttribute="leading" secondItem="MrA-Lh-jav" secondAttribute="trailing" constant="10" id="SgU-4w-DsC"/>
-                                <constraint firstItem="F0H-y3-Cwp" firstAttribute="centerY" secondItem="iZR-it-taf" secondAttribute="centerY" id="SrH-6L-SlF"/>
-                                <constraint firstItem="Jx4-xQ-9or" firstAttribute="top" secondItem="KuS-5G-FcM" secondAttribute="bottom" constant="-10" id="TTc-OT-9GK"/>
-                                <constraint firstItem="ydw-Ey-JIH" firstAttribute="centerX" secondItem="bzd-j1-tNi" secondAttribute="centerX" id="WIk-Pz-zMJ"/>
-                                <constraint firstItem="4h6-na-ztX" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="34" id="XWg-fs-QfS"/>
-                                <constraint firstItem="ul4-TQ-1nE" firstAttribute="centerY" secondItem="Xrk-VK-R3z" secondAttribute="centerY" id="XX5-eG-PzM"/>
-                                <constraint firstItem="ClN-sF-8td" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="38" id="XmK-Uu-eBk"/>
-                                <constraint firstItem="5RC-3q-jpM" firstAttribute="centerY" secondItem="TAD-S2-yJa" secondAttribute="centerY" id="YAa-pz-g0p"/>
-                                <constraint firstItem="iZR-it-taf" firstAttribute="leading" secondItem="F0H-y3-Cwp" secondAttribute="trailing" constant="10" id="YB3-Sk-Bab"/>
-                                <constraint firstItem="KuS-5G-FcM" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="38" id="YQJ-vV-Vgy"/>
-                                <constraint firstItem="ul4-TQ-1nE" firstAttribute="leading" secondItem="Xrk-VK-R3z" secondAttribute="trailing" constant="10" id="a2r-ng-lDK"/>
-                                <constraint firstItem="Fe1-Jp-GEO" firstAttribute="leading" secondItem="4h6-na-ztX" secondAttribute="trailing" constant="10" id="axy-Yp-8Zy"/>
-                                <constraint firstItem="ul4-TQ-1nE" firstAttribute="top" secondItem="ClN-sF-8td" secondAttribute="bottom" constant="14" id="bC2-ve-s4z"/>
-                                <constraint firstItem="iZR-it-taf" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="58" id="cTe-pE-3wh"/>
-                                <constraint firstItem="b04-xd-9wp" firstAttribute="top" secondItem="iZR-it-taf" secondAttribute="bottom" constant="-2" id="cWx-2i-hLJ"/>
-                                <constraint firstItem="iZR-it-taf" firstAttribute="top" secondItem="es1-Lj-mt9" secondAttribute="bottom" id="dBQ-LS-Bcg"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b04-xd-9wp" secondAttribute="trailing" constant="20" symbolic="YES" id="dCF-m0-Ubk"/>
-                                <constraint firstItem="lny-al-JS1" firstAttribute="centerY" secondItem="ydw-Ey-JIH" secondAttribute="centerY" id="ddc-Q5-r4h"/>
-                                <constraint firstItem="5RC-3q-jpM" firstAttribute="centerY" secondItem="TAD-S2-yJa" secondAttribute="centerY" id="ePE-Xx-b0d"/>
-                                <constraint firstItem="5RC-3q-jpM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TAD-S2-yJa" secondAttribute="trailing" constant="8" symbolic="YES" id="f5V-Ah-oIb"/>
-                                <constraint firstItem="ClN-sF-8td" firstAttribute="top" secondItem="0UT-MA-a3z" secondAttribute="top" constant="28" id="fMA-f4-Hx6"/>
-                                <constraint firstItem="eqT-31-vf2" firstAttribute="centerY" secondItem="ydw-Ey-JIH" secondAttribute="centerY" id="fah-dw-6fk"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="iZR-it-taf" secondAttribute="trailing" constant="20" symbolic="YES" id="ghO-kK-8m6"/>
-                                <constraint firstItem="4em-CD-h6R" firstAttribute="leading" secondItem="ul4-TQ-1nE" secondAttribute="leading" id="hOl-by-MIJ"/>
-                                <constraint firstItem="aXv-UV-bBy" firstAttribute="centerX" secondItem="Xrk-VK-R3z" secondAttribute="centerX" id="jQf-mt-lhZ"/>
-                                <constraint firstItem="4h6-na-ztX" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="34" id="kf4-lM-Cbp"/>
-                                <constraint firstItem="aXv-UV-bBy" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="34" id="kpx-IP-PJv"/>
-                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="es1-Lj-mt9" secondAttribute="trailing" constant="20" symbolic="YES" id="mR3-a6-dUa"/>
-                                <constraint firstItem="TAD-S2-yJa" firstAttribute="centerY" secondItem="3XD-eW-ziY" secondAttribute="centerY" id="oLo-gx-djC"/>
-                                <constraint firstItem="F0H-y3-Cwp" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="34" id="oSQ-fS-aue"/>
-                                <constraint firstItem="MrA-Lh-jav" firstAttribute="centerX" secondItem="Xrk-VK-R3z" secondAttribute="centerX" id="rP8-5j-EYp"/>
-                                <constraint firstItem="b04-xd-9wp" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="58" id="sbG-h4-pLs"/>
-                                <constraint firstItem="Fe1-Jp-GEO" firstAttribute="centerY" secondItem="4h6-na-ztX" secondAttribute="centerY" id="sjE-Mp-bEV"/>
-                                <constraint firstItem="ul4-TQ-1nE" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leading" constant="58" id="usA-Fk-XHG"/>
-                                <constraint firstItem="Fe1-Jp-GEO" firstAttribute="top" secondItem="ul4-TQ-1nE" secondAttribute="bottom" constant="10" id="vbi-Yo-hTa"/>
-                                <constraint firstAttribute="trailing" secondItem="lny-al-JS1" secondAttribute="trailing" constant="13" id="wVE-HM-zpd"/>
-                                <constraint firstItem="WC4-Vs-hNj" firstAttribute="centerY" secondItem="bzd-j1-tNi" secondAttribute="centerY" id="yhk-Zp-jNR"/>
-                                <constraint firstItem="upf-2I-yKl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fe1-Jp-GEO" secondAttribute="trailing" constant="8" symbolic="YES" id="yl4-HU-Bt4"/>
-                                <constraint firstItem="ydw-Ey-JIH" firstAttribute="top" secondItem="bzd-j1-tNi" secondAttribute="bottom" constant="-25" id="ylE-z9-Mbz"/>
-                                <constraint firstItem="4h6-na-ztX" firstAttribute="centerX" secondItem="Xrk-VK-R3z" secondAttribute="centerX" id="yll-eT-eMN"/>
+                                <constraint firstItem="KY2-RF-tBX" firstAttribute="trailing" secondItem="0UT-MA-a3z" secondAttribute="trailingMargin" id="1D9-Ks-5ti"/>
+                                <constraint firstAttribute="bottom" secondItem="KY2-RF-tBX" secondAttribute="bottom" id="3P7-2G-Xkl"/>
+                                <constraint firstItem="KY2-RF-tBX" firstAttribute="leading" secondItem="0UT-MA-a3z" secondAttribute="leadingMargin" id="EMk-GP-6Xk"/>
+                                <constraint firstItem="KY2-RF-tBX" firstAttribute="top" secondItem="0UT-MA-a3z" secondAttribute="top" id="Xve-z8-gEx"/>
                             </constraints>
                         </view>
                         <gestureRecognizers/>
@@ -489,17 +434,17 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzH-Lv-A1d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="U2w-H1-PkZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1171.875" y="-401.40845070422534"/>
+            <point key="canvasLocation" x="1111.5942028985507" y="497.54464285714283"/>
         </scene>
         <!--HowToUse-->
         <scene sceneID="mw9-8L-X0y">
             <objects>
                 <viewController storyboardIdentifier="howToUse" title="HowToUse" id="VIU-GY-pak" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="pE1-Sj-F9d">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="j0b-7h-1ZU">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurrylogoforui.png" translatesAutoresizingMaskIntoConstraints="NO" id="R6c-gu-oCh">
@@ -516,44 +461,44 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe down on the search bar to reload" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqn-CR-j65">
-                                    <rect key="frame" x="28" y="86" width="264" height="46.5"/>
+                                    <rect key="frame" x="28" y="86" width="319" height="23.5"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe right on the search bar to customise" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcr-H7-VYf">
-                                    <rect key="frame" x="28" y="140.5" width="264" height="46.5"/>
+                                    <rect key="frame" x="28" y="117.5" width="319" height="46.5"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe left on the search bar for history" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq2-yv-Z0T">
-                                    <rect key="frame" x="28" y="193" width="264" height="46.5"/>
+                                    <rect key="frame" x="28" y="170" width="319" height="23.5"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe up on the search bar for desktop website" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFo-uR-ly2">
-                                    <rect key="frame" x="28" y="245.5" width="264" height="46.5"/>
+                                    <rect key="frame" x="28" y="199.5" width="319" height="46.5"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe down with three fingers to share" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuH-MP-99j">
-                                    <rect key="frame" x="28" y="301" width="264" height="46.5"/>
+                                    <rect key="frame" x="28" y="255" width="319" height="23.5"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoui.png" translatesAutoresizingMaskIntoConstraints="NO" id="EpC-IZ-12f">
-                                    <rect key="frame" x="20" y="398" width="125" height="125"/>
+                                    <rect key="frame" x="20" y="497" width="125" height="125"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="125" id="jbd-Wd-hTn"/>
                                         <constraint firstAttribute="height" constant="125" id="oI2-Ki-PTk"/>
                                     </constraints>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MorningLogoDark" translatesAutoresizingMaskIntoConstraints="NO" id="26z-zd-wEY">
-                                    <rect key="frame" x="165" y="398" width="125" height="125"/>
+                                    <rect key="frame" x="220" y="497" width="125" height="125"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="125" id="7m3-Fg-TYe"/>
                                         <constraint firstAttribute="width" constant="125" id="dL3-90-TCy"/>
@@ -592,17 +537,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfm-OU-gtd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2145" y="-888"/>
+            <point key="canvasLocation" x="2145" y="-36"/>
         </scene>
         <!--PrivacyPolicy-->
         <scene sceneID="Wyd-Ju-5DR">
             <objects>
                 <viewController storyboardIdentifier="privacyPolicyView" title="PrivacyPolicy" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ITb-Tq-qem" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="IEF-PY-Mgv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bMA-ik-RRg">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="privacy policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfg-vg-I3h">
@@ -612,10 +557,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdS-Mo-wDz">
-                                    <rect key="frame" x="32" y="86" width="256" height="424"/>
+                                    <rect key="frame" x="32" y="86" width="311" height="523"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDI-I7-sVL">
-                                            <rect key="frame" x="0.0" y="0.0" width="256" height="424"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="311" height="523"/>
                                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <string key="text">We care very profoundly about our personal data. We know that you do too, so we have created Expedition to not harvest user data. We do not run ads, or store your personal information in any way. The only data collected by Expedition is from websites that you may visit, such as Google or websites with Google trackers. In this case, the data goes to Google, not us. You can somewhat prevent this by turning off cookies. We do not know who you are, anything about you, or what you are using Expedition for. If you want to more harshly protect yourself, we have tools to block all cookies from working, though some websites rely on these cookies to work properly. If you care that much, you can, however, switch them off.</string>
                                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -650,7 +595,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yc-B9-wG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2145" y="85"/>
+            <point key="canvasLocation" x="2145" y="1011"/>
         </scene>
     </scenes>
     <resources>
@@ -661,15 +606,8 @@
         <image name="LightUI" width="100" height="100"/>
         <image name="MorningLogoDark" width="124.5" height="124.5"/>
         <image name="ShadowUI" width="100" height="100"/>
-        <image name="arrow.counterclockwise.circle" catalog="system" width="64" height="60"/>
         <image name="blurrylogoforui.png" width="1024" height="1024"/>
-        <image name="circle.bottomthird.split" catalog="system" width="64" height="60"/>
-        <image name="clock" catalog="system" width="64" height="60"/>
-        <image name="cookie" width="17" height="17"/>
-        <image name="lock.circle" catalog="system" width="64" height="60"/>
         <image name="logoui.png" width="1024" height="1024"/>
-        <image name="questionmark.circle" catalog="system" width="64" height="60"/>
-        <image name="xmark.circle" catalog="system" width="64" height="60"/>
         <namedColor name="Expedition Blue">
             <color red="0.0" green="0.6119999885559082" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
