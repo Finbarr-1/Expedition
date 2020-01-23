@@ -39,7 +39,6 @@
 		5D1D0D5E23C6F1CB00B4377E /* HistoryElement+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1D0D5C23C6F1CB00B4377E /* HistoryElement+CoreDataProperties.swift */; };
 		5D2FA89E23D548F300A68AF5 /* DarkIntro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D2FA89D23D548F300A68AF5 /* DarkIntro.gif */; };
 		5D2FA8A023D5490B00A68AF5 /* LightIntro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D2FA89F23D5490B00A68AF5 /* LightIntro.gif */; };
-		5D2FA8A223D5491B00A68AF5 /* DarkIntro.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5D2FA8A123D5491B00A68AF5 /* DarkIntro.gif */; };
 		5D41CBF123C569B6003A16F9 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */; };
 		5D41CBF323C5745C003A16F9 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */; };
 		5D5BA2E223C5910C00D98050 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */; };
@@ -429,7 +428,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1030;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Zeqe Golomb";
 				TargetAttributes = {
 					001366B32307B61F009A102E = {
@@ -508,7 +507,6 @@
 				5DE81BC523CBB45700F6FA33 /* LightBlue@2x.png in Resources */,
 				0078502F23CD688E00BDB94C /* Prism@2x.png in Resources */,
 				00AB6BA623CD37DE0088E269 /* Metal@2x.png in Resources */,
-				5D2FA8A223D5491B00A68AF5 /* DarkIntro.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
