@@ -275,7 +275,7 @@
                                             </connections>
                                         </switch>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-xQ-9or" userLabel="GlyphFade">
-                                            <rect key="frame" x="79.5" y="603" width="200" height="200"/>
+                                            <rect key="frame" x="129.5" y="503" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="GlyphFadeUI">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -285,7 +285,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-Ey-JIH" userLabel="Shadow">
-                                            <rect key="frame" x="18" y="603" width="200" height="200"/>
+                                            <rect key="frame" x="8" y="503" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <state key="normal" image="ShadowUI">
@@ -296,7 +296,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-Vs-hNj" userLabel="Light">
-                                            <rect key="frame" x="18" y="421" width="200" height="200"/>
+                                            <rect key="frame" x="8" y="421" width="100" height="100"/>
                                             <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="LightUI">
@@ -307,7 +307,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lny-al-JS1" userLabel="FadeBG">
-                                            <rect key="frame" x="141" y="603" width="200" height="200"/>
+                                            <rect key="frame" x="251" y="503" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="FadeUI">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -338,8 +338,18 @@
                                                 <segue destination="ITb-Tq-qem" kind="presentation" id="4zN-aQ-N27"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-31-vf2" userLabel="Blue">
+                                            <rect key="frame" x="251" y="421" width="100" height="100"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                            <state key="normal" image="BlueLightUI">
+                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="didTapLightBlueIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="Zoc-HA-bSx"/>
+                                            </connections>
+                                        </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi" userLabel="Dark">
-                                            <rect key="frame" x="79.5" y="421" width="200" height="200"/>
+                                            <rect key="frame" x="129.5" y="421" width="100" height="100"/>
                                             <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -351,19 +361,9 @@
                                                 <action selector="didTapDarkIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="2CD-8Q-wY6"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-31-vf2" userLabel="Blue">
-                                            <rect key="frame" x="141" y="421" width="200" height="200"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                            <state key="normal" image="BlueLightUI">
-                                                <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="didTapLightBlueIcon:" destination="bgj-w0-VgC" eventType="touchUpInside" id="Zoc-HA-bSx"/>
-                                            </connections>
-                                        </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="WC4-Vs-hNj" firstAttribute="leading" secondItem="ihG-mg-cLZ" secondAttribute="leading" constant="18" id="0G0-wA-2Id"/>
+                                        <constraint firstItem="WC4-Vs-hNj" firstAttribute="leading" secondItem="ihG-mg-cLZ" secondAttribute="leading" constant="8" id="0G0-wA-2Id"/>
                                         <constraint firstItem="TAD-S2-yJa" firstAttribute="leading" secondItem="KY2-RF-tBX" secondAttribute="leading" constant="18" id="0e3-vx-9KU"/>
                                         <constraint firstItem="upf-2I-yKl" firstAttribute="centerY" secondItem="Fe1-Jp-GEO" secondAttribute="centerY" id="6C3-Mk-SFu"/>
                                         <constraint firstItem="iZR-it-taf" firstAttribute="top" secondItem="b04-xd-9wp" secondAttribute="bottom" constant="6" id="7dh-wC-a4f"/>
@@ -373,7 +373,6 @@
                                         <constraint firstItem="lny-al-JS1" firstAttribute="centerX" secondItem="eqT-31-vf2" secondAttribute="centerX" id="Di4-xs-TCN"/>
                                         <constraint firstItem="Jx4-xQ-9or" firstAttribute="centerX" secondItem="KY2-RF-tBX" secondAttribute="centerX" id="Ewq-B9-7wk"/>
                                         <constraint firstItem="ul4-TQ-1nE" firstAttribute="leading" secondItem="KY2-RF-tBX" secondAttribute="leading" constant="18" id="FVL-R2-aWt"/>
-                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" secondItem="eqT-31-vf2" secondAttribute="trailing" constant="18" id="FsB-re-aGP"/>
                                         <constraint firstItem="WC4-Vs-hNj" firstAttribute="top" secondItem="KuS-5G-FcM" secondAttribute="bottom" constant="12" id="Gws-cb-j5q"/>
                                         <constraint firstItem="upf-2I-yKl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fe1-Jp-GEO" secondAttribute="trailing" constant="8" symbolic="YES" id="H6u-o9-Wvn"/>
                                         <constraint firstItem="ClN-sF-8td" firstAttribute="top" secondItem="KY2-RF-tBX" secondAttribute="top" constant="24" id="Hfl-jg-Iju"/>
@@ -381,6 +380,7 @@
                                         <constraint firstItem="ydw-Ey-JIH" firstAttribute="centerX" secondItem="WC4-Vs-hNj" secondAttribute="centerX" id="NHp-ak-Miq"/>
                                         <constraint firstAttribute="trailing" secondItem="upf-2I-yKl" secondAttribute="trailing" constant="18" id="Ngh-br-eyU"/>
                                         <constraint firstItem="ClN-sF-8td" firstAttribute="leading" secondItem="KY2-RF-tBX" secondAttribute="leading" constant="20" id="PcB-YE-1Dw"/>
+                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" secondItem="eqT-31-vf2" secondAttribute="trailing" constant="8" id="PfY-Po-gyo"/>
                                         <constraint firstAttribute="bottom" secondItem="4S2-tN-yD7" secondAttribute="bottom" constant="602.5" id="Re8-DP-cIT"/>
                                         <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b04-xd-9wp" secondAttribute="trailing" symbolic="YES" id="S0w-b7-OT0"/>
                                         <constraint firstItem="KuS-5G-FcM" firstAttribute="leading" secondItem="XjT-db-CDc" secondAttribute="leading" constant="18" id="Tvd-Hb-OSq"/>
@@ -397,7 +397,6 @@
                                         <constraint firstItem="iZR-it-taf" firstAttribute="leading" secondItem="XjT-db-CDc" secondAttribute="leading" constant="18" id="dnS-7d-0kf"/>
                                         <constraint firstItem="b04-xd-9wp" firstAttribute="top" secondItem="4em-CD-h6R" secondAttribute="bottom" constant="8" id="ejN-Fs-Zct"/>
                                         <constraint firstItem="4S2-tN-yD7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ul4-TQ-1nE" secondAttribute="trailing" constant="8" symbolic="YES" id="eqF-Hv-WVV"/>
-                                        <constraint firstItem="XjT-db-CDc" firstAttribute="trailing" secondItem="eqT-31-vf2" secondAttribute="trailing" constant="18" id="fKa-M6-eGG"/>
                                         <constraint firstItem="ydw-Ey-JIH" firstAttribute="top" secondItem="WC4-Vs-hNj" secondAttribute="bottom" constant="-18" id="fwN-dh-FwY"/>
                                         <constraint firstAttribute="trailing" secondItem="4S2-tN-yD7" secondAttribute="trailing" constant="18" id="inq-QD-jEB"/>
                                         <constraint firstItem="4em-CD-h6R" firstAttribute="leading" secondItem="ihG-mg-cLZ" secondAttribute="leading" constant="19" id="ktE-b1-2ug"/>
@@ -498,7 +497,7 @@
                                     </constraints>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MorningLogoDark" translatesAutoresizingMaskIntoConstraints="NO" id="26z-zd-wEY">
-                                    <rect key="frame" x="220" y="497" width="125" height="125"/>
+                                    <rect key="frame" x="220" y="497" width="125.00000000000003" height="125"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="125" id="7m3-Fg-TYe"/>
                                         <constraint firstAttribute="width" constant="125" id="dL3-90-TCy"/>
