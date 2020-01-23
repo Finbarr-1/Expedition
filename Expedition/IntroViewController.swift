@@ -25,7 +25,7 @@ class IntroViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.switchToSearchView), userInfo: nil, repeats: false)
+        let timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.switchToSearchView), userInfo: nil, repeats: false)
     }
     
     @objc func switchToSearchView() {

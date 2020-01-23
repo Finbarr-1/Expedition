@@ -32,12 +32,12 @@
                     <navigationItem key="navigationItem" id="bxM-Oq-1vm"/>
                     <connections>
                         <outlet property="gifView" destination="Bwc-XX-UMS" id="1hb-6x-xTN"/>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showSearchView" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="tOY-Um-AMB"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showSearchView" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="tOY-Um-AMB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lsQ-Iq-tM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="197" y="907"/>
+            <point key="canvasLocation" x="-639" y="20"/>
         </scene>
         <!--Web-->
         <scene sceneID="tne-QT-ifu">
