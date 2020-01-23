@@ -24,6 +24,14 @@ class IntroViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        let timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(self.switchToSearchView), userInfo: nil, repeats: false)
+    }
+    
+    @objc func switchToSearchView() {
+        performSegue(withIdentifier: "showSearchView", sender: self)
+    }
+    
 
     /*
     // MARK: - Navigation

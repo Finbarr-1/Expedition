@@ -57,7 +57,7 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
                     print("OPEN: ", historyArray[0].url!)
                 } else {
                     openUrl(urlString: url!.absoluteString)
-                    print("OPEN: ", url?.absoluteString)
+                    print("OPEN: ", url!.absoluteString)
                 }
             } catch {
                 print("ERROR OCCURRED")
@@ -65,8 +65,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         } else {
             openUrl(urlString: url!.absoluteString)
         }
-        
-        performSegue(withIdentifier: "showIntro", sender: self)
     }
     
     @IBAction func searchBarShare(_ sender: UILongPressGestureRecognizer) {
