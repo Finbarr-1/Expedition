@@ -45,6 +45,8 @@
 		5D7845A223CC243A006E6CE1 /* BlurryIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D7845A123CC243A006E6CE1 /* BlurryIcon@2x.png */; };
 		5D793D0523D4DF5C00539A44 /* Swift+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D793D0423D4DF5C00539A44 /* Swift+Gif.swift */; };
 		5D793D0723D4E02D00539A44 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D793D0623D4E02D00539A44 /* IntroViewController.swift */; };
+		5D865CC423E1013700374B07 /* BlankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D865CC323E1013700374B07 /* BlankViewController.swift */; };
+		5D865CC823E105E500374B07 /* privacy_screen.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D865CC723E105E500374B07 /* privacy_screen.png */; };
 		5D9B0E4323CBE355006713A4 /* VortexIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5D9B0E4223CBE355006713A4 /* VortexIcon@2x.png */; };
 		5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59FD23CB98C1007C6495 /* GlyphFade@2x.png */; };
 		5DE81BC323CBB45000F6FA33 /* ColorShadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AD59E923CB986E007C6495 /* ColorShadow@2x.png */; };
@@ -142,6 +144,8 @@
 		5D7845A123CC243A006E6CE1 /* BlurryIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BlurryIcon@2x.png"; sourceTree = "<group>"; };
 		5D793D0423D4DF5C00539A44 /* Swift+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift+Gif.swift"; sourceTree = "<group>"; };
 		5D793D0623D4E02D00539A44 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		5D865CC323E1013700374B07 /* BlankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlankViewController.swift; sourceTree = "<group>"; };
+		5D865CC723E105E500374B07 /* privacy_screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = privacy_screen.png; sourceTree = "<group>"; };
 		5D9B0E4223CBE355006713A4 /* VortexIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VortexIcon@2x.png"; sourceTree = "<group>"; };
 		5DFC236423D58840004A3DF9 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		5DFC236623D58840004A3DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -214,6 +218,7 @@
 				0007CD0223D1253F00E3535C /* blurrylogoforui.png */,
 				5D2FA89F23D5490B00A68AF5 /* LightIntro.gif */,
 				5D2FA8A123D5491B00A68AF5 /* DarkIntro.gif */,
+				5D865CC723E105E500374B07 /* privacy_screen.png */,
 				5DE81BC623CBB83400F6FA33 /* TotallyNotSecretIcons */,
 				0016FC3C23A6B801000D0022 /* DarkAppIcon */,
 				00AD59E723CB9865007C6495 /* ColorShadowAppIcon */,
@@ -224,6 +229,7 @@
 				001366B92307B61F009A102E /* SearchingViewController.swift */,
 				5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */,
 				5D5BA2E123C5910C00D98050 /* HistoryTableViewController.swift */,
+				5D865CC323E1013700374B07 /* BlankViewController.swift */,
 				5D41CBF023C569B6003A16F9 /* SettingsBundleHelper.swift */,
 				5D1D0D5923C6B0B300B4377E /* PersistenceService.swift */,
 				001366B72307B61F009A102E /* AppDelegate.swift */,
@@ -459,6 +465,7 @@
 				0040048923CD7DAC002926E9 /* Zuckerberg@2x.png in Resources */,
 				D65C4E6023CD3D5900B83EC8 /* MorningIcon@2x.png in Resources */,
 				5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */,
+				5D865CC823E105E500374B07 /* privacy_screen.png in Resources */,
 				5D2FA8A023D5490B00A68AF5 /* LightIntro.gif in Resources */,
 				00EED5FC23CD370C00A1E258 /* Black@2x.png in Resources */,
 				00F7071123D16FB400C0B8E2 /* Diamond@2x.png in Resources */,
@@ -514,6 +521,7 @@
 				5D1D0D5A23C6B0B300B4377E /* PersistenceService.swift in Sources */,
 				5D793D0723D4E02D00539A44 /* IntroViewController.swift in Sources */,
 				5D41CBF123C569B6003A16F9 /* SettingsBundleHelper.swift in Sources */,
+				5D865CC423E1013700374B07 /* BlankViewController.swift in Sources */,
 				5D1D0D5E23C6F1CB00B4377E /* HistoryElement+CoreDataProperties.swift in Sources */,
 				D6F21CB023C409AE004C79EC /* code.swift in Sources */,
 				5D793D0523D4DF5C00539A44 /* Swift+Gif.swift in Sources */,

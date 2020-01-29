@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="E3a-YU-zsV">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController storyboardIdentifier="IntroViewController" title="GifView" id="E3a-YU-zsV" customClass="IntroViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3n1-9b-CYd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-XX-UMS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="Expedition White"/>
@@ -44,15 +44,15 @@
             <objects>
                 <viewController title="Web" id="BYZ-38-t0r" customClass="ViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="JeA-nV-CKj">
-                                <rect key="frame" x="340" y="18" width="20" height="20"/>
+                                <rect key="frame" x="379" y="62" width="20" height="20"/>
                                 <color key="color" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             </activityIndicatorView>
                             <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Sr-kh-OPV">
-                                <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <gestureRecognizers/>
@@ -66,7 +66,7 @@
                                 </connections>
                             </wkWebView>
                             <searchBar opaque="NO" contentMode="redraw" layoutMarginsFollowReadableWidth="YES" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-H8-wBy">
-                                <rect key="frame" x="2" y="0.0" width="338" height="56"/>
+                                <rect key="frame" x="2" y="44" width="377" height="56"/>
                                 <rect key="contentStretch" x="0.050000000000000003" y="0.0" width="1" height="1"/>
                                 <gestureRecognizers/>
                                 <color key="barTintColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -109,6 +109,7 @@
                         <outlet property="searchBar" destination="gA5-H8-wBy" id="GK0-Cp-j0j"/>
                         <outlet property="webView" destination="1Sr-kh-OPV" id="AbH-gy-eSn"/>
                         <segue destination="E3a-YU-zsV" kind="presentation" identifier="showIntro" modalPresentationStyle="fullScreen" id="b16-5W-GaX"/>
+                        <segue destination="KbL-uP-Hd2" kind="presentation" identifier="showBlankScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="J6e-BP-JhY"/>
                     </connections>
                 </viewController>
                 <swipeGestureRecognizer direction="right" id="ltd-91-b5P" userLabel="Credits Swipe">
@@ -139,28 +140,61 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="197" y="21"/>
+            <point key="canvasLocation" x="215" y="1"/>
+        </scene>
+        <!--Blank View Controller-->
+        <scene sceneID="M8U-vN-65D">
+            <objects>
+                <viewController storyboardIdentifier="Blank Screen" id="KbL-uP-Hd2" customClass="BlankViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lAE-Ui-ynU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="privacy_screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-1Y-ftc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="d5L-Z1-Ex4"/>
+                                    <constraint firstAttribute="width" constant="414" id="fmr-wM-5s5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dBM-1Y-ftc" firstAttribute="centerY" secondItem="lAE-Ui-ynU" secondAttribute="centerY" id="5hI-zF-Jf1"/>
+                            <constraint firstItem="dBM-1Y-ftc" firstAttribute="centerX" secondItem="lAE-Ui-ynU" secondAttribute="centerX" id="G0V-CS-XJi"/>
+                            <constraint firstItem="dBM-1Y-ftc" firstAttribute="top" secondItem="lAE-Ui-ynU" secondAttribute="topMargin" constant="-44" id="wsU-hI-b4c"/>
+                            <constraint firstItem="dBM-1Y-ftc" firstAttribute="leading" secondItem="LRz-3c-U6J" secondAttribute="leading" id="xCj-2h-F0E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LRz-3c-U6J"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showSearchScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="fET-hm-iSD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCs-2j-rrh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.44927536231884" y="780.13392857142856"/>
         </scene>
         <!--History-->
         <scene sceneID="4gg-kz-CRd">
             <objects>
                 <tableViewController title="History" id="65v-MH-vlF" customClass="HistoryTableViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="26q-fx-QMl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="sectionIndexBackgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextCell" textLabel="7dK-fL-zc3" style="IBUITableViewCellStyleDefault" id="jPf-bm-8lT">
-                                <rect key="frame" x="16" y="55.5" width="343" height="47"/>
+                                <rect key="frame" x="20" y="55.333332061767578" width="374" height="47"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jPf-bm-8lT" id="7Wr-Ex-Ulu" customClass="UITableView">
-                                    <rect key="frame" x="0.0" y="0.0" width="343" height="47"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7dK-fL-zc3">
-                                            <rect key="frame" x="15" y="0.0" width="313" height="47"/>
+                                            <rect key="frame" x="20" y="0.0" width="334" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -191,14 +225,14 @@
             <objects>
                 <viewController storyboardIdentifier="Options" title="Options" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bgj-w0-VgC" customClass="OptionsViewController" customModule="Expedition" customModuleProvider="target" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="qSP-HF-leV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="0UT-MA-a3z">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KY2-RF-tBX">
-                                    <rect key="frame" x="8" y="0.0" width="359" height="647"/>
+                                    <rect key="frame" x="8" y="0.0" width="398" height="842"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="keep history" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ul4-TQ-1nE">
                                             <rect key="frame" x="18" y="153" width="96" height="24"/>
@@ -207,7 +241,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4S2-tN-yD7">
-                                            <rect key="frame" x="292" y="149.5" width="51" height="31"/>
+                                            <rect key="frame" x="331" y="149.66666666666666" width="51" height="31"/>
                                             <color key="onTintColor" name="Expedition Blue"/>
                                             <connections>
                                                 <action selector="historySwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="5L1-5F-Bbx"/>
@@ -238,7 +272,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es1-Lj-mt9">
-                                            <rect key="frame" x="19.5" y="189" width="154" height="36"/>
+                                            <rect key="frame" x="19.666666666666671" y="189" width="154" height="36"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" title="clear browsing data">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -256,7 +290,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="upf-2I-yKl">
-                                            <rect key="frame" x="292" y="110.5" width="51" height="31"/>
+                                            <rect key="frame" x="331" y="110.66666666666667" width="51" height="31.000000000000014"/>
                                             <color key="onTintColor" name="Expedition Blue"/>
                                             <connections>
                                                 <action selector="cookiesSwitchValueChange:" destination="bgj-w0-VgC" eventType="valueChanged" id="I75-oW-yD2"/>
@@ -269,14 +303,14 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5RC-3q-jpM">
-                                            <rect key="frame" x="292" y="72.5" width="51" height="31"/>
+                                            <rect key="frame" x="331" y="72.666666666666671" width="51" height="31"/>
                                             <color key="onTintColor" name="Expedition Blue"/>
                                             <connections>
                                                 <action selector="reopenTabsSwitchValueChanged:" destination="bgj-w0-VgC" eventType="valueChanged" id="TfA-nO-YOJ"/>
                                             </connections>
                                         </switch>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jx4-xQ-9or" userLabel="GlyphFade">
-                                            <rect key="frame" x="79.5" y="603" width="200" height="200"/>
+                                            <rect key="frame" x="149" y="503" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="GlyphFadeUI">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -286,7 +320,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydw-Ey-JIH" userLabel="Shadow">
-                                            <rect key="frame" x="8" y="603" width="200" height="200"/>
+                                            <rect key="frame" x="8" y="503" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <state key="normal" image="ShadowUI">
@@ -297,7 +331,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WC4-Vs-hNj" userLabel="Light">
-                                            <rect key="frame" x="8" y="421" width="200" height="200"/>
+                                            <rect key="frame" x="8" y="421" width="100" height="100"/>
                                             <rect key="contentStretch" x="0.0" y="0.0" width="0.69999999999999996" height="1"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="LightUI">
@@ -308,7 +342,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lny-al-JS1" userLabel="FadeBG">
-                                            <rect key="frame" x="151" y="603" width="200" height="200"/>
+                                            <rect key="frame" x="290" y="503" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="FadeUI">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -340,7 +374,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-31-vf2" userLabel="Blue">
-                                            <rect key="frame" x="151" y="421" width="200" height="200"/>
+                                            <rect key="frame" x="290" y="421" width="100" height="100"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                             <state key="normal" image="BlueLightUI">
                                                 <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -350,7 +384,7 @@
                                             </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-j1-tNi" userLabel="Dark">
-                                            <rect key="frame" x="79.5" y="421" width="200" height="200"/>
+                                            <rect key="frame" x="149" y="421" width="100" height="100"/>
                                             <rect key="contentStretch" x="0.0" y="0.0" width="0.80000000000000004" height="0.80000000000000004"/>
                                             <gestureRecognizers/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
@@ -441,10 +475,10 @@
             <objects>
                 <viewController storyboardIdentifier="howToUse" title="HowToUse" id="VIU-GY-pak" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="pE1-Sj-F9d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="j0b-7h-1ZU">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blurrylogoforui.png" translatesAutoresizingMaskIntoConstraints="NO" id="R6c-gu-oCh">
@@ -461,44 +495,44 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe down on the search bar to reload" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqn-CR-j65">
-                                    <rect key="frame" x="28" y="86" width="319" height="23.5"/>
+                                    <rect key="frame" x="28" y="86" width="358" height="23.333333333333329"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe right on the search bar to customise" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcr-H7-VYf">
-                                    <rect key="frame" x="28" y="117.5" width="319" height="46.5"/>
+                                    <rect key="frame" x="28" y="117.33333333333333" width="358" height="23.333333333333329"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe left on the search bar for history" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cq2-yv-Z0T">
-                                    <rect key="frame" x="28" y="170" width="319" height="23.5"/>
+                                    <rect key="frame" x="28" y="146.66666666666666" width="358" height="23.333333333333343"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe up on the search bar for desktop website" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFo-uR-ly2">
-                                    <rect key="frame" x="28" y="199.5" width="319" height="46.5"/>
+                                    <rect key="frame" x="28" y="176" width="358" height="46.666666666666657"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="swipe down with three fingers to share" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XuH-MP-99j">
-                                    <rect key="frame" x="28" y="255" width="319" height="23.5"/>
+                                    <rect key="frame" x="28" y="231.66666666666666" width="358" height="23.333333333333343"/>
                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoui.png" translatesAutoresizingMaskIntoConstraints="NO" id="EpC-IZ-12f">
-                                    <rect key="frame" x="20" y="497" width="125" height="125"/>
+                                    <rect key="frame" x="20" y="692" width="125" height="125"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="125" id="jbd-Wd-hTn"/>
                                         <constraint firstAttribute="height" constant="125" id="oI2-Ki-PTk"/>
                                     </constraints>
                                 </imageView>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MorningLogoDark" translatesAutoresizingMaskIntoConstraints="NO" id="26z-zd-wEY">
-                                    <rect key="frame" x="220" y="497" width="125" height="125"/>
+                                    <rect key="frame" x="259" y="692" width="125" height="125"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="125" id="7m3-Fg-TYe"/>
                                         <constraint firstAttribute="width" constant="125" id="dL3-90-TCy"/>
@@ -544,10 +578,10 @@
             <objects>
                 <viewController storyboardIdentifier="privacyPolicyView" title="PrivacyPolicy" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ITb-Tq-qem" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="IEF-PY-Mgv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bMA-ik-RRg">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="privacy policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dfg-vg-I3h">
@@ -557,10 +591,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdS-Mo-wDz">
-                                    <rect key="frame" x="32" y="86" width="311" height="523"/>
+                                    <rect key="frame" x="32" y="86" width="350" height="718"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDI-I7-sVL">
-                                            <rect key="frame" x="0.0" y="0.0" width="311" height="523"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="718"/>
                                             <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <string key="text">We care very profoundly about our personal data. We know that you do too, so we have created Expedition to not harvest user data. We do not run ads, or store your personal information in any way. The only data collected by Expedition is from websites that you may visit, such as Google or websites with Google trackers. In this case, the data goes to Google, not us. You can somewhat prevent this by turning off cookies. We do not know who you are, anything about you, or what you are using Expedition for. If you want to more harshly protect yourself, we have tools to block all cookies from working, though some websites rely on these cookies to work properly. If you care that much, you can, however, switch them off.</string>
                                             <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -604,10 +638,11 @@
         <image name="FadeUI" width="100" height="100"/>
         <image name="GlyphFadeUI" width="100" height="100"/>
         <image name="LightUI" width="100" height="100"/>
-        <image name="MorningLogoDark" width="124.5" height="124.5"/>
+        <image name="MorningLogoDark" width="124.33333587646484" height="124.33333587646484"/>
         <image name="ShadowUI" width="100" height="100"/>
         <image name="blurrylogoforui.png" width="1024" height="1024"/>
         <image name="logoui.png" width="1024" height="1024"/>
+        <image name="privacy_screen.png" width="99.360000610351562" height="215"/>
         <namedColor name="Expedition Blue">
             <color red="0.0" green="0.6119999885559082" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -615,5 +650,8 @@
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="fET-hm-iSD"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>

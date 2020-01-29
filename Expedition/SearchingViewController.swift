@@ -65,6 +65,13 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
         } else {
             openUrl(urlString: url!.absoluteString)
         }
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.willResignActiveNotification, object: nil)
+    }
+    
+    @objc func appMovedToBackground() {
+        performSegue(withIdentifier: "showBlankScreen", sender: self)
     }
     
     @IBAction func searchBarShare(_ sender: UILongPressGestureRecognizer) {
@@ -89,9 +96,6 @@ class ViewController: UIViewController, WKNavigationDelegate, UISearchBarDelegat
                             }
                             if queries[0].lowercased() == "appicon" {
                                 print("SHOULD CHANGE APP ICON")
-                                if queries[1].lowercased() == "isfacebooktrackingme" {
-                                  
-                                }
                                 UIApplication.shared.setAlternateIconName(String(queries[1]).lowercased())
                             }
                         }
