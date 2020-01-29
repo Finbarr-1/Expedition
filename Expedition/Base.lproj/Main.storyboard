@@ -109,7 +109,7 @@
                         <outlet property="searchBar" destination="gA5-H8-wBy" id="GK0-Cp-j0j"/>
                         <outlet property="webView" destination="1Sr-kh-OPV" id="AbH-gy-eSn"/>
                         <segue destination="E3a-YU-zsV" kind="presentation" identifier="showIntro" modalPresentationStyle="fullScreen" id="b16-5W-GaX"/>
-                        <segue destination="KbL-uP-Hd2" kind="presentation" identifier="showBlankScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="J6e-BP-JhY"/>
+                        <segue destination="KbL-uP-Hd2" kind="presentation" identifier="showBlankScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="J6e-BP-JhY"/>
                     </connections>
                 </viewController>
                 <swipeGestureRecognizer direction="right" id="ltd-91-b5P" userLabel="Credits Swipe">
@@ -153,12 +153,12 @@
                         <viewLayoutGuide key="safeArea" id="LRz-3c-U6J"/>
                     </view>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showSearchScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="fET-hm-iSD"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="showSearchScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="fET-hm-iSD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WCs-2j-rrh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="101.44927536231884" y="780.13392857142856"/>
+            <point key="canvasLocation" x="-639" y="852"/>
         </scene>
         <!--History-->
         <scene sceneID="4gg-kz-CRd">
@@ -635,6 +635,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="J6e-BP-JhY"/>
         <segue reference="fET-hm-iSD"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
