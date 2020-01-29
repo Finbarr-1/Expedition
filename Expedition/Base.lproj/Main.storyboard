@@ -149,22 +149,7 @@
                     <view key="view" contentMode="scaleToFill" id="lAE-Ui-ynU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="privacy_screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="dBM-1Y-ftc">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="896" id="d5L-Z1-Ex4"/>
-                                    <constraint firstAttribute="width" constant="414" id="fmr-wM-5s5"/>
-                                </constraints>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="dBM-1Y-ftc" firstAttribute="centerY" secondItem="lAE-Ui-ynU" secondAttribute="centerY" id="5hI-zF-Jf1"/>
-                            <constraint firstItem="dBM-1Y-ftc" firstAttribute="centerX" secondItem="lAE-Ui-ynU" secondAttribute="centerX" id="G0V-CS-XJi"/>
-                            <constraint firstItem="dBM-1Y-ftc" firstAttribute="top" secondItem="lAE-Ui-ynU" secondAttribute="topMargin" constant="-44" id="wsU-hI-b4c"/>
-                            <constraint firstItem="dBM-1Y-ftc" firstAttribute="leading" secondItem="LRz-3c-U6J" secondAttribute="leading" id="xCj-2h-F0E"/>
-                        </constraints>
+                        <color key="backgroundColor" name="Expedition White"/>
                         <viewLayoutGuide key="safeArea" id="LRz-3c-U6J"/>
                     </view>
                     <connections>
@@ -642,7 +627,6 @@
         <image name="ShadowUI" width="100" height="100"/>
         <image name="blurrylogoforui.png" width="1024" height="1024"/>
         <image name="logoui.png" width="1024" height="1024"/>
-        <image name="privacy_screen.png" width="99.360000610351562" height="215"/>
         <namedColor name="Expedition Blue">
             <color red="0.0" green="0.6119999885559082" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
