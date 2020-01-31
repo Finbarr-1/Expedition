@@ -15,6 +15,8 @@ class IntroViewController: UIViewController {
         super.viewDidLoad()
 
         print("LOADED INTRO VIEW CONTROLLER")
+        // Tell the engine to play a pattern.
+        try engine.playPattern(from: URL(fileURLWithPath: path))
         
         if traitCollection.userInterfaceStyle == .light {
             gifView.loadGif(name: "LightIntro")

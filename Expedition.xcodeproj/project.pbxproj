@@ -30,6 +30,7 @@
 		00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBA23A84AFF00F045F7 /* DarkIcon@2x.png */; };
 		00A91DBD23A84AFF00F045F7 /* DarkIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A91DBB23A84AFF00F045F7 /* DarkIcon@3x.png */; };
 		00AB6BA623CD37DE0088E269 /* Metal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00AB6BA523CD37DD0088E269 /* Metal@2x.png */; };
+		00AFAA5523E3B976006E9CD4 /* Inflate.ahap in Resources */ = {isa = PBXBuildFile; fileRef = 00AFAA5423E3B976006E9CD4 /* Inflate.ahap */; };
 		00C4A4C623C509E800C18F65 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00C4A4C523C509E800C18F65 /* Settings.bundle */; };
 		00EED5FC23CD370C00A1E258 /* Black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EED5FB23CD370C00A1E258 /* Black@2x.png */; };
 		00F7071123D16FB400C0B8E2 /* Diamond@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F7071023D16FB400C0B8E2 /* Diamond@2x.png */; };
@@ -128,6 +129,7 @@
 		00AD59FE23CB98C2007C6495 /* GlyphFade@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GlyphFade@3x.png"; sourceTree = "<group>"; };
 		00AD5A0423CB98DB007C6495 /* LightBlue@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightBlue@3x.png"; sourceTree = "<group>"; };
 		00AD5A0523CB98DC007C6495 /* LightBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LightBlue@2x.png"; sourceTree = "<group>"; };
+		00AFAA5423E3B976006E9CD4 /* Inflate.ahap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Inflate.ahap; sourceTree = "<group>"; };
 		00C4A4C523C509E800C18F65 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		00EED5FB23CD370C00A1E258 /* Black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black@2x.png"; sourceTree = "<group>"; };
 		00F7071023D16FB400C0B8E2 /* Diamond@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Diamond@2x.png"; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				00AD59F523CB98A5007C6495 /* FadingAppIcon */,
 				00AD59FC23CB98B8007C6495 /* GlyphFadeAppIcon */,
 				00AD5A0323CB98D5007C6495 /* LightBlueAppIcon */,
+				00AFAA5423E3B976006E9CD4 /* Inflate.ahap */,
 				5D793D0623D4E02D00539A44 /* IntroViewController.swift */,
 				001366B92307B61F009A102E /* SearchingViewController.swift */,
 				5D41CBF223C5745C003A16F9 /* OptionsViewController.swift */,
@@ -462,6 +465,7 @@
 				0077891923D14005002AEE78 /* DarkShatter@2x.png in Resources */,
 				D65C4E5E23CD396E00B83EC8 /* ThePinkOne@2x.png in Resources */,
 				00A91DBC23A84AFF00F045F7 /* DarkIcon@2x.png in Resources */,
+				00AFAA5523E3B976006E9CD4 /* Inflate.ahap in Resources */,
 				0040048923CD7DAC002926E9 /* Zuckerberg@2x.png in Resources */,
 				D65C4E6023CD3D5900B83EC8 /* MorningIcon@2x.png in Resources */,
 				5DE81BC223CBB41900F6FA33 /* GlyphFade@2x.png in Resources */,

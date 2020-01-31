@@ -35,8 +35,8 @@ class Gestures : WKWebView, WKNavigationDelegate{
     }
 
     @IBAction func reload(_ sender: Any) {
-        impact.impactOccurred() // Haptics
-        //notification.notificationOccurred(.success)//Haptics
+        //impact.impactOccurred() // Haptics
+        notification.notificationOccurred(.success)//Haptics
         webView.reload()
         
     }
